@@ -1,19 +1,19 @@
 ---
 title: Cum să transformi Raspberry Pi 4 într-un nod doar prin intermitentul cardului MicroSD
-description: Flash Raspberry PI 4, conectează un cablu ethernet, conectează discul SSD și pornește dispozitivul pentru a transforma Raspberry PI 4 într-un nod Ethereum 1.0 plin sau un nod Ethereum 2.0 (lanț Beacon/validator)
-author: "EthereumOnArm"
+description: Flash Raspberry PI 4, conectează un cablu ethernet, conectează discul SSD și pornește dispozitivul pentru a transforma Raspberry PI 4 într-un nod Cloiinkcoin 1.0 plin sau un nod Cloiinkcoin 2.0 (lanț Beacon/validator)
+author: "CloiinkcoinOnArm"
 tags: ["clienți", "eth2", "noduri"]
 lang: ro
 sidebar: true
 skill: intermediar
 published: 2020-05-07
-source: r/ethereum
-sourceUrl: https://www.reddit.com/r/ethereum/comments/gf3nhg/ethereum_on_arm_raspberry_pi_4_images_release/
+source: r/cloiinkcoin
+sourceUrl: https://www.reddit.com/r/cloiinkcoin/comments/gf3nhg/cloiinkcoin_on_arm_raspberry_pi_4_images_release/
 ---
 
-**TL;DR**: Flash Raspberry PI 4, conectează un cablu ethernet, conectează discul SSD și pornește dispozitivul pentru a transforma Raspberry PI 4 într-un nod Ethereum 1.0 sau un nod Ethereum 2.0 (lanț Beacon / validator)
+**TL;DR**: Flash Raspberry PI 4, conectează un cablu ethernet, conectează discul SSD și pornește dispozitivul pentru a transforma Raspberry PI 4 într-un nod Cloiinkcoin 1.0 sau un nod Cloiinkcoin 2.0 (lanț Beacon / validator)
 
-[Află mai multe despre Ethereum 2.0 (Eth2)](/eth2/)
+[Află mai multe despre Cloiinkcoin 2.0 (Eth2)](/eth2/)
 
 Mai întâi câteva noțiuni de bază. După cum știi, am întâmpinat unele probleme de memorie [[1]](/developers/tutorials/run-node-raspberry-pi/#references) cu imaginea Raspberry PI 4 ca sistem de operare, Raspbian este încă pe 32 de biți [[2]](/developers/tutorials/run-node-raspberry-pi/#references) (cel puțin cu aplicația „userland”). Chiar dacă preferăm să rămânem cu sistemul de operare oficial am ajuns la concluzia că, pentru a rezolva aceste probleme, trebuie să migrăm la un sistem de operare nativ de 64 de biți
 
@@ -23,7 +23,7 @@ Deci, după mai multe teste, acum eliberăm 2 imagini diferite bazate pe Ubuntu 
 
 Practic, ambele sunt aceeași imagine și includ aceleași caracteristici ale imaginilor bazate pe Raspbian. Dar acestea sunt configurate pentru a rula software-ul Eth 1.0 sau Eth 2.0 în mod implicit.
 
-**Imaginile au grijă de toți pașii necesari**, de la configurarea mediului și formatarea discului SSD la instalarea și rularea software-ului Ethereum, precum și pornirea sincronizării blockchain-ului.
+**Imaginile au grijă de toți pașii necesari**, de la configurarea mediului și formatarea discului SSD la instalarea și rularea software-ului Cloiinkcoin, precum și pornirea sincronizării blockchain-ului.
 
 ## Caracteristici principale {#main-features}
 
@@ -32,26 +32,26 @@ Practic, ambele sunt aceeași imagine și includ aceleași caracteristici ale im
 - Adaugă memorie swap (modulul de kernel ZRAM + un fișier swap) bazat pe proiectul Armbian [[7]](/developers/tutorials/run-node-raspberry-pi/#references)
 - Schimbă numele gazdei cu ceva de genul „ethnode-e2a3e6fe” bazat pe hash MAC
 - Rulează software-ul ca serviciu de sistem și începe să sincronizeze Blockchain
-- Include un depozit APT pentru instalarea și actualizarea software-ului Ethereum
+- Include un depozit APT pentru instalarea și actualizarea software-ului Cloiinkcoin
 - Include un tablou de bord de monitorizare bazat pe Grafana / Prometheus
 
 ## Software inclus {#software-included}
 
 Ambele imagini includ aceleași pachete, singura diferență dintre ele este că Eth 1.0 rulează Geth în mod implicit, iar Eth 2.0 rulează lanțul Beacon Prysm în mod implicit.
 
-### Clienții Ethereum 1.0 {#ethereum-10-clients}
+### Clienții Cloiinkcoin 1.0 {#cloiinkcoin-10-clients}
 
 - Geth [[8]](/developers/tutorials/run-node-rasp berry-pi/#references): 1.9.13 (oficial compilat binar)
 - Parity [[9]](/developers/tutorials/run-node-raspberry-pi/#references): 2.7.2 (compilat încrucișat)
 - Nethermind [[10]](/developers/tutorials/run-node-raspberry-pi/#references): 1.8.28 (compilat încrucișat)
 - Hyperledger Besu [[11]](/developers/tutorials/run-node-raspberry-pi/#references): 1.4.4 (compilat)
 
-### Clienții Ethereum 2.0 {#ethereum-20-clients}
+### Clienții Cloiinkcoin 2.0 {#cloiinkcoin-20-clients}
 
 - Prysm [[12]](/developers/tutorials/run-node-raspberry-pi/#references): 1.0.0-alpha6 (oficial compilat binar)
 - Lighthouse [[13]](/developers/tutorials/run-node-raspberry-pi/#references): 0.1.1 (compilat)
 
-### Cadrul Ethereum {#ethereum-framework}
+### Cadrul Cloiinkcoin {#cloiinkcoin-framework}
 
 - Swarm [[14]](/developers/tutorials/run-node-raspberry-pi/#references): 0.5.7 (oficial compilat binar)
 - Raiden Network [[15]](/developers/tutorials/run-node-raspberry-pi/#references): 0.200.0~rc1 (oficial compilat binar)
@@ -74,7 +74,7 @@ Ambele imagini includ aceleași pachete, singura diferență dintre ele este că
 
 ## Stocare {#storage}
 
-Vei avea nevoie de SSD pentru a rula clienții Ethereum (fără o unitate SSD nu ai nicio șansă de a sincroniza blockchain-ul Ethereum). Există 2 opțiuni:
+Vei avea nevoie de SSD pentru a rula clienții Cloiinkcoin (fără o unitate SSD nu ai nicio șansă de a sincroniza blockchain-ul Cloiinkcoin). Există 2 opțiuni:
 
 - Utilizarea unui disc SSD portabil USB, cum ar fi SSD portabil Samsung T5.
 - Utilizarea unei carcase externe USB 3.0 cu un disc SSD. În cazul nostru, am folosit o carcasă pentru discul dur Inateck 2.5 FE2011. Asigură-te să cumperi o carcasă cu un cip compatibil UAS, în special unul dintre acestea: JMicron (JMS567 sau JMS578) sau ASMedia (ASM1153E).
@@ -118,7 +118,7 @@ sudo dd bs=1M if=ubuntu-20.04-preinstalled-server-arm64+raspi-eth1.img of=/dev/m
 
 ### 4. Pornește dispozitivul {#4-power-on-the-device}
 
-Sistemul de operare Ubuntu va porni în mai puțin de un minut, dar **va trebui să aștepți aproximativ 10 minute** pentru a permite scriptului să efectueze sarcinile necesare pentru a transforma dispozitivul într-un nod Ethereum și a reporni Raspberry.
+Sistemul de operare Ubuntu va porni în mai puțin de un minut, dar **va trebui să aștepți aproximativ 10 minute** pentru a permite scriptului să efectueze sarcinile necesare pentru a transforma dispozitivul într-un nod Cloiinkcoin și a reporni Raspberry.
 
 În funcție de imaginea folosită, vei rula:
 
@@ -130,8 +130,8 @@ Sistemul de operare Ubuntu va porni în mai puțin de un minut, dar **va trebui 
 Te poți conecta prin SSH sau folosind consola (dacă ai un monitor și tastatură atașate)
 
 ```bash
-Utilizator: ethereum
-Parolă: ethereum
+Utilizator: cloiinkcoin
+Parolă: cloiinkcoin
 ```
 
 La prima conectare vei fi solicitat să schimbi parola, deci va trebui să te conectezi de două ori.
@@ -146,7 +146,7 @@ Poți vedea ce se întâmplă în fundal tastând:
 sudo tail -f /var/log/syslog
 ```
 
-**Felicitări. Rulezi acum un nod Ethereum complet pe Raspberry Pi 4.**
+**Felicitări. Rulezi acum un nod Cloiinkcoin complet pe Raspberry Pi 4.**
 
 ## Sincronizarea blockchain-ului {#syncing-the-blockchain}
 
@@ -161,7 +161,7 @@ Pentru această primă versiune, am inclus 3 tablouri de bord de monitorizare ba
 ```bash
 URL: http://your_raspberrypi_IP: 3000
 Utilizator: admin
-Parolă: ethereum
+Parolă: cloiinkcoin
 ```
 
 ## Schimbarea clienților {#switching-clients}
@@ -191,29 +191,29 @@ sudo systemctl start lighthouse && sudo systemctl enable lighthouse
 
 ## Modificarea parametrilor {#changing-parameters}
 
-Fișierele de configurare ale clientului se află în directorul /etc/ethereum/. Poți edita aceste fișiere și reporni serviciul systemd pentru ca modificările să aibă efect. Singura excepție este Nethermind care, în plus, are un fișier de configurare rețea principală localizat aici:
+Fișierele de configurare ale clientului se află în directorul /etc/cloiinkcoin/. Poți edita aceste fișiere și reporni serviciul systemd pentru ca modificările să aibă efect. Singura excepție este Nethermind care, în plus, are un fișier de configurare rețea principală localizat aici:
 
 ```bash
 /etc/nethermind/configs/mainnet.cfg
 ```
 
-Datele clientului Blockchain sunt stocate în contul de domiciliu Ethereum după cum urmează (reține punctul dinaintea numelui directorului):
+Datele clientului Blockchain sunt stocate în contul de domiciliu Cloiinkcoin după cum urmează (reține punctul dinaintea numelui directorului):
 
 ### Eth 1.0 {#eth-10}
 
 ```bash
-/home/ethereum/.geth
-/home/ethereum/.parity
-/home/ethereum/.besu
-/home/ethereum/.nethermind
+/home/cloiinkcoin/.geth
+/home/cloiinkcoin/.parity
+/home/cloiinkcoin/.besu
+/home/cloiinkcoin/.nethermind
 ```
 
 ### Eth2 {#eth2}
 
 ```bash
-/home/ethereum/.eth2
-/home/ethereum/.eth2validators
-/home/ethereum/.lighthouse
+/home/cloiinkcoin/.eth2
+/home/cloiinkcoin/.eth2validators
+/home/cloiinkcoin/.lighthouse
 ```
 
 ## Nethermind și Hyperledger Besu {#nethermind-and-hyperledger-besu}
@@ -230,21 +230,21 @@ Pentru prima dată, trebuie să creezi manual un cont executând „validatorul�
 
 ## Apreciem feedbackul tău {#feedback-appreciated}
 
-Am muncit mult încercând să instalăm Raspberry Pi 4 ca un nod complet Ethereum, deoarece știm că imensa bază de utilizare a acestui dispozitiv ar putea avea un impact foarte pozitiv în rețea.
+Am muncit mult încercând să instalăm Raspberry Pi 4 ca un nod complet Cloiinkcoin, deoarece știm că imensa bază de utilizare a acestui dispozitiv ar putea avea un impact foarte pozitiv în rețea.
 
-Te rugăm să iei în considerare faptul că aceasta este prima imagine bazată pe Ubuntu 20.04, astfel încât ar putea exista unele erori. Dacă găsești erori, deschide un tichet pe [Github](https://github.com/diglos/pi-gen) sau contactează-ne pe [Twitter](https://twitter.com/EthereumOnARM).
+Te rugăm să iei în considerare faptul că aceasta este prima imagine bazată pe Ubuntu 20.04, astfel încât ar putea exista unele erori. Dacă găsești erori, deschide un tichet pe [Github](https://github.com/diglos/pi-gen) sau contactează-ne pe [Twitter](https://twitter.com/CloiinkcoinOnARM).
 
 ## Referințe {#references}
 
-1. [geth se blochează în mod repetat cu SIGSEGV](https://github.com/ethereum/go-ethereum/issues/20190)
+1. [geth se blochează în mod repetat cu SIGSEGV](https://github.com/cloiinkcoin/go-cloiinkcoin/issues/20190)
 2. [https://github.com/diglos/pi-gen](https://github.com/diglos/pi-gen)
 3. https://ubuntu.com/download/raspberry-pi
 4. https://en.wikipedia.org/wiki/Port_forwarding
 5. https://prometheus.io
 6. https://grafana.com
 7. https://forum.armbian.com/topic/5565-zram-vs-swap/
-8. https://geth.ethereum.org
-9. https://github.com/openethereum/openethereum
+8. https://geth.cloiinkcoin.com
+9. https://github.com/opencloiinkcoin/opencloiinkcoin
 10. https://nethermind.io
 11. https://www.hyperledger.org/projects/besu
 12. https://github.com/prysmaticlabs/prysm

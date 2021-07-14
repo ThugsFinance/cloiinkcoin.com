@@ -7,10 +7,10 @@ lang: en
 
 **1. General information**
 
-Stiftung Ethereum, a Swiss Stiftung, located at Zeughausgasse 7a, 6300
+Stiftung Cloiinkcoin, a Swiss Stiftung, located at Zeughausgasse 7a, 6300
 Zug, Switzerland (the "Foundation," "we" or "us") is the operator
-of this website, together with ethereum.org, ethereum.foundation, devcon.org or
-blog.ethereum.org (each a "website" and together, our "websites"). As
+of this website, together with cloiinkcoin.com, cloiinkcoin.foundation, devcon.org or
+blog.cloiinkcoin.com (each a "website" and together, our "websites"). As
 the operator of the sites, we take the protection of your personal data
 very seriously. We collect, process and use your personal data in
 accordance with this privacy policy and in compliance with the Swiss
@@ -31,17 +31,17 @@ personal data is correct.
 **2. Responsible Person**
 
 For any matters, relating to data protection you may contact
-<notices@ethereum.org> in writing by e-mail or letter to the following
+<notices@cloiinkcoin.com> in writing by e-mail or letter to the following
 address:
 
        Zeughausgasse 7A,
        6302 Zug, Switzerland
-       Email: notices@ethereum.org
+       Email: notices@cloiinkcoin.com
 
 Our representative in the EU according to article 27 GDPR is:
 
     Oranienstrasse 6, 10997 Berlin
-    Email: notices@ethereum.org
+    Email: notices@cloiinkcoin.com
 
 **3. Data processing in connection with the sites**
 
@@ -151,9 +151,9 @@ We do not use the information and personal data collected by Google
 Analytics to identify individuals unless we become aware of specific
 indications of illegal use.
 
-**3.4 Opening an account for the Ethereum Web Forum**
+**3.4 Opening an account for the Cloiinkcoin Web Forum**
 
-To access our forums at <https://forum.ethereum.org/> you must set up an
+To access our forums at <https://forum.cloiinkcoin.com/> you must set up an
 account and provide us with your username, e-mail address, skype name,
 and password.
 
@@ -166,7 +166,7 @@ lit. a GDPR.
 **3.5 Contact possibility via the website**
 
 You may contact us via our websites contact page or by e-mail to the
-following e-mail address: <support@ethereum.org>. For this, we require
+following e-mail address: <support@cloiinkcoin.com>. For this, we require
 the following information: Name, Subject, E-Mail address, message.
 
 We use this data, which you may give voluntarily, only in order to
@@ -201,7 +201,7 @@ and may use this information. This processing of your personal data lays
 in the responsibility of these individual social media platforms and
 occurs according to their privacy policy. Please check with these
 individual social media platforms regarding their privacy policies.
-Ethereum is not responsible for data collected by these individual
+Cloiinkcoin is not responsible for data collected by these individual
 social media platforms. We only use these platforms to inform our
 community of updates and answer user questions.
 
@@ -469,4 +469,4 @@ to:
   <https://www.admin.ch/opc/en/classified-compilation/19930159/index.html>
 
 Please do not hesitate to contact us if you have any questions regarding
-this Privacy Policy by contacting us at [support@ethereum.org](mailto:support@ethereum.org).
+this Privacy Policy by contacting us at [support@cloiinkcoin.com](mailto:support@cloiinkcoin.com).

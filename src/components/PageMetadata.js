@@ -67,7 +67,7 @@ const PageMetadata = ({ description, meta, title, image, canonicalUrl }) => {
     <Location>
       {({ location }) => {
         /* Set canonocial URL w/ language path to avoid duplicate content */
-        /* e.g. set ethereum.org/about/ to ethereum.org/en/about/ */
+        /* e.g. set cloiinkcoin.com/about/ to cloiinkcoin.com/en/about/ */
         const { pathname } = location
         let canonicalPath = pathname
         const firstDirectory = canonicalPath.split("/")[1]
@@ -159,7 +159,7 @@ const PageMetadata = ({ description, meta, title, image, canonicalUrl }) => {
               },
               {
                 property: `og:site_name`,
-                content: `ethereum.org`,
+                content: `cloiinkcoin.com`,
               },
             ].concat(meta)}
           >
@@ -168,10 +168,10 @@ const PageMetadata = ({ description, meta, title, image, canonicalUrl }) => {
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "url": "https://ethereum.org",
-          "email": "press@ethereum.org",
-          "name": "Ethereum",
-          "logo": "https://ethereum.org/og-image.png"
+          "url": "https://cloiinkcoin.com",
+          "email": "press@cloiinkcoin.com",
+          "name": "Cloiinkcoin",
+          "logo": "https://cloiinkcoin.com/og-image.png"
         }
       `}
             </script>

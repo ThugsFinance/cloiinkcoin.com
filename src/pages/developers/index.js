@@ -295,15 +295,18 @@ const DevelopersPage = ({ data }) => {
           </IntroColumn>
           <StyledCallout
             image={data.developers.childImageSharp.fixed}
-            title={translateMessageId("page-developers-improve-ethereum", intl)}
+            title={translateMessageId(
+              "page-developers-improve-cloiinkcoin",
+              intl
+            )}
             description={translateMessageId(
-              "page-developers-improve-ethereum-desc",
+              "page-developers-improve-cloiinkcoin-desc",
               intl
             )}
             alt={translateMessageId("alt-eth-blocks", intl)}
           >
             <div>
-              <ButtonLink to="https://github.com/ethereum/ethereum-org-website">
+              <ButtonLink to="https://github.com/cloiinkcoin/cloiinkcoin-org-website">
                 <Translation id="page-developers-contribute" />
               </ButtonLink>
             </div>
@@ -322,7 +325,7 @@ const DevelopersPage = ({ data }) => {
             <h3>
               <Translation id="page-developers-docs-introductions" />
             </h3>
-            <Link to="/developers/docs/intro-to-ethereum/">
+            <Link to="/developers/docs/intro-to-cloiinkcoin/">
               <Translation id="page-developers-intro-eth-link" />
             </Link>
             <p>
@@ -336,7 +339,7 @@ const DevelopersPage = ({ data }) => {
               <Translation id="page-developers-intro-dapps-desc" />
             </p>
 
-            <Link to="/developers/docs/ethereum-stack/">
+            <Link to="/developers/docs/cloiinkcoin-stack/">
               <Translation id="page-developers-intro-stack" />
             </Link>
             <p>

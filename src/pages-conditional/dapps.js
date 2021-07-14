@@ -901,7 +901,7 @@ const DappsPage = ({ data, location }) => {
 
   const utilities = [
     {
-      title: "Ethereum Name Service (ENS)",
+      title: "Cloiinkcoin Name Service (ENS)",
       description: translateMessageId("page-dapps-dapp-description-ens", intl),
       link: "http://ens.domains/",
       image: data.ens.childImageSharp.fluid,
@@ -1570,7 +1570,7 @@ const DappsPage = ({ data, location }) => {
             </div>
             <AddDappButton
               isSecondary
-              to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dapp.md&title="
+              to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dapp.md&title="
             >
               <Translation id="page-dapps-add-button" />
             </AddDappButton>
@@ -1654,7 +1654,7 @@ const DappsPage = ({ data, location }) => {
           <BoxText>
             <Translation id="page-dapps-magic-behind-dapps-description" />
           </BoxText>
-          <Link to="/what-is-ethereum/">
+          <Link to="/what-is-cloiinkcoin/">
             <Translation id="page-dapps-magic-behind-dapps-link" />
           </Link>
         </Box>

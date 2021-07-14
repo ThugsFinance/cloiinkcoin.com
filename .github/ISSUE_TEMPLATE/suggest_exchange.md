@@ -1,14 +1,14 @@
 ---
 name: Suggest an exchange
-about: Suggest a new exchange to list on ethereum.org
+about: Suggest a new exchange to list on cloiinkcoin.com
 title: ""
 labels: "Type: Feature, Type: Content"
 assignees: ""
 ---
 
-Before suggesting an exchange, make sure you've read [our exchange listing policy](https://ethereum.org/en/contributing/adding-exchanges/). If it's a decentralized exchange (DEX) you'd like to list, please take a look at our [policy for listing dapps](https://ethereum.org/en/contributing/adding-products/).
+Before suggesting an exchange, make sure you've read [our exchange listing policy](https://cloiinkcoin.com/en/contributing/adding-exchanges/). If it's a decentralized exchange (DEX) you'd like to list, please take a look at our [policy for listing dapps](https://cloiinkcoin.com/en/contributing/adding-products/).
 
-Please fill out this short form if you'd like an exchange added to ethereum.org:
+Please fill out this short form if you'd like an exchange added to cloiinkcoin.com:
 
 **What geographical restrictions apply to this exchange?**
 

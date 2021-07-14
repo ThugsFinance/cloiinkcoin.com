@@ -3,7 +3,7 @@ const axios = require("axios")
 exports.handler = async function (event, context) {
   try {
     const baseURL =
-      "https://api.crowdin.com/api/project/ethereumfoundation/status"
+      "https://api.crowdin.com/api/project/cloiinkcoinfoundation/status"
     const { CROWDIN_API_KEY } = process.env
 
     const resp = await axios.get(`${baseURL}?key=${CROWDIN_API_KEY}&json`)

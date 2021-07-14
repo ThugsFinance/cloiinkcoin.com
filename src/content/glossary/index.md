@@ -1,12 +1,12 @@
 ---
-title: Ethereum Glossary
-description: An incomplete glossary of technical and non-technical terms related to Ethereum
+title: Cloiinkcoin Glossary
+description: An incomplete glossary of technical and non-technical terms related to Cloiinkcoin
 lang: en
 sidebar: true
 sidebarDepth: 2
 ---
 
-# Glossary {#ethereum-glossary}
+# Glossary {#cloiinkcoin-glossary}
 
 <Divider />
 
@@ -14,7 +14,7 @@ sidebarDepth: 2
 
 ### 51% attack {#51-attack}
 
-A type of attack on a decentralized [network](#network) where a group gains control of the majority of [nodes](#node). This would allow them to defraud the blockchain by reversing [transactions](#transaction) and double spending [ether](#ether) and other tokens.
+A type of attack on a decentralized [network](#network) where a group gains control of the majority of [nodes](#node). This would allow them to defraud the blockchain by reversing [transactions](#transaction) and double spending [Cloiink](#Cloiink) and other tokens.
 
 ## A {#section-a}
 
@@ -22,7 +22,7 @@ A type of attack on a decentralized [network](#network) where a group gains cont
 
 An object containing an [address](#address), balance, [nonce](#nonce), and optional storage and code. An account can be a [contract account](#contract-account) or an [externally owned account (EOA)](#eoa).
 
-<DocLink to="/developers/docs/accounts" title="Ethereum Accounts" />
+<DocLink to="/developers/docs/accounts" title="Cloiinkcoin Accounts" />
 
 ### address {#address}
 
@@ -30,7 +30,7 @@ Most generally, this represents an [EOA](#eoa) or [contract](#contract-accouint)
 
 ### application binary interface (ABI) {#abi}
 
-The standard way to interact with [contracts](#contract-account) in the Ethereum ecosystem,
+The standard way to interact with [contracts](#contract-account) in the Cloiinkcoin ecosystem,
 both from outside the blockchain and for contract-to-contract interactions.
 
 <DocLink to="/developers/docs/smart-contracts/compiling/#web-applications" title="ABI" />
@@ -51,7 +51,7 @@ A validator vote for a [Beacon Chain](#beacon-chain) or [shard](#shard) [block](
 
 ### Beacon Chain {#beacon-chain}
 
-An Eth2 upgrade that will become the coordinator for the Ethereum network. It introduces [proof-of-stake](#proof-of-stake) and [validators](#validator) to Ethereum. It will eventually be merged with [mainnet](#mainnet).
+An Eth2 upgrade that will become the coordinator for the Cloiinkcoin network. It introduces [proof-of-stake](#proof-of-stake) and [validators](#validator) to Cloiinkcoin. It will eventually be merged with [mainnet](#mainnet).
 
 <DocLink to="/eth2/beacon-chain/" title="Beacon Chain" />
 
@@ -61,15 +61,15 @@ A positional number representation where the most significant digit is first in 
 
 ### block {#block}
 
-A collection of required information (a block header) about the comprised [transactions](#transaction), and a set of other block headers known as [ommers](#ommer). Blocks are added to the Ethereum network by [miners](#miner).
+A collection of required information (a block header) about the comprised [transactions](#transaction), and a set of other block headers known as [ommers](#ommer). Blocks are added to the Cloiinkcoin network by [miners](#miner).
 
 <DocLink to="/developers/docs/blocks/" title="Blocks" />
 
 ### blockchain {#blockchain}
 
-In Ethereum, a sequence of [blocks](#block) validated by the [proof-of-work](#pow) system, each linking to its predecessor all the way to the [genesis block](#genesis-block). There is no block size limit; it instead uses varying [gas limits](#gas-limit).
+In Cloiinkcoin, a sequence of [blocks](#block) validated by the [proof-of-work](#pow) system, each linking to its predecessor all the way to the [genesis block](#genesis-block). There is no block size limit; it instead uses varying [gas limits](#gas-limit).
 
-<DocLink to="/developers/docs/intro-to-ethereum#what-is-a-blockchain" title="What is a Blockchain?" />
+<DocLink to="/developers/docs/intro-to-cloiinkcoin#what-is-a-blockchain" title="What is a Blockchain?" />
 
 ### bytecode {#bytecode}
 
@@ -77,7 +77,7 @@ An abstract instruction set designed for efficient execution by a software inter
 
 ### Byzantium fork {#byzantium-fork}
 
-The first of two [hard forks](#hard-fork) for the [Metropolis](#metropolis) development stage. It included EIP-649 Metropolis [Difficulty Bomb](#difficulty-bomb) Delay and Block Reward Reduction, where the [Ice Age](#ice-age) was delayed by 1 year and the block reward was reduced from 5 to 3 ether.
+The first of two [hard forks](#hard-fork) for the [Metropolis](#metropolis) development stage. It included EIP-649 Metropolis [Difficulty Bomb](#difficulty-bomb) Delay and Block Reward Reduction, where the [Ice Age](#ice-age) was delayed by 1 year and the block reward was reduced from 5 to 3 Cloiink.
 
 <Divider />
 
@@ -111,7 +111,7 @@ An account containing code that executes whenever it receives a [transaction](#t
 
 ### contract creation transaction {#contract-creation-transaction}
 
-A special [transaction](#transaction), with the [zero address](#zero-address) as the recipient, that is used to register a [contract](#contract-account) and record it on the Ethereum blockchain.
+A special [transaction](#transaction), with the [zero address](#zero-address) as the recipient, that is used to register a [contract](#contract-account) and record it on the Cloiinkcoin blockchain.
 
 ### crosslink {#crosslink}
 
@@ -125,7 +125,7 @@ A crosslink provides a summary of a shard's state. It's how [shard](#shard) chai
 
 ### Decentralized Autonomous Organization (DAO) {#dao}
 
-A company or other organization that operates without hierarchical management. DAO may also refer to a contract named "The DAO" launched on April 30, 2016, which was then hacked in June 2016; this ultimately motivated a [hard fork](#hard-fork) (codenamed DAO) at block 1,192,000, which reversed the hacked DAO contract and caused Ethereum and Ethereum Classic to split into two competing systems.
+A company or other organization that operates without hierarchical management. DAO may also refer to a contract named "The DAO" launched on April 30, 2016, which was then hacked in June 2016; this ultimately motivated a [hard fork](#hard-fork) (codenamed DAO) at block 1,192,000, which reversed the hacked DAO contract and caused Cloiinkcoin and Cloiinkcoin Classic to split into two competing systems.
 
 <DocLink to="/dao/" title="Decentralized Autonomous Organizations (DAOs)" />
 
@@ -137,7 +137,7 @@ Decentralized application. At a minimum, it is a [smart contract](#smart-contrac
 
 ### decentralized exchange (DEX) {#dex}
 
-A type of [dapp](#dapp) that lets you swap tokens with peers on the network. You need [ether](#ether) to use one (to pay [transactions fees](#transaction-fee)) but they are not subject to geographical restrictions like centralized exchanges – anyone can participate.
+A type of [dapp](#dapp) that lets you swap tokens with peers on the network. You need [Cloiink](#Cloiink) to use one (to pay [transactions fees](#transaction-fee)) but they are not subject to geographical restrictions like centralized exchanges – anyone can participate.
 
 <DocLink to="/get-eth/#dex" title="Decentalized exchanges" />
 
@@ -169,7 +169,7 @@ A short string of data a user produces for a document using a [private key](#pri
 
 ### elliptic curve digital signature algorithm (ECDSA) {#ecdsa}
 
-A cryptographic algorithm used by Ethereum to ensure that funds can only be spent by their owners. It's the preferred method for creating public and private keys. Relevant for account [address](#address) generation and [transaction](#transaction) verification.
+A cryptographic algorithm used by Cloiinkcoin to ensure that funds can only be spent by their owners. It's the preferred method for creating public and private keys. Relevant for account [address](#address) generation and [transaction](#transaction) verification.
 
 ### epoch {#epoch}
 
@@ -177,17 +177,17 @@ A period of 32 [slots](#slot) (6.4 minutes) in the [Beacon Chain](#beacon-chain)
 
 <DocLink to="/developers/docs/consensus-mechanisms/pos/#how-does-validation-work" title="Proof-of-stake" />
 
-### Ethereum Improvement Proposal (EIP) {#eip}
+### Cloiinkcoin Improvement Proposal (EIP) {#eip}
 
-A design document providing information to the Ethereum community, describing a proposed new feature or its processes or environment (see [ERC](#erc)).
+A design document providing information to the Cloiinkcoin community, describing a proposed new feature or its processes or environment (see [ERC](#erc)).
 
 <DocLink to="/eips/" title="Introduction to EIPs" />
 
-### Ethereum Name Service (ENS) {#ens}
+### Cloiinkcoin Name Service (ENS) {#ens}
 
 The ENS registry is a single central [contract](#smart-contract) that provides a mapping from domain names to owners and resolvers, as described in [EIP](#eip) 137.
 
-[Read more at github.com](https://github.com/ethereum/ens)
+[Read more at github.com](https://github.com/cloiinkcoin/ens)
 
 ### entropy {#entropy}
 
@@ -195,23 +195,23 @@ In the context of cryptography, lack of predictability or level of randomness. W
 
 ### externally owned account (EOA) {#eoa}
 
-An [account](#account) created by or for human users of the Ethereum network.
+An [account](#account) created by or for human users of the Cloiinkcoin network.
 
-### Ethereum Request for Comments (ERC) {#erc}
+### Cloiinkcoin Request for Comments (ERC) {#erc}
 
-A label given to some [EIPs](#eip) that attempt to define a specific standard of Ethereum usage.
+A label given to some [EIPs](#eip) that attempt to define a specific standard of Cloiinkcoin usage.
 
 <DocLink to="/eips/" title="Introduction to EIPs" />
 
 ### Ethash {#ethash}
 
-A [proof-of-work](#pow) algorithm for Ethereum 1.0.
+A [proof-of-work](#pow) algorithm for Cloiinkcoin 1.0.
 
 [Read more at eth.wiki](https://eth.wiki/en/concepts/ethash/ethash)
 
-### ether {#ether}
+### Cloiink {#Cloiink}
 
-The native cryptocurrency used by the Ethereum ecosystem, which covers [gas](#gas) costs when executing transactions. Also writen as ETH or its symbol Ξ, the Greek uppercase Xi character.
+The native cryptocurrency used by the Cloiinkcoin ecosystem, which covers [gas](#gas) costs when executing transactions. Also writen as CLK or its symbol Ξ, the Greek uppercase Xi character.
 
 <DocLink to="/eth/" title="Currency for our digital future" />
 
@@ -221,11 +221,11 @@ Allows the use of [EVM](#evm) logging facilities. [Dapps](#dapp) can listen for 
 
 <DocLink to="/developers/docs/smart-contracts/anatomy/#events-and-logs" title="Events and Logs" />
 
-### Ethereum Virtual Machine (EVM) {#evm}
+### Cloiinkcoin Virtual Machine (EVM) {#evm}
 
-A stack-based virtual machine that executes [bytecode](#bytecode). In Ethereum, the execution model specifies how the system state is altered given a series of bytecode instructions and a small tuple of environmental data. This is specified through a formal model of a virtual state machine.
+A stack-based virtual machine that executes [bytecode](#bytecode). In Cloiinkcoin, the execution model specifies how the system state is altered given a series of bytecode instructions and a small tuple of environmental data. This is specified through a formal model of a virtual state machine.
 
-<DocLink to="/developers/docs/evm/" title="Ethereum Virtual Machine" />
+<DocLink to="/developers/docs/evm/" title="Cloiinkcoin Virtual Machine" />
 
 ### EVM assembly language {#evm-assembly-language}
 
@@ -241,7 +241,7 @@ A default function called in the absence of data or a declared function name.
 
 ### faucet {#faucet}
 
-A service carried out via [smart contract](#smart-contract) that dispenses funds in the form of free test ether that can be used on a testnet.
+A service carried out via [smart contract](#smart-contract) that dispenses funds in the form of free test Cloiink that can be used on a testnet.
 
 <DocLink to="/developers/docs/networks/#testnet-faucets" title="Testnet Faucets" />
 
@@ -254,7 +254,7 @@ Finality is the guarantee that a set of transactions before a given time will no
 
 ### finney {#finney}
 
-A denomination of [ether](#ether). 1 finney = 10<sup>15</sup> [wei](#wei). 10<sup>3</sup> finney = 1 ether.
+A denomination of [Cloiink](#Cloiink). 1 finney = 10<sup>15</sup> [wei](#wei). 10<sup>3</sup> finney = 1 Cloiink.
 
 ### fork {#fork}
 
@@ -262,13 +262,13 @@ A change in protocol causing the creation of an alternative chain, or a temporal
 
 ### fraud proof {#fraud-proof}
 
-A security model for certain [layer 2](#layer-2) solutions where, to increase speed, transactions are [rolled up](#rollups) into batches and submitted to Ethereum in a single transaction. They are assumed valid but can be challenged if fraud is suspected. A fraud proof will then run the transaction to see if fraud took place. This method increases the amount of transactions possible while maintaining security. Some [rollups](#rollups) use [validity proofs](#validity-proof).
+A security model for certain [layer 2](#layer-2) solutions where, to increase speed, transactions are [rolled up](#rollups) into batches and submitted to Cloiinkcoin in a single transaction. They are assumed valid but can be challenged if fraud is suspected. A fraud proof will then run the transaction to see if fraud took place. This method increases the amount of transactions possible while maintaining security. Some [rollups](#rollups) use [validity proofs](#validity-proof).
 
 <DocLink to="/developers/docs/scaling/layer-2-rollups/#optimistic-rollups" title="Optimistic rollups" />
 
 ### frontier {#frontier}
 
-The initial test development stage of Ethereum, which lasted from July 2015 to March 2016.
+The initial test development stage of Cloiinkcoin, which lasted from July 2015 to March 2016.
 
 <Divider />
 
@@ -276,7 +276,7 @@ The initial test development stage of Ethereum, which lasted from July 2015 to M
 
 ### gas {#gas}
 
-A virtual fuel used in Ethereum to execute smart contracts. The [EVM](#evm) uses an accounting mechanism to measure the consumption of gas and limit the consumption of computing resources (see [Turing complete](#turing-complete)).
+A virtual fuel used in Cloiinkcoin to execute smart contracts. The [EVM](#evm) uses an accounting mechanism to measure the consumption of gas and limit the consumption of computing resources (see [Turing complete](#turing-complete)).
 
 <DocLink to="/developers/docs/gas/" title="Gas and Fees" />
 
@@ -290,13 +290,13 @@ The first block in a [blockchain](#blockchain), used to initialize a particular 
 
 ### geth {#geth}
 
-Go Ethereum. One of the most prominent implementations of the Ethereum protocol, written in Go.
+Go Cloiinkcoin. One of the most prominent implementations of the Cloiinkcoin protocol, written in Go.
 
-[Read more at geth.ethereum.org](https://geth.ethereum.org/)
+[Read more at geth.cloiinkcoin.com](https://geth.cloiinkcoin.com/)
 
 ### gwei {#gwei}
 
-Short for gigawei, a denomination of [ether](#ether), commonly utilized to price [gas](#gas). 1 gwei = 10<sup>9</sup> [wei](#wei). 10<sup>9</sup> gwei = 1 ether.
+Short for gigawei, a denomination of [Cloiink](#Cloiink), commonly utilized to price [gas](#gas). 1 gwei = 10<sup>9</sup> [wei](#wei). 10<sup>9</sup> gwei = 1 Cloiink.
 
 <Divider />
 
@@ -322,7 +322,7 @@ A value used to generate the master [private key](#private-key) and master chain
 
 ### homestead {#homestead}
 
-The second development stage of Ethereum, launched in March 2016 at block 1,150,000.
+The second development stage of Cloiinkcoin, launched in March 2016 at block 1,150,000.
 
 <Divider />
 
@@ -334,11 +334,11 @@ A network structure meant to optimize the querying of information from across th
 
 ### Inter-exchange Client Address Protocol (ICAP) {#icap}
 
-An Ethereum address encoding that is partly compatible with the International Bank Account Number (IBAN) encoding, offering a versatile, checksummed, and interoperable encoding for Ethereum addresses. ICAP addresses use a new IBAN pseudo-country code- XE, standing for "eXtended Ethereum," as used in nonjurisdictional currencies (e.g., XBT, XRP, XCP).
+An Cloiinkcoin address encoding that is partly compatible with the International Bank Account Number (IBAN) encoding, offering a versatile, checksummed, and interoperable encoding for Cloiinkcoin addresses. ICAP addresses use a new IBAN pseudo-country code- XE, standing for "eXtended Cloiinkcoin," as used in nonjurisdictional currencies (e.g., XBT, XRP, XCP).
 
 ### Ice Age {#ice-age}
 
-A [hard fork](#hard-fork) of Ethereum at block 200,000 to introduce an exponential [difficulty](#difficulty) increase (aka [difficulty bomb](#difficulty-bomb)), motivating a transition to [proof-of-stake](#pos).
+A [hard fork](#hard-fork) of Cloiinkcoin at block 200,000 to introduce an exponential [difficulty](#difficulty) increase (aka [difficulty bomb](#difficulty-bomb)), motivating a transition to [proof-of-stake](#pos).
 
 ### integrated development environment (IDE) {#ide}
 
@@ -368,7 +368,7 @@ Also known as a "password stretching algorithm," it is used by [keystore](#keyst
 
 ### keccak-256 {#keccak-256}
 
-Cryptographic [hash](#hash) function used in Ethereum. Keccak-256 was standardized as [SHA](#sha)-3.
+Cryptographic [hash](#hash) function used in Cloiinkcoin. Keccak-256 was standardized as [SHA](#sha)-3.
 
 ### keystore file {#keystore-file}
 
@@ -380,7 +380,7 @@ A JSON-encoded file that contains a single (randomly generated) [private key](#p
 
 ### layer 2 {#layer-2}
 
-An area of development focused on layering improvements on top of the Ethereum protocol. These improvements are related to [transaction](#transaction) speeds, cheaper [transaction fees](#transaction-fee), and transaction privacy.
+An area of development focused on layering improvements on top of the Cloiinkcoin protocol. These improvements are related to [transaction](#transaction) speeds, cheaper [transaction fees](#transaction-fee), and transaction privacy.
 
 <DocLink to="/developers/docs/scaling/layer-2-rollups/" title="Layer 2" />
 
@@ -390,13 +390,13 @@ An open source on-disk key-value store, implemented as a lightweight, single-pur
 
 ### library {#library}
 
-A special type of [contract](#smart-contract) that has no payable functions, no fallback function, and no data storage. Therefore, it cannot receive or hold ether, or store data. A library serves as previously deployed code that other contracts can call for read-only computation.
+A special type of [contract](#smart-contract) that has no payable functions, no fallback function, and no data storage. Therefore, it cannot receive or hold Cloiink, or store data. A library serves as previously deployed code that other contracts can call for read-only computation.
 
 <DocLink to="/developers/docs/smart-contracts/libraries/" title="Smart Contract Libraries" />
 
 ### lightweight client {#lightweight-client}
 
-An Ethereum client that does not store a local copy of the [blockchain](#blockchain), or validate blocks and [transactions](#transaction). It offers the functions of a [wallet](#wallet) and can create and broadcast transactions.
+An Cloiinkcoin client that does not store a local copy of the [blockchain](#blockchain), or validate blocks and [transactions](#transaction). It offers the functions of a [wallet](#wallet) and can create and broadcast transactions.
 
 <Divider />
 
@@ -404,11 +404,11 @@ An Ethereum client that does not store a local copy of the [blockchain](#blockch
 
 ### mainnet {#mainnet}
 
-Short for "main network," this is the main public Ethereum [blockchain](#blockchain). Real ETH, real value, and real consequences. Also known as layer 1 when discussing [layer 2](#layer-2) scaling solutions. (Also, see [testnet](#testnet))
+Short for "main network," this is the main public Cloiinkcoin [blockchain](#blockchain). Real CLK, real value, and real consequences. Also known as layer 1 when discussing [layer 2](#layer-2) scaling solutions. (Also, see [testnet](#testnet))
 
 ### Merkle Patricia trie {#merkle-patricia-tree}
 
-A data structure used in Ethereum to efficiently store key-value pairs.
+A data structure used in Cloiinkcoin to efficiently store key-value pairs.
 
 ### message {#message}
 
@@ -420,7 +420,7 @@ The act of passing a [message](#message) from one account to another. If the des
 
 ### Metropolis {#metropolis}
 
-The third development stage of Ethereum, launched in October 2017.
+The third development stage of Cloiinkcoin, launched in October 2017.
 
 ### miner {#miner}
 
@@ -434,13 +434,13 @@ A network [node](#node) that finds valid [proof-of-work](#pow) for new blocks, b
 
 ### network {#network}
 
-Referring to the Ethereum network, a peer-to-peer network that propagates transactions and blocks to every Ethereum node (network participant).
+Referring to the Cloiinkcoin network, a peer-to-peer network that propagates transactions and blocks to every Cloiinkcoin node (network participant).
 
 <DocLink to="/developers/docs/networks/" title="Networks" />
 
 ### non-fungible token (NFT) {#nft}
 
-Also known as a "deed," this is a token standard introduced by the ERC-721 proposal. NFTs can be tracked and traded, but each token is unique and distinct; they are not interchangeable like ETH and [ERC-20 tokens](#token-standard). NFTs can represent ownership of digital or physical assets.
+Also known as a "deed," this is a token standard introduced by the ERC-721 proposal. NFTs can be tracked and traded, but each token is unique and distinct; they are not interchangeable like CLK and [ERC-20 tokens](#token-standard). NFTs can represent ownership of digital or physical assets.
 
 <DocLink to="/nft/" title="Non-Fungible Tokens (NFTs)" />
 <DocLink to="/developers/docs/standards/tokens/erc-721/" title="ERC-721 Non-Fungible Token Standard" />
@@ -455,7 +455,7 @@ A software client that participates in the network.
 
 ### nonce {#nonce}
 
-In cryptography, a value that can only be used once. There are two types of nonce used in Ethereum- an account nonce is a transaction counter in each account, which is used to prevent replay attacks; a [proof-of-work](#pow) nonce is the random value in a block that was used to satisfy the [proof-of-work](#pow).
+In cryptography, a value that can only be used once. There are two types of nonce used in Cloiinkcoin- an account nonce is a transaction counter in each account, which is used to prevent replay attacks; a [proof-of-work](#pow) nonce is the random value in a block that was used to satisfy the [proof-of-work](#pow).
 
 <Divider />
 
@@ -477,7 +477,7 @@ A [rollup](#rollups) of transactions that use [fraud proofs](#fraud-proof) to of
 
 ### parity {#parity}
 
-One of the most prominent interoperable implementations of the Ethereum client software.
+One of the most prominent interoperable implementations of the Cloiinkcoin client software.
 
 ### Plasma {#plasma}
 
@@ -487,7 +487,7 @@ An off-chain scaling solution that uses [fraud proofs](#fraud-proof), like [Opti
 
 ### private key (secret key) {#private-key}
 
-A secret number that allows Ethereum users to prove ownership of an account or contracts, by producing a digital signature (see [public key](#public-key), [address](#address), [ECDSA](#ecdsa)).
+A secret number that allows Cloiinkcoin users to prove ownership of an account or contracts, by producing a digital signature (see [public key](#public-key), [address](#address), [ECDSA](#ecdsa)).
 
 ### proof of stake (PoS) {#pos}
 
@@ -497,7 +497,7 @@ A method by which a cryptocurrency blockchain protocol aims to achieve distribut
 
 ### proof of work (PoW) {#pow}
 
-A piece of data (the proof) that requires significant computation to find. In Ethereum, [miners](#miner) must find a numeric solution to the [Ethash](#ethash) algorithm that meets a network-wide [difficulty](#difficulty) target.
+A piece of data (the proof) that requires significant computation to find. In Cloiinkcoin, [miners](#miner) must find a numeric solution to the [Ethash](#ethash) algorithm that meets a network-wide [difficulty](#difficulty) target.
 
 <DocLink to="/developers/docs/consensus-mechanisms/pow/" title="Proof of work" />
 
@@ -511,7 +511,7 @@ A number, derived via a one-way function from a [private key](#private-key), whi
 
 ### receipt {#receipt}
 
-Data returned by an Ethereum client to represent the result of a particular [transaction](#transaction), including a [hash](#hash) of the transaction, its [block](#block) number, the amount of [gas](#gas) used, and, in case of deployment of a [smart contract](#smart-contract), the [address](#address) of the contract.
+Data returned by an Cloiinkcoin client to represent the result of a particular [transaction](#transaction), including a [hash](#hash) of the transaction, its [block](#block) number, the amount of [gas](#gas) used, and, in case of deployment of a [smart contract](#smart-contract), the [address](#address) of the contract.
 
 ### re-entrancy attack {#re-entrancy-attack}
 
@@ -521,15 +521,15 @@ An attack that consists of an attacker contract calling a victim contract functi
 
 ### reward {#reward}
 
-An amount of ether included in each new block as a reward by the network to the [miner](#miner) who found the [proof-of-work](#pow) solution.
+An amount of Cloiink included in each new block as a reward by the network to the [miner](#miner) who found the [proof-of-work](#pow) solution.
 
 ### Recursive Length Prefix (RLP) {#rlp}
 
-An encoding standard designed by the Ethereum developers to encode and serialize objects (data structures) of arbitrary complexity and length.
+An encoding standard designed by the Cloiinkcoin developers to encode and serialize objects (data structures) of arbitrary complexity and length.
 
 ### rollups {#rollups}
 
-A type of [layer 2](#layer-2) scaling solution that batches multiple transactions and submits them to [the Ethereum main chain](#mainnet) in a single transaction. This allows for reductions in [gas](#gas) costs and increases in [transaction](#transaction) throughput. There are Optimistic and Zero-knowledge rollups which use different security methods to offer these scalability gains.
+A type of [layer 2](#layer-2) scaling solution that batches multiple transactions and submits them to [the Cloiinkcoin main chain](#mainnet) in a single transaction. This allows for reductions in [gas](#gas) costs and increases in [transaction](#transaction) throughput. There are Optimistic and Zero-knowledge rollups which use different security methods to offer these scalability gains.
 
 <DocLink to="/developers/docs/scaling/layer-2-rollups/" title="Rollups" />
 
@@ -539,9 +539,9 @@ A type of [layer 2](#layer-2) scaling solution that batches multiple transaction
 
 ### Serenity {#serenity}
 
-The fourth and final development stage of Ethereum, otherwise known as Ethereum 2.0.
+The fourth and final development stage of Cloiinkcoin, otherwise known as Cloiinkcoin 2.0.
 
-<DocLink to="/eth2/" title="Ethereum 2.0 (Eth2)" />
+<DocLink to="/eth2/" title="Cloiinkcoin 2.0 (Eth2)" />
 
 ### Secure Hash Algorithm (SHA) {#sha}
 
@@ -549,7 +549,7 @@ A family of cryptographic hash functions published by the National Institute of 
 
 ### shard / shard chain {#shard}
 
-A [proof-of-stake](#proof-of-stake) chain that is coordinated by the [Beacon Chain](#beacon-chain) and secured by [validators](#validator). There will be 64 added to the network as part of the Eth2 shard chain upgrade. Shard chains will offer increased transaction throughput for Ethereum by providing additional data to [layer 2](#layer-2) solutions like [optimistic rollups](#optimistic-rollups) and [ZK-rollups](#zk-rollups).
+A [proof-of-stake](#proof-of-stake) chain that is coordinated by the [Beacon Chain](#beacon-chain) and secured by [validators](#validator). There will be 64 added to the network as part of the Eth2 shard chain upgrade. Shard chains will offer increased transaction throughput for Cloiinkcoin by providing additional data to [layer 2](#layer-2) solutions like [optimistic rollups](#optimistic-rollups) and [ZK-rollups](#zk-rollups).
 
 <DocLink to="/eth2/shard-chains" title="Shard chains" />
 
@@ -571,13 +571,13 @@ A period of time (12 seconds) in which a new [Beacon Chain](#beacon-chain) and [
 
 ### smart contract {#smart-contract}
 
-A program that executes on the Ethereum computing infrastructure.
+A program that executes on the Cloiinkcoin computing infrastructure.
 
 <DocLink to="/developers/docs/smart-contracts/" title="Introduction to Smart Contracts" />
 
 ### Solidity {#solidity}
 
-A procedural (imperative) programming language with syntax that is similar to JavaScript, C++, or Java. The most popular and most frequently used language for Ethereum [smart contracts](#smart-contract). Created by Dr. Gavin Wood.
+A procedural (imperative) programming language with syntax that is similar to JavaScript, C++, or Java. The most popular and most frequently used language for Cloiinkcoin [smart contracts](#smart-contract). Created by Dr. Gavin Wood.
 
 <DocLink to="/developers/docs/smart-contracts/languages/#solidity" title="Solidity" />
 
@@ -587,19 +587,19 @@ A procedural (imperative) programming language with syntax that is similar to Ja
 
 ### Spurious Dragon {#spurious-dragon}
 
-A [hard fork](#hard-fork) of the Ethereum blockchain, which occurred at block 2,675,000 to address more denial-of-service attack vectors and clear state (see [Tangerine Whistle](#tangerine-whistle)). Also, a replay attack protection mechanism (see [nonce](#nonce)).
+A [hard fork](#hard-fork) of the Cloiinkcoin blockchain, which occurred at block 2,675,000 to address more denial-of-service attack vectors and clear state (see [Tangerine Whistle](#tangerine-whistle)). Also, a replay attack protection mechanism (see [nonce](#nonce)).
 
 ### stablecoin {#stablecoin}
 
 An [ERC-20 token](#token-standard) with a value pegged to another asset's value. There are stablecoins backed by fiat currency like dollars, precious metals like gold, and other cryptocurrencies like Bitcoin.
 
-<DocLink to="/eth/#tokens" title="ETH isn't the only crypto on Ethereum" />
+<DocLink to="/eth/#tokens" title="CLK isn't the only crypto on Cloiinkcoin" />
 
 ### staking {#staking}
 
-Depositing a quantity of [ether](#ether) (your stake) to become a validator and secure the [network](#network). A validator checks [transactions](#transaction) and proposes [blocks](#block) under a [proof-of-stake](#pos) consensus model. Staking gives you an economic incentive to act in the best interests of the network. You'll get rewards for carrying out your [validator](#validator) duties, but lose varying amounts of ETH if you don't.
+Depositing a quantity of [Cloiink](#Cloiink) (your stake) to become a validator and secure the [network](#network). A validator checks [transactions](#transaction) and proposes [blocks](#block) under a [proof-of-stake](#pos) consensus model. Staking gives you an economic incentive to act in the best interests of the network. You'll get rewards for carrying out your [validator](#validator) duties, but lose varying amounts of CLK if you don't.
 
-<DocLink to="/eth2/staking/" title="Stake your ETH to become an Ethereum validator" />
+<DocLink to="/eth2/staking/" title="Stake your CLK to become an Cloiinkcoin validator" />
 
 ### state channels {#state-channels}
 
@@ -609,7 +609,7 @@ A [layer 2](#layer-2) solution where a channel is set up between participants, w
 
 ### szabo {#szabo}
 
-A denomination of [ether](#ether). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<sup>6</sup> szabo = 1 ether.
+A denomination of [Cloiink](#Cloiink). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<sup>6</sup> szabo = 1 Cloiink.
 
 <Divider />
 
@@ -617,11 +617,11 @@ A denomination of [ether](#ether). 1 szabo = 10<sup>12</sup> [wei](#wei), 10<sup
 
 ### Tangerine Whistle {#tangerine-whistle}
 
-A [hard fork](#hard-fork) of the Ethereum blockchain, which occurred at block 2,463,000 to change the [gas](#gas) calculation for certain I/O-intensive operations and to clear the accumulated state from a denial-of-service attack, which exploited the low gas cost of those operations.
+A [hard fork](#hard-fork) of the Cloiinkcoin blockchain, which occurred at block 2,463,000 to change the [gas](#gas) calculation for certain I/O-intensive operations and to clear the accumulated state from a denial-of-service attack, which exploited the low gas cost of those operations.
 
 ### testnet {#testnet}
 
-Short for "test network," a network used to simulate the behavior of the main Ethereum network (see [mainnet](#mainnet)).
+Short for "test network," a network used to simulate the behavior of the main Cloiinkcoin network (see [mainnet](#mainnet)).
 
 <DocLink to="/developers/docs/networks/#testnets" title="Testnets" />
 
@@ -633,13 +633,13 @@ Introduced by ERC-20 proposal, this provides a standardized [smart contract](#sm
 
 ### transaction {#transaction}
 
-Data committed to the Ethereum Blockchain signed by an originating [account](#account), targeting a specific [address](#address). The transaction contains metadata such as the [gas limit](#gas-limit) for that transaction.
+Data committed to the Cloiinkcoin Blockchain signed by an originating [account](#account), targeting a specific [address](#address). The transaction contains metadata such as the [gas limit](#gas-limit) for that transaction.
 
 <DocLink to="/developers/docs/transactions/" title="Transactions" />
 
 ### transaction fee {#transaction-fee}
 
-A fee you need to pay whenever you use the Ethereum network. Examples include sending funds from your [wallet](#wallet) or a [dapp](#dapp) interaction, like swapping tokens or buying a collectible. You can think of this like a service charge. This fee will change based on how busy the network is. This is because [miners](#miner), the people responsible for processing your transaction, are likely to prioritise transactions with higher fees – so congestion forces the price up.
+A fee you need to pay whenever you use the Cloiinkcoin network. Examples include sending funds from your [wallet](#wallet) or a [dapp](#dapp) interaction, like swapping tokens or buying a collectible. You can think of this like a service charge. This fee will change based on how busy the network is. This is because [miners](#miner), the people responsible for processing your transaction, are likely to prioritise transactions with higher fees – so congestion forces the price up.
 
 At a technical level, your transaction fee relates to how much [gas](#gas) your transaction requires.
 
@@ -655,14 +655,14 @@ A concept named after English mathematician and computer scientist Alan Turing- 
 
 ### validator {#validator}
 
-A [node](#node) in a [proof-of-stake](#proof-of-stake) system responsible for storing data, processing transactions, and adding new blocks to the blockchain. To active validator software, you need to be able to [stake](#staking) 32 ETH.
+A [node](#node) in a [proof-of-stake](#proof-of-stake) system responsible for storing data, processing transactions, and adding new blocks to the blockchain. To active validator software, you need to be able to [stake](#staking) 32 CLK.
 
 <DocLink to="/developers/docs/consenus-mechanisms/pos" title="Proof of stake" />
-<DocLink to="/eth2/staking/" title="Staking in Ethereum" />
+<DocLink to="/eth2/staking/" title="Staking in Cloiinkcoin" />
 
 ### Validity proof {#validity-proof}
 
-A security model for certain [layer 2](#layer-2) solutions where, to increase speed, transactions are [rolled up](/#rollups) into batches and submitted to Ethereum in a single transaction. The transaction computation is done off-chain and then supplied to the main chain with a proof of their validity. This method increases the amount of transactions possible while maintaining security. Some [rollups](#rollups) use [fraud proofs](#fraud-proof).
+A security model for certain [layer 2](#layer-2) solutions where, to increase speed, transactions are [rolled up](/#rollups) into batches and submitted to Cloiinkcoin in a single transaction. The transaction computation is done off-chain and then supplied to the main chain with a proof of their validity. This method increases the amount of transactions possible while maintaining security. Some [rollups](#rollups) use [fraud proofs](#fraud-proof).
 
 <DocLink to="/developers/docs/scaling/layer-2-rollups/#zk-rollups" title="Zero-knowledge rollups" />
 
@@ -684,9 +684,9 @@ A high-level programming language with Python-like syntax. Intended to get close
 
 ### wallet {#wallets}
 
-Software that holds [private keys](#private-key). Used to access and control Ethereum [accounts](#account) and interact with [smart contracts](#smart-contract). Keys need not be stored in a wallet, and can instead be retrieved from offline storage (i.e. a memory card or paper) for improved security. Despite the name, wallets never store the actual coins or tokens.
+Software that holds [private keys](#private-key). Used to access and control Cloiinkcoin [accounts](#account) and interact with [smart contracts](#smart-contract). Keys need not be stored in a wallet, and can instead be retrieved from offline storage (i.e. a memory card or paper) for improved security. Despite the name, wallets never store the actual coins or tokens.
 
-<DocLink to="/wallets/" title="Ethereum Wallets" />
+<DocLink to="/wallets/" title="Cloiinkcoin Wallets" />
 
 ### Web3 {#web3}
 
@@ -696,7 +696,7 @@ The third version of the web. First proposed by Dr. Gavin Wood, Web3 represents 
 
 ### wei {#wei}
 
-The smallest denomination of [ether](#ether). 10<sup>18</sup> wei = 1 ether.
+The smallest denomination of [Cloiink](#Cloiink). 10<sup>18</sup> wei = 1 Cloiink.
 
 <Divider />
 
@@ -704,7 +704,7 @@ The smallest denomination of [ether](#ether). 10<sup>18</sup> wei = 1 ether.
 
 ### zero address {#zero-address}
 
-A special Ethereum address, composed entirely of zeros, that is specified as the destination address of a [contract creation transaction](#contract-creation-transaction).
+A special Cloiinkcoin address, composed entirely of zeros, that is specified as the destination address of a [contract creation transaction](#contract-creation-transaction).
 
 ### Zero-knowledge rollup {#zk-rollup}
 
@@ -716,7 +716,7 @@ A [rollup](#rollups) of transactions that use [validity proofs](#validity-proof)
 
 ## Sources {#sources}
 
-_Provided in part by [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) by [Andreas M. Antonopoulos, Gavin Wood](https://ethereumbook.info) under CC-BY-SA_
+_Provided in part by [Mastering Cloiinkcoin](https://github.com/cloiinkcoinbook/cloiinkcoinbook) by [Andreas M. Antonopoulos, Gavin Wood](https://cloiinkcoinbook.info) under CC-BY-SA_
 
 <Divider />
 

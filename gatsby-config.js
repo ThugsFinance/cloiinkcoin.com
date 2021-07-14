@@ -3,19 +3,19 @@ require("dotenv").config()
 
 const supportedLanguages = translations.supportedLanguages
 const defaultLanguage = `en`
-const siteUrl = `https://ethereum.org`
+const siteUrl = `https://cloiinkcoin.com`
 
 module.exports = {
   siteMetadata: {
     // `title` & `description` pulls from respective ${lang}.json files in PageMetadata.js
-    title: `ethereum.org`,
-    description: `Ethereum is a global, decentralized platform for money and new kinds of applications. On Ethereum, you can write code that controls money, and build applications accessible anywhere in the world.`,
+    title: `cloiinkcoin.com`,
+    description: `Cloiinkcoin is a global, decentralized platform for money and new kinds of applications. On Cloiinkcoin, you can write code that controls money, and build applications accessible anywhere in the world.`,
     url: siteUrl,
     siteUrl,
-    author: `@ethereum`,
+    author: `@cloiinkcoin`,
     defaultLanguage,
     supportedLanguages,
-    editContentUrl: `https://github.com/ethereum/ethereum-org-website/tree/dev/`,
+    editContentUrl: `https://github.com/cloiinkcoin/cloiinkcoin-org-website/tree/dev/`,
   },
   plugins: [
     // i18n support
@@ -37,8 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ethereum.org`,
-        short_name: `ethereum.org`,
+        name: `cloiinkcoin.com`,
+        short_name: `cloiinkcoin.com`,
         start_url: `/en/`,
         background_color: `#fff`,
         theme_color: `#1c1ce1`,
@@ -51,7 +51,7 @@ module.exports = {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "4",
-        matomoUrl: "https://matomo.ethereum.org",
+        matomoUrl: "https://matomo.cloiinkcoin.com",
         siteUrl,
         matomoPhpScript: "matomo.php",
         matomoJsScript: "matomo.js",
@@ -81,7 +81,7 @@ module.exports = {
         ],
       },
     },
-    // Sitemap generator (ethereum.org/sitemap.xml)
+    // Sitemap generator (cloiinkcoin.com/sitemap.xml)
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {

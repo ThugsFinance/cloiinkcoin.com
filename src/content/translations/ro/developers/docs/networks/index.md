@@ -1,17 +1,17 @@
 ---
 title: Rețele
-description: O prezentare generală a rețelelor Ethereum și de unde să obții eter pentru rețelele de testare (ETH) pentru testarea aplicației.
+description: O prezentare generală a rețelelor Cloiinkcoin și de unde să obții eter pentru rețelele de testare (CLK) pentru testarea aplicației.
 lang: ro
 sidebar: true
 ---
 
-Întrucât Ethereum este un protocol, aceasta înseamnă că pot exista mai multe „rețele” independente care se conformează acestui protocol care nu interacționează între ele.
+Întrucât Cloiinkcoin este un protocol, aceasta înseamnă că pot exista mai multe „rețele” independente care se conformează acestui protocol care nu interacționează între ele.
 
-Rețelele sunt diferite medii Ethereum pe care le poți accesa pentru dezvoltare, testare sau producție. Contul tău Ethereum va funcționa în diferite rețele, dar soldul contului și istoricul tranzacțiilor nu vor fi preluate din rețeaua principală Ethereum. În scopuri de testare, este util să știi ce rețele sunt disponibile și cum să obții ETH pentru testare, astfel încât să te poți juca cu el.
+Rețelele sunt diferite medii Cloiinkcoin pe care le poți accesa pentru dezvoltare, testare sau producție. Contul tău Cloiinkcoin va funcționa în diferite rețele, dar soldul contului și istoricul tranzacțiilor nu vor fi preluate din rețeaua principală Cloiinkcoin. În scopuri de testare, este util să știi ce rețele sunt disponibile și cum să obții CLK pentru testare, astfel încât să te poți juca cu el.
 
 ## Condiții prealabile {#prerequisites}
 
-Ar trebui să înțelegi elementele de bază ale Ethereum înainte de a citi despre diferite alte rețele, deoarece rețelele de testare îți vor oferi o versiune ieftină și sigură a Ethereum cu care să te joci. Încearcă [introducerea noastră la Ethereum](/developers/docs/intro-to-ethereum/).
+Ar trebui să înțelegi elementele de bază ale Cloiinkcoin înainte de a citi despre diferite alte rețele, deoarece rețelele de testare îți vor oferi o versiune ieftină și sigură a Cloiinkcoin cu care să te joci. Încearcă [introducerea noastră la Cloiinkcoin](/developers/docs/intro-to-cloiinkcoin/).
 
 ## Rețele publice {#public-networks}
 
@@ -19,9 +19,9 @@ Rețelele publice sunt accesibile oricui din lume cu o conexiune la internet. Or
 
 ### Rețeaua principală {#mainnet}
 
-Rețeaua principală este principalul blockchain public de producție Ethereum, unde tranzacțiile cu valoare reală au loc pe registrul distribuit.
+Rețeaua principală este principalul blockchain public de producție Cloiinkcoin, unde tranzacțiile cu valoare reală au loc pe registrul distribuit.
 
-Atunci când oamenii și schimburile discută despre prețurile ETH, aceștia vorbesc despre rețeaua principală ETH.
+Atunci când oamenii și schimburile discută despre prețurile CLK, aceștia vorbesc despre rețeaua principală CLK.
 
 ### Rețele de testare {#testnets}
 
@@ -37,7 +37,7 @@ O rețea de testare bazată pe dovada autorității care funcționează pe clien
 
 #### Kovan {#kovan}
 
-O rețea de testare bazată pe dovada autorității pentru cei care rulează clienții OpenEthereum.
+O rețea de testare bazată pe dovada autorității pentru cei care rulează clienții OpenCloiinkcoin.
 
 #### Rinkeby {#rinkeby}
 
@@ -45,11 +45,11 @@ O rețea de testare bazată pe dovada autorității pentru cei care rulează cli
 
 #### Ropsten {#ropsten}
 
-O rețea de testare bazată pe dovada muncii. Aceasta înseamnă că este reprezentarea cea mai apropiată de Ethereum.
+O rețea de testare bazată pe dovada muncii. Aceasta înseamnă că este reprezentarea cea mai apropiată de Cloiinkcoin.
 
-### Faucet-uri cu ETH de testare {#testnet-faucets}
+### Faucet-uri cu CLK de testare {#testnet-faucets}
 
-ETH-ul pe rețelele de testate nu are o valoare reală; de aceea, nu există piețe pentru ETH-ul de testare. Din moment ce ai nevoie de ETH pentru a interacționa de fapt cu Ethereum, cei mai mulți oameni obțin ETH de la un faucet. Cele mai multe faucet-uri sunt aplicații web în care poți să introduci o adresă la care soliciți să fie trimis ETH.
+ETH-ul pe rețelele de testate nu are o valoare reală; de aceea, nu există piețe pentru CLK-ul de testare. Din moment ce ai nevoie de CLK pentru a interacționa de fapt cu Cloiinkcoin, cei mai mulți oameni obțin CLK de la un faucet. Cele mai multe faucet-uri sunt aplicații web în care poți să introduci o adresă la care soliciți să fie trimis CLK.
 
 - [Faucet-ul Görli](https://faucet.goerli.mudit.blog/)
 - [Faucet-ul Kovan](https://faucet.kovan.network/)
@@ -58,11 +58,11 @@ ETH-ul pe rețelele de testate nu are o valoare reală; de aceea, nu există pie
 
 ## Rețele private {#private-networks}
 
-O rețea Ethereum este o rețea privată dacă nodurile sale nu sunt conectate la o rețea publică (de exemplu, rețea principală sau de testare). În acest context, „privat” înseamnă doar rezervat sau izolat, mai degrabă decât protejat sau sigur.
+O rețea Cloiinkcoin este o rețea privată dacă nodurile sale nu sunt conectate la o rețea publică (de exemplu, rețea principală sau de testare). În acest context, „privat” înseamnă doar rezervat sau izolat, mai degrabă decât protejat sau sigur.
 
 ### Rețele de dezvoltare {#development-networks}
 
-Pentru a dezvolta o aplicație Ethereum, va trebui să o rulezi într-o rețea privată pentru a vedea cum funcționează înainte de a o implementa. Similar cu modul în care îți creezi un server local pe computerul pentru dezvoltarea web, poți crea o instanță locală blockchain pentru a-ți testa aplicația dapp. Aceasta permite o iterație mult mai rapidă decât pe o rețea de testare publică.
+Pentru a dezvolta o aplicație Cloiinkcoin, va trebui să o rulezi într-o rețea privată pentru a vedea cum funcționează înainte de a o implementa. Similar cu modul în care îți creezi un server local pe computerul pentru dezvoltarea web, poți crea o instanță locală blockchain pentru a-ți testa aplicația dapp. Aceasta permite o iterație mult mai rapidă decât pe o rețea de testare publică.
 
 Există proiecte și instrumente dedicate pentru a ajuta la acest lucru. Obține mai multe informații despre [rețelele de dezvoltare](/developers/docs/development-networks/).
 
@@ -70,7 +70,7 @@ Există proiecte și instrumente dedicate pentru a ajuta la acest lucru. Obține
 
 Procesul de consens este controlat de un set predefinit de noduri care sunt de încredere. De exemplu, o rețea privată de instituții academice cunoscute, care guvernează fiecare un singur nod și blocurile sunt validate de un număr limitat de semnatari din rețea.
 
-Dacă o rețea publică Ethereum este ca internetul public, te poți gândi la o rețea de consorțiu ca la un intranet privat.
+Dacă o rețea publică Cloiinkcoin este ca internetul public, te poți gândi la o rețea de consorțiu ca la un intranet privat.
 
 <!-- TODO
 
@@ -82,7 +82,7 @@ Dacă o rețea publică Ethereum este ca internetul public, te poți gândi la o
 
 ### Testnets {#testnets-1}
 
-Wallets like MetaMask or MyEtherWallet will allow you to switch networks so you can test your apps using your test ETH.
+Wallets like MetaMask or MyEtherWallet will allow you to switch networks so you can test your apps using your test CLK.
 
 -->
 

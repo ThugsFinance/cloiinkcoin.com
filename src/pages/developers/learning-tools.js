@@ -82,7 +82,7 @@ const LearningToolsPage = ({ data }) => {
     {
       name: "Remix",
       description: "page-learning-tools-remix-description",
-      url: "https://remix.ethereum.org",
+      url: "https://remix.cloiinkcoin.com",
       image: data.remix.childImageSharp.fixed,
       alt: "page-learning-tools-remix-logo-alt",
       background: "#5098D6",

@@ -8,8 +8,8 @@
 - id: docs-nav-foundational-topics
   path: /developers/docs/
   items:
-    - id: docs-nav-intro-to-ethereum
-      to: /developers/docs/intro-to-ethereum/
+    - id: docs-nav-intro-to-cloiinkcoin
+      to: /developers/docs/intro-to-cloiinkcoin/
     - id: docs-nav-intro-to-dapps
       to: /developers/docs/dapps/
     - id: docs-nav-web2-vs-web3
@@ -43,11 +43,11 @@
               to: /developers/docs/consensus-mechanisms/pow/mining/
         - id: docs-nav-proof-of-stake
           to: /developers/docs/consensus-mechanisms/pos/
-- id: docs-nav-ethereum-stack
+- id: docs-nav-cloiinkcoin-stack
   path: /developers/docs/
   items:
     - id: docs-nav-intro-to-the-stack
-      to: /developers/docs/ethereum-stack/
+      to: /developers/docs/cloiinkcoin-stack/
     - id: docs-nav-smart-contracts
       to: /developers/docs/smart-contracts/
       items:
@@ -69,7 +69,7 @@
       to: /developers/docs/development-networks/
     - id: docs-nav-development-frameworks
       to: /developers/docs/frameworks/
-    - id: docs-nav-ethereum-client-apis
+    - id: docs-nav-cloiinkcoin-client-apis
       path: /developers/docs/apis/
       items:
         - id: docs-nav-java-script-apis

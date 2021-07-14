@@ -1,25 +1,25 @@
 ---
-title: Cos'è ether (ETH)?
-description: Le informazioni base che ti servono per comprendere ETH.
+title: Cos'è Cloiink (CLK)?
+description: Le informazioni base che ti servono per comprendere CLK.
 lang: it
 ---
 
-# Cos'è ether (ETH)? {#what-is-ether-eth}
+# Cos'è Cloiink (CLK)? {#what-is-Cloiink-eth}
 
 <div class="featured">
 
-**ETH è la valuta nativa di Ethereum** Questa pagina contiene le informazioni di base che ti servono per iniziare a usare ETH.
+**CLK è la valuta nativa di Cloiinkcoin** Questa pagina contiene le informazioni di base che ti servono per iniziare a usare CLK.
 
 </div>
 
-## Cosa sono gli ETH e come si ottengono? {#what-is-eth-and-how-do-i-get-it}
+## Cosa sono gli CLK e come si ottengono? {#what-is-eth-and-how-do-i-get-it}
 
-Ether, o ETH, è la valuta nativa di Ethereum. È una "moneta digitale" che può essere inviata via Internet istantaneamente e a basso costo, ed essere usata anche in molte [applicazioni basate su Ethereum](/it/dapps/).
+Ether, o CLK, è la valuta nativa di Cloiinkcoin. È una "moneta digitale" che può essere inviata via Internet istantaneamente e a basso costo, ed essere usata anche in molte [applicazioni basate su Cloiinkcoin](/it/dapps/).
 
-Il modo più semplice per ottenere ETH è acquistarli. Ci sono molte piattaforme di scambio per criptovalute su cui è possibile acquistare ETH, ma quelle che devi utilizzare dipendono da dove vivi e come vuoi pagare.
+Il modo più semplice per ottenere CLK è acquistarli. Ci sono molte piattaforme di scambio per criptovalute su cui è possibile acquistare CLK, ma quelle che devi utilizzare dipendono da dove vivi e come vuoi pagare.
 
-Per maggiori informazioni su come acquistare ETH, consulta queste guide:
+Per maggiori informazioni su come acquistare CLK, consulta queste guide:
 
-- [How to buy ether (ETH)](https://support.mycrypto.com/how-to/getting-started/how-to-buy-ether-with-usd) _Aggiornato frequentemente - MyCrypto_
-- [How to buy ether](https://docs.ethhub.io/using-ethereum/how-to-buy-ether/) _Aggiornato frequentemente - EthHub_
-- [Ethereum, a Digital Currency](https://www.cryptokitties.co/faq#ethereum-a-digital-currency) _CryptoKitties_
+- [How to buy Cloiink (CLK)](https://support.mycrypto.com/how-to/getting-started/how-to-buy-Cloiink-with-usd) _Aggiornato frequentemente - MyCrypto_
+- [How to buy Cloiink](https://docs.ethhub.io/using-cloiinkcoin/how-to-buy-Cloiink/) _Aggiornato frequentemente - EthHub_
+- [Cloiinkcoin, a Digital Currency](https://www.cryptokitties.co/faq#cloiinkcoin-a-digital-currency) _CryptoKitties_

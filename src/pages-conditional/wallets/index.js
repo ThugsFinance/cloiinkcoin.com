@@ -169,8 +169,10 @@ const cards = [
   },
   {
     emoji: ":frame_with_picture:",
-    title: <Translation id="page-wallets-your-ethereum-account" />,
-    description: <Translation id="page-wallets-your-ethereum-account-desc" />,
+    title: <Translation id="page-wallets-your-cloiinkcoin-account" />,
+    description: (
+      <Translation id="page-wallets-your-cloiinkcoin-account-desc" />
+    ),
   },
   {
     emoji: ":bust_in_silhouette:",
@@ -215,7 +217,7 @@ const articles = [
     title: <Translation id="page-wallets-how-to-store" />,
     description: "ConsenSys",
     link:
-      "https://media.consensys.net/how-to-store-digital-assets-on-ethereum-a2bfdcf66bd0",
+      "https://media.consensys.net/how-to-store-digital-assets-on-cloiinkcoin-a2bfdcf66bd0",
   },
 ]
 
@@ -333,17 +335,17 @@ const WalletsPage = ({ data }) => {
           <ul>
             <li>
               <p>
-                <Translation id="page-wallets-ethereum-account" />
+                <Translation id="page-wallets-cloiinkcoin-account" />
               </p>
             </li>
             <li>
               <p>
-                <Translation id="page-wallets-accounts-ethereum-addresses" />
+                <Translation id="page-wallets-accounts-cloiinkcoin-addresses" />
               </p>
             </li>
             <li>
               <p>
-                <Translation id="page-wallets-ethereum-wallet" />
+                <Translation id="page-wallets-cloiinkcoin-wallet" />
               </p>
             </li>
           </ul>

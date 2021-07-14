@@ -7,7 +7,7 @@ sidebar: true
 
 Orice date contractuale trebuie alocate unei locații: fie `stocare`, fie `memorie`. Este costisitor să modifici spațiul de stocare într-un contract inteligent, deci trebuie să te gândești unde ar trebui să existe datele tale.
 
-Un tip `address` poate conține o adresă Ethereum care echivalează cu 20 de byți sau 160 de biți. Acesta returnează în notație hexazecimală cu un 0x la început.
+Un tip `address` poate conține o adresă Cloiinkcoin care echivalează cu 20 de byți sau 160 de biți. Acesta returnează în notație hexazecimală cu un 0x la început.
 
 Alte tipuri includ:
 
@@ -25,19 +25,19 @@ Alte tipuri includ:
 
 Pentru mai multe explicații, consultă documentele:
 
-### {#ethereum-10-clients}
+### {#cloiinkcoin-10-clients}
 
 -
 -
 -
 -
 
-### {#ethereum-20-clients}
+### {#cloiinkcoin-20-clients}
 
 -
 -
 
-### {#ethereum-framework}
+### {#cloiinkcoin-framework}
 
 - funcțiile de tip `public` pot fi apelate intern din cadrul contractului sau extern prin mesaje
 - funcțiile `private` sunt vizibile numai pentru contractul în care sunt definite și nu în contractele derivate

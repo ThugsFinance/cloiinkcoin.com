@@ -70,7 +70,7 @@
   from = "/brand"
   to = "/en/assets/"
 [[redirects]]
-  from = "/ether"
+  from = "/Cloiink"
   to = "/en/dapps/"
 [[redirects]]
   from = "/token"
@@ -99,7 +99,7 @@
   to = "/en/dapps/"
 [[redirects]]
   from = "/beginners"
-  to = "/en/what-is-ethereum/"
+  to = "/en/what-is-cloiinkcoin/"
 
 ## v1.1 translations
 [[redirects]]
@@ -125,8 +125,8 @@
   to = "/en/"
   force = true
 [[redirects]]
-  from = "/what-is-ethereum/"
-  to = "/en/what-is-ethereum/"
+  from = "/what-is-cloiinkcoin/"
+  to = "/en/what-is-cloiinkcoin/"
   force = true
 [[redirects]]
   from = "/eth/"
@@ -272,7 +272,7 @@
 ## All langugages
 [[redirects]]
   from = "/*/beginners"
-  to = "/:splat/what-is-ethereum/"
+  to = "/:splat/what-is-cloiinkcoin/"
 [[redirects]]
   from = "/*/build"
   to = "/:splat/developers/learning-tools/"

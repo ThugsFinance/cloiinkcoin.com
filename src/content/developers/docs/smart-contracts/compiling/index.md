@@ -6,11 +6,11 @@ sidebar: true
 incomplete: true
 ---
 
-You need to compile your contract so that your web app and the Ethereum virtual machine (EVM) can understand it.
+You need to compile your contract so that your web app and the Cloiinkcoin virtual machine (EVM) can understand it.
 
 ## Prerequisites {#prerequisites}
 
-You might find it helpful to have read our intro to [smart contracts](/developers/docs/smart-contracts/) and the [Ethereum virtual machine](/developers/docs/evm/) before reading about compilation.
+You might find it helpful to have read our intro to [smart contracts](/developers/docs/smart-contracts/) and the [Cloiinkcoin virtual machine](/developers/docs/evm/) before reading about compilation.
 
 ## The EVM {#the-evm}
 
@@ -42,7 +42,7 @@ The ABI is a JSON file that describes the deployed contract and its smart contra
 
 A [Javascript client library](/developers/docs/apis/javascript/) will read the **ABI** in order for you to call on your smart contract in your web app's interface.
 
-Below is the ABI for the ERC-20 token contract. An ERC-20 is a token you can trade on Ethereum.
+Below is the ABI for the ERC-20 token contract. An ERC-20 is a token you can trade on Cloiinkcoin.
 
 ```json
 [
@@ -276,4 +276,4 @@ Below is the ABI for the ERC-20 token contract. An ERC-20 is a token you can tra
 ## Related topics {#related-topics}
 
 - [Javascript client libraries](/developers/docs/apis/javascript/)
-- [Ethereum virtual machine](/developers/docs/ethereum-virtual-machine/)
+- [Cloiinkcoin virtual machine](/developers/docs/cloiinkcoin-virtual-machine/)

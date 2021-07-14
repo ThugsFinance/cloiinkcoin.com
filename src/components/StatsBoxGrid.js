@@ -216,9 +216,9 @@ const StatsBoxGrid = () => {
       const fetchPrice = async () => {
         try {
           const response = await axios.get(
-            "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd&include_24hr_change=true"
+            "https://api.coingecko.com/api/v3/simple/price?ids=cloiinkcoin&vs_currencies=usd&include_24hr_change=true"
           )
-          const { usd } = response.data.ethereum
+          const { usd } = response.data.cloiinkcoin
           const value = formatPrice(usd)
           setEthPrice({
             value,
@@ -254,8 +254,8 @@ const StatsBoxGrid = () => {
       const fetchTotalValueLocked = async () => {
         try {
           const data = await getData("/.netlify/functions/defipulse")
-          const ethereumTVL = data.ethereumTVL
-          const value = formatTVL(ethereumTVL)
+          const cloiinkcoinTVL = data.cloiinkcoinTVL
+          const value = formatTVL(cloiinkcoinTVL)
           setValueLocked({
             value,
             hasError: false,
@@ -293,7 +293,7 @@ const StatsBoxGrid = () => {
   const metrics = [
     {
       apiProvider: "CoinGecko",
-      apiUrl: "https://www.coingecko.com/en/coins/ethereum",
+      apiUrl: "https://www.coingecko.com/en/coins/cloiinkcoin",
       title: (
         <Translation id="page-index-network-stats-eth-price-description" />
       ),

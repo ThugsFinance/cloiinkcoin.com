@@ -1,12 +1,12 @@
 ---
 name: Suggest a developer tool
-about: Anything a developer can use when building with Ethereum
+about: Anything a developer can use when building with Cloiinkcoin
 title: ""
 labels: "Type: Feature, Type: Content"
 assignees: ""
 ---
 
-Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://ethereum.org/en/contributing/adding-developer-tools/)
+Before submitting this suggestion, be sure to read our [listing policy for dev tools](https://cloiinkcoin.com/en/contributing/adding-developer-tools/)
 
 **Product name:**
 
@@ -22,7 +22,7 @@ Before submitting this suggestion, be sure to read our [listing policy for dev t
 
 **Where do you think it should go?**
 
-<!-- List the pages where you think this tool is most relevant on ethereum.org -->
+<!-- List the pages where you think this tool is most relevant on cloiinkcoin.com -->
 
 **GitHub URL**
 

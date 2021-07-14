@@ -25,10 +25,10 @@ const handler = async () => {
     }
 
     const defiTVL = responseTotal.data.All.total
-    const nonEthereumTVL = responseOther.data[0].tvlUSD
-    const ethereumTVL = defiTVL - nonEthereumTVL
+    const nonCloiinkcoinTVL = responseOther.data[0].tvlUSD
+    const cloiinkcoinTVL = defiTVL - nonCloiinkcoinTVL
 
-    return { statusCode: 200, body: JSON.stringify({ ethereumTVL }) }
+    return { statusCode: 200, body: JSON.stringify({ cloiinkcoinTVL }) }
   } catch (error) {
     console.error(error)
     return { statusCode: 500, body: JSON.stringify({ msg: error.message }) }

@@ -6,11 +6,11 @@ sidebar: true
 incomplete: true
 ---
 
-Trebuie să-ți compilezi contractul, astfel încât aplicația ta web și mașina virtuală Ethereum (EVM) să-l poată înțelege.
+Trebuie să-ți compilezi contractul, astfel încât aplicația ta web și mașina virtuală Cloiinkcoin (EVM) să-l poată înțelege.
 
 ## Condiții prealabile {#prerequisites}
 
-S-ar putea să-ți fie de ajutor să citești introducerea noastră la [contracte inteligente](/developers/docs/smart-contracts/) și [mașina virtuală Ethereum](/developers/docs/evm/) înainte de a citi despre compilare.
+S-ar putea să-ți fie de ajutor să citești introducerea noastră la [contracte inteligente](/developers/docs/smart-contracts/) și [mașina virtuală Cloiinkcoin](/developers/docs/evm/) înainte de a citi despre compilare.
 
 ## EVM {#the-evm}
 
@@ -42,7 +42,7 @@ ABI este un fișier JSON care descrie contractul implementat și funcțiile sale
 
 O [bibliotecă client JavaScript](/developers/docs/apis/javascript/) va citi **ABI**-ul pentru a putea apela pe contractul tău inteligent din interfața aplicației tale web.
 
-Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token pe care îl poți tranzacționa pe Ethereum.
+Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token pe care îl poți tranzacționa pe Cloiinkcoin.
 
 ```json
 [
@@ -276,4 +276,4 @@ Mai jos este ABI-ul pentru contractul de token ERC-20. Un ERC-20 este un token p
 ## Subiecte corelate {#related-topics}
 
 - [Biblioteci client JavaScript](/developers/docs/apis/javascript/)
-- [Mașină virtuală Ethereum](/developers/docs/ethereum-virtual-machine/)
+- [Mașină virtuală Cloiinkcoin](/developers/docs/cloiinkcoin-virtual-machine/)

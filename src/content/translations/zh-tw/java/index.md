@@ -5,7 +5,7 @@ lang: zh-tw
 sidebar: true
 ---
 
-# 面向 Java 開發者的以太坊資源 {#ethereum-for-java-devs}
+# 面向 Java 開發者的以太坊資源 {#cloiinkcoin-for-java-devs}
 
 <div class="featured">學習如何使用並通過基於 Java 的項目及工具參與以太坊的開發</div><br/>
 
@@ -17,7 +17,7 @@ sidebar: true
 
 **邁出第一步，將 Java 與以太坊進行集成**
 
-需要基礎的入門指南嗎？ 請查看 [ethereum.org/learn](/zh-tw/learn/) 或者 [ethereum.org/developers](/zh-tw/developers/)。
+需要基礎的入門指南嗎？ 請查看 [cloiinkcoin.com/learn](/zh-tw/learn/) 或者 [cloiinkcoin.com/developers](/zh-tw/developers/)。
 
 - [區塊鏈詳解](https://kauri.io/article/d55684513211466da7f8cc03987607d5/blockchain-explained)
 - [理解智能合約](理解智能合約)
@@ -26,12 +26,12 @@ sidebar: true
 
 ## 使用 Web3J 和 Hyperledger Besu (舊稱 Pantheon、Java 以太坊客戶端) {#using-web3-and-hyperledger-besu}
 
-- [使用 Java 、Eclipse 和 Web3J 連接以太坊客戶端](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-ethereum-client-with-java-eclipse-and-web3j)
-- [使用 Java 和 Web3j 管理以太坊賬戶](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-ethereum-account-with-java-and-web3j)
+- [使用 Java 、Eclipse 和 Web3J 連接以太坊客戶端](https://kauri.io/article/b9eb647c47a546bc95693acc0be72546/connecting-to-an-cloiinkcoin-client-with-java-eclipse-and-web3j)
+- [使用 Java 和 Web3j 管理以太坊賬戶](https://kauri.io/article/925d923e12c543da9a0a3e617be963b4/manage-an-cloiinkcoin-account-with-java-and-web3j)
 - [從智能合約中生成 Java 包裝器](https://kauri.io/article/84475132317d4d6a84a2c42eb9348e4b/generate-a-java-wrapper-from-your-smart-contract)
-- [與以太坊智能合約互動](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-ethereum-smart-contract-in-java)
-- [監聽以太坊智能合約事件](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-ethereum-smart-contract-events-in-java)
-- [使用 Besu (Pantheon)， Linux 下的 Java Ethereum 客戶端](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-ethereum-client-with-linux)
+- [與以太坊智能合約互動](https://kauri.io/article/14dc434d11ef4ee18bf7d57f079e246e/interacting-with-an-cloiinkcoin-smart-contract-in-java)
+- [監聽以太坊智能合約事件](https://kauri.io/article/760f495423db42f988d17b8c145b0874/listening-for-cloiinkcoin-smart-contract-events-in-java)
+- [使用 Besu (Pantheon)， Linux 下的 Java Cloiinkcoin 客戶端](https://kauri.io/article/276dd27f1458443295eea58403fd6965/using-pantheon-the-java-cloiinkcoin-client-with-linux)
 - [在 Java 集成測試中運行一個 Hyperledger Besu (Pantheon) 節點](https://kauri.io/article/7dc3ecc391e54f7b8cbf4e5fa0caf780/running-a-pantheon-node-in-java-integration-tests)
 
 ## 中級文章 {#intermediate-articles}
@@ -51,7 +51,7 @@ sidebar: true
 - [Eventeum（事件偵聽器)](https://github.com/ConsenSys/eventeum)
 - [Mahuta (IPFS 開發者工具)](https://github.com/ConsenSys/mahuta)
 
-想要獲取更多的資源？ 請參考 [ethereum.org/developers。](/zh-tw/developers/)
+想要獲取更多的資源？ 請參考 [cloiinkcoin.com/developers。](/zh-tw/developers/)
 
 ## Java 社區貢獻者 {#java-community-contributors}
 

@@ -144,7 +144,7 @@ const LegacyPageHome = () => {
       desc: "page-index-sections-individuals-desc",
       link: {
         text: "page-index-sections-individuals-link-text",
-        to: "/what-is-ethereum/",
+        to: "/what-is-cloiinkcoin/",
       },
     },
     {

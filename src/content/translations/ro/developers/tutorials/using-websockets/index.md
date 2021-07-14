@@ -18,7 +18,7 @@ source: Documentație Alchemy
 sourceUrl: https://docs.alchemyapi.io/guides/using-websockets
 ---
 
-Acesta este un ghid de bază pentru a folosi WebSockets și Alchemy pentru a face cereri către blockchain-ul Ethereum.
+Acesta este un ghid de bază pentru a folosi WebSockets și Alchemy pentru a face cereri către blockchain-ul Cloiinkcoin.
 
 ## WebSockets vs. HTTP {#websockets-vs-http}
 

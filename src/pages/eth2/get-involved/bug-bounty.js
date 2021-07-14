@@ -244,22 +244,22 @@ const BugBountiesPage = ({ data, location }) => {
     {
       title: <Translation id="page-eth2-bug-bounty-title-1" />,
       link:
-        "https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/beacon-chain.md",
+        "https://github.com/cloiinkcoin/eth2.0-specs/blob/dev/specs/phase0/beacon-chain.md",
     },
     {
       title: <Translation id="page-eth2-bug-bounty-title-2" />,
       link:
-        "https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/fork-choice.md",
+        "https://github.com/cloiinkcoin/eth2.0-specs/blob/dev/specs/phase0/fork-choice.md",
     },
     {
       title: <Translation id="page-eth2-bug-bounty-title-3" />,
       link:
-        "https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/deposit-contract.md",
+        "https://github.com/cloiinkcoin/eth2.0-specs/blob/dev/specs/phase0/deposit-contract.md",
     },
     {
       title: <Translation id="page-eth2-bug-bounty-title-4" />,
       link:
-        "https://github.com/ethereum/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md",
+        "https://github.com/cloiinkcoin/eth2.0-specs/blob/dev/specs/phase0/p2p-interface.md",
     },
   ]
   return (
@@ -337,7 +337,7 @@ const BugBountiesPage = ({ data, location }) => {
                 intl
               )}
             >
-              <Link to="https://github.com/ethereum/eth2.0-specs">
+              <Link to="https://github.com/cloiinkcoin/eth2.0-specs">
                 <Translation id="page-eth2-bug-bounty-specs" />
               </Link>
               <br />
@@ -353,7 +353,7 @@ const BugBountiesPage = ({ data, location }) => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="https://github.com/ethereum/annotated-spec">
+                    <Link to="https://github.com/cloiinkcoin/annotated-spec">
                       Vitalik Buterin's{" "}
                       <Translation id="page-eth2-bug-bounty-annotated-specs" />
                     </Link>
@@ -515,8 +515,8 @@ const BugBountiesPage = ({ data, location }) => {
           </H2>
           <TextNoMargin>
             <Translation id="page-eth2-bug-bounty-email-us" />{" "}
-            <Link to="mailto:eth2bounty@ethereum.org">
-              eth2bounty@ethereum.org
+            <Link to="mailto:eth2bounty@cloiinkcoin.com">
+              eth2bounty@cloiinkcoin.com
             </Link>
           </TextNoMargin>
         </div>

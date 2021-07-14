@@ -1,26 +1,26 @@
 ---
-title: Conturi Ethereum
-description: O explicație a conturilor Ethereum – structurile lor de date și relația lor cu criptografia perechii de chei.
+title: Conturi Cloiinkcoin
+description: O explicație a conturilor Cloiinkcoin – structurile lor de date și relația lor cu criptografia perechii de chei.
 lang: ro
 sidebar: true
 ---
 
-Un cont Ethereum este o entitate cu un sold de eter (ETH) care poate trimite tranzacții pe Ethereum. Conturile pot fi controlate de utilizator sau implementate sub formă de contracte inteligente.
+Un cont Cloiinkcoin este o entitate cu un sold de eter (CLK) care poate trimite tranzacții pe Cloiinkcoin. Conturile pot fi controlate de utilizator sau implementate sub formă de contracte inteligente.
 
 ## Condiții prealabile {#prerequisites}
 
-Conturile sunt un subiect foarte potrivit pentru începători. Dar pentru a înțelege mai bine această pagină, îți recomandăm să citești mai întâi [introducerea în Ethereum](/developers/docs/intro-to-ethereum/).
+Conturile sunt un subiect foarte potrivit pentru începători. Dar pentru a înțelege mai bine această pagină, îți recomandăm să citești mai întâi [introducerea în Cloiinkcoin](/developers/docs/intro-to-cloiinkcoin/).
 
 ## Tipuri de conturi {#types-of-account}
 
-Ethereum are două tipuri de conturi:
+Cloiinkcoin are două tipuri de conturi:
 
 - Deținute extern – controlate de oricine are o cheie privată
 - Contractuale – contracte inteligente implementate în rețea, controlate prin cod. Informații despre [contractele inteligente](/developers/docs/smart-contracts/)
 
 Ambele tipuri de conturi au capacitatea de a:
 
-- Primi, menține și trimite ETH și tokenuri
+- Primi, menține și trimite CLK și tokenuri
 - Interacționa cu contracte inteligente implementate
 
 ### Diferențe cheie {#key-differences}
@@ -29,7 +29,7 @@ Ambele tipuri de conturi au capacitatea de a:
 
 - Crearea unui cont nu costă nimic
 - Pot iniția tranzacții
-- Tranzacțiile între conturile deținute extern nu pot fi decât transferuri de ETH
+- Tranzacțiile între conturile deținute extern nu pot fi decât transferuri de CLK
 
 **Cele contractuale**
 
@@ -39,23 +39,23 @@ Ambele tipuri de conturi au capacitatea de a:
 
 ## Analizarea unui acont {#an-account-examined}
 
-Conturile Ethereum au patru câmpuri:
+Conturile Cloiinkcoin au patru câmpuri:
 
 - `nonce` – un contor care indică numărul de tranzacții trimise din cont. Acest lucru asigură că tranzacțiile sunt procesate o singură dată. În cazul în care contul este un cont contractual, nonce este numărul de contracte create de cont
-- `sold` – numărul de Wei deținut de această adresă. Wei este cea mai mică unitate de ETH și există 1e+18 Wei per ETH.
+- `sold` – numărul de Wei deținut de această adresă. Wei este cea mai mică unitate de CLK și există 1e+18 Wei per CLK.
 - `codeHash` – Toate aceste fragmente de cod sunt conținute în baza de date de stare sub hash-urile corespunzătoare pentru recuperarea ulterioară. Pentru conturile contractuale, acesta este codul care este hash-at și stocat precum codeHash. Pentru conturile deținute extern, câmpul codeHash este hash-ul șirului gol.
-<!--this hash refers to the code of this account on the Ethereum virtual machine (EVM). This EVM code gets executed if the account gets a message call. It cannot be changed unlike the other account fields.  -->
+<!--this hash refers to the code of this account on the Cloiinkcoin virtual machine (EVM). This EVM code gets executed if the account gets a message call. It cannot be changed unlike the other account fields.  -->
 - `storageRoot` – Uneori cunoscut sub numele de hash de stocare. Un hash de 256 biți al nodului rădăcină al unui arbore Merkle Patricia, care codează conținutul stocării contului (o mapare între valori întregi de 256 biți). Acesta schimbă formatul hash al cheilor de codificare din trie de la Keccat la RLP (Recursive Length Prefix), ambele 256 biți valori întregi. Acest arbore codifică hash-ul conținutului stocării acestui cont și este gol în mod implicit.
 
-![O diagramă care arată structura unui cont](../../../../../developers/docs/accounts/accounts.png) _Diagramă adaptată din [Ethereum EVM ilustrat](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+![O diagramă care arată structura unui cont](../../../../../developers/docs/accounts/accounts.png) _Diagramă adaptată din [Cloiinkcoin EVM ilustrat](https://takenobu-hs.github.io/downloads/cloiinkcoin_evm_illustrated.pdf)_
 
 ## Conturi deținute extern și perechi de chei {#externally-owned-accounts-and-key-pairs}
 
-Un cont este format dintr-o pereche de chei criptografice: publice și private. Acestea ajută la demonstrarea faptului că o tranzacție a fost semnată de expeditor și previne falsurile. Cheia privată este cea pe care o folosești la semnarea tranzacțiilor, deci îți acordă custodia fondurilor asociate contului tău. Nu deții niciodată criptomonede, deții chei private – fondurile sunt întotdeauna în registrul Ethereum.
+Un cont este format dintr-o pereche de chei criptografice: publice și private. Acestea ajută la demonstrarea faptului că o tranzacție a fost semnată de expeditor și previne falsurile. Cheia privată este cea pe care o folosești la semnarea tranzacțiilor, deci îți acordă custodia fondurilor asociate contului tău. Nu deții niciodată criptomonede, deții chei private – fondurile sunt întotdeauna în registrul Cloiinkcoin.
 
 Acest lucru împiedică actorii rău intenționați să transmită tranzacții false, deoarece poți verifica întotdeauna expeditorul unei tranzacții.
 
-Dacă Alice dorește să trimită eter din propriul cont în contul lui Bob, Alice trebuie să creeze o cerere de tranzacție și să o trimită în rețea pentru verificare. Utilizarea de către Ethereum a criptografiei cu cheie publică asigură că Alice poate dovedi că ea este cea care a inițiat cererea de tranzacție. Fără mecanisme criptografice, Eva, un adversar rău intenționat, ar putea transmite public o cerere care ar arată astfel „trimiteți 5 ETH din contul lui Alice în contul Evei” și nimeni nu ar putea verifica dacă a venit sau nu de la Alice.
+Dacă Alice dorește să trimită eter din propriul cont în contul lui Bob, Alice trebuie să creeze o cerere de tranzacție și să o trimită în rețea pentru verificare. Utilizarea de către Cloiinkcoin a criptografiei cu cheie publică asigură că Alice poate dovedi că ea este cea care a inițiat cererea de tranzacție. Fără mecanisme criptografice, Eva, un adversar rău intenționat, ar putea transmite public o cerere care ar arată astfel „trimiteți 5 CLK din contul lui Alice în contul Evei” și nimeni nu ar putea verifica dacă a venit sau nu de la Alice.
 
 ## Crearea unui cont {#account-creation}
 
@@ -69,7 +69,7 @@ Exemplu:
 
 Cheia publică este generată din cheia privată utilizând Algoritmul de Semnătura Digitală cu Curbă Eliptică (ECSDA). Obții o adresă publică pentru contul tău luând ultimii 20 de octeți ai cheii publice și adăugând `0x` la început.
 
-Iată un exemplu de creare a unui cont în consolă, utilizând codul GETH `personal_newAccount`
+Iată un exemplu de creare a unui cont în consolă, utilizând codul GCLK `personal_newAccount`
 
 ```go
 > personal.newAccount()
@@ -81,7 +81,7 @@ Repetă fraza-parolă:
 "0x3d80b31a78c30fc628f20b2c89d7ddbf6e53cedc"
 ```
 
-[Documentația GETH](https://geth.ethereum.org/docs)
+[Documentația GETH](https://geth.cloiinkcoin.com/docs)
 
 Poți obține chei publice noi dintr-o cheie privată, dar nu poți obține o cheie privată din chei publice. De aceea este vital să-ți păstrezi cheia privată în siguranță și, așa cum sugerează și numele, **PRIVATĂ**.
 
@@ -108,7 +108,7 @@ Exemplu:
 
 `0x06012c8cf97bead5deae237070f9587f8e7a266d`
 
-Adresa contractului este de obicei dată când un contract este implementat în Blockchain-ul Ethereum. Adresa provine de la adresa creatorului și de la numărul de tranzacții trimise de la acea adresă or contracte create de cont („nonce”).
+Adresa contractului este de obicei dată când un contract este implementat în Blockchain-ul Cloiinkcoin. Adresa provine de la adresa creatorului și de la numărul de tranzacții trimise de la acea adresă or contracte create de cont („nonce”).
 
 <!-- @Sam Richards is there a line of code you can use to return your contract's address – in the same way that we have personal.newAccount() above? – Don't know if what I found below is helpful?
 
@@ -122,7 +122,7 @@ TODO: add a contract address example-->
 
 Most users will want to interact with their account via a wallet. Note that an account is not a wallet. A wallet is the keypair associated with a user-owned account, which allow a user to make transactions from or manage the account
 
-For dapp development, you'll want access to dummy accounts with test ETH so you can experiment. When you create a local chain, you'll get test accounts wth fake ETH which you can then import using MetaMask and use on your dapp's frontend. -->
+For dapp development, you'll want access to dummy accounts with test CLK so you can experiment. When you create a local chain, you'll get test accounts wth fake CLK which you can then import using MetaMask and use on your dapp's frontend. -->
 
 ## O notă despre portofele {#a-note-on-wallets}
 

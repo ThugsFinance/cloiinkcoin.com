@@ -88,12 +88,12 @@ const EthPriceCard = ({ className, isLeftAlign }) => {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd&include_24hr_change=true"
+        "https://api.coingecko.com/api/v3/simple/price?ids=cloiinkcoin&vs_currencies=usd&include_24hr_change=true"
       )
       .then((response) => {
-        if (response.data && response.data.ethereum) {
-          const currentPriceUSD = response.data.ethereum.usd
-          const percentChangeUSD = +response.data.ethereum.usd_24h_change.toFixed(
+        if (response.data && response.data.cloiinkcoin) {
+          const currentPriceUSD = response.data.cloiinkcoin.usd
+          const percentChangeUSD = +response.data.cloiinkcoin.usd_24h_change.toFixed(
             2
           )
           setState({

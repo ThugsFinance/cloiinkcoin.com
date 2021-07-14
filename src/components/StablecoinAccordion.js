@@ -440,7 +440,7 @@ const StablecoinAccordion = () => {
         "page-stablecoins-accordion-earn-project-3-description",
         intl
       ),
-      alt: translateMessageId("ethereum-logo", intl),
+      alt: translateMessageId("cloiinkcoin-logo", intl),
     },
   ]
 

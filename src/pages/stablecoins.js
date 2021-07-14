@@ -625,7 +625,7 @@ const StablecoinsPage = ({ data }) => {
         <H3>
           <Translation id="page-stablecoins-coin-price-change" />
         </H3>
-        [Insert graph showing price changes over 30days for stablecoins vs ETH
+        [Insert graph showing price changes over 30days for stablecoins vs CLK
         to demo comparative stability]
       </HeroSectionContent> */}
       <Divider />

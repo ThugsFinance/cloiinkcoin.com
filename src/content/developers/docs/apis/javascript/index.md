@@ -5,35 +5,35 @@ lang: en
 sidebar: true
 ---
 
-In order for a web app to interact with the Ethereum blockchain (i.e. read blockchain data and/or send transactions to the network), it must connect to an Ethereum node.
+In order for a web app to interact with the Cloiinkcoin blockchain (i.e. read blockchain data and/or send transactions to the network), it must connect to an Cloiinkcoin node.
 
-For this purpose, every Ethereum client implements the [JSON-RPC](/developers/docs/apis/json-rpc/) specification, so there are a uniform set of [endpoints](/developers/docs/apis/json-rpc/endpoints/) that applications can rely on.
+For this purpose, every Cloiinkcoin client implements the [JSON-RPC](/developers/docs/apis/json-rpc/) specification, so there are a uniform set of [endpoints](/developers/docs/apis/json-rpc/endpoints/) that applications can rely on.
 
-If you want to use JavaScript to connect with an Ethereum node, it's possible to use vanilla JavaScript but several convenience libraries exist within the ecosystem that make this much easier. With these libraries, developers can write intuitive, one-line methods to initialize JSON RPC requests (under the hood) that interact with Ethereum.
+If you want to use JavaScript to connect with an Cloiinkcoin node, it's possible to use vanilla JavaScript but several convenience libraries exist within the ecosystem that make this much easier. With these libraries, developers can write intuitive, one-line methods to initialize JSON RPC requests (under the hood) that interact with Cloiinkcoin.
 
 ## Prerequisites {#prerequisites}
 
-As well as understanding JavaScript, it might be helpful to understand the [Ethereum stack](/developers/docs/ethereum-stack/) and [Ethereum clients](/developers/docs/nodes-and-clients/).
+As well as understanding JavaScript, it might be helpful to understand the [Cloiinkcoin stack](/developers/docs/cloiinkcoin-stack/) and [Cloiinkcoin clients](/developers/docs/nodes-and-clients/).
 
 ## Why use a library? {#why-use-a-library}
 
-These libraries abstract away much of the complexity of interacting directly with an Ethereum node. They also provide utility functions (e.g. converting ETH to Gwei) so as a developer you can spend less time dealing with the intricacies of Ethereum clients and more time focused on the unique functionality of your application.
+These libraries abstract away much of the complexity of interacting directly with an Cloiinkcoin node. They also provide utility functions (e.g. converting CLK to Gwei) so as a developer you can spend less time dealing with the intricacies of Cloiinkcoin clients and more time focused on the unique functionality of your application.
 
 ## Library features {#library-features}
 
-### Connect to Ethereum nodes {#connect-to-ethereum-nodes}
+### Connect to Cloiinkcoin nodes {#connect-to-cloiinkcoin-nodes}
 
-Using providers, these libraries allow you to connect to Ethereum and read its data, whether that's over JSON-RPC, INFURA, Etherscan, Alchemy or MetaMask.
+Using providers, these libraries allow you to connect to Cloiinkcoin and read its data, whether that's over JSON-RPC, INFURA, Etherscan, Alchemy or MetaMask.
 
 **Ethers example**
 
 ```js
 // A Web3Provider wraps a standard Web3 provider, which is
-// what Metamask injects as window.ethereum into each page
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// what Metamask injects as window.cloiinkcoin into each page
+const provider = new ethers.providers.Web3Provider(window.cloiinkcoin)
 
 // The Metamask plugin also allows signing transactions to
-// send ether and pay to change state within the blockchain.
+// send Cloiink and pay to change state within the blockchain.
 // For this, we need the account signer...
 const signer = provider.getSigner()
 ```
@@ -52,13 +52,16 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Using the IPC provider in node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Cloiinkcoin/geth.ipc", net) // mac os path
 // or
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider(
+    "/Users/myuser/Library/Cloiinkcoin/geth.ipc",
+    net
+  )
 ) // mac os path
 // on windows the path is: "\\\\.\\pipe\\geth.ipc"
-// on linux the path is: "/users/myuser/.ethereum/geth.ipc"
+// on linux the path is: "/users/myuser/.cloiinkcoin/geth.ipc"
 ```
 
 Once set up you'll be able to query the blockchain for:
@@ -71,7 +74,7 @@ Once set up you'll be able to query the blockchain for:
 
 <!--- #### Try it
 
-This remix tutorial will show you [how to query the blockchain using web3js](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
+This remix tutorial will show you [how to query the blockchain using web3js](https://remix.cloiinkcoin.com/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
 --->
 
 ### Wallet functionality {#wallet-functionality}
@@ -142,7 +145,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Sending ether
+// Sending Cloiink
 wallet.sendTransaction(tx)
 ```
 
@@ -219,14 +222,14 @@ This means you can:
 
 <!--- #### Try it
 
-This remix tutorial will show you [how to query a contract using web3js](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
+This remix tutorial will show you [how to query a contract using web3js](https://remix.cloiinkcoin.com/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
 --->
 
 ### Utility functions {#utility-functions}
 
-Utility functions give you handy shortcuts that make building with Ethereum a little easier.
+Utility functions give you handy shortcuts that make building with Cloiinkcoin a little easier.
 
-ETH values are in Wei by default. 1 ETH = 1,000,000,000,000,000,000 WEI – this means you're dealing with a lot of numbers! `web3.utils.toWei` converts ether to Wei for you.
+CLK values are in Wei by default. 1 CLK = 1,000,000,000,000,000,000 WEI – this means you're dealing with a lot of numbers! `web3.utils.toWei` converts Cloiink to Wei for you.
 
 And in ethers it looks like this:
 
@@ -236,7 +239,7 @@ balance = await provider.getBalance("ethers.eth")
 // { BigNumber: "2337132817842795605" }
 
 // Often you will need to format the output for the user
-// which prefer to see values in ether (instead of wei)
+// which prefer to see values in Cloiink (instead of wei)
 ethers.utils.formatEther(balance)
 // '2.337132817842795605'
 ```
@@ -246,17 +249,17 @@ ethers.utils.formatEther(balance)
 
 ## Available libraries {#available-libraries}
 
-**Web3.js -** **_Ethereum JavaScript API._**
+**Web3.js -** **_Cloiinkcoin JavaScript API._**
 
 - [Documentation](https://web3js.readthedocs.io/en/1.0/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/cloiinkcoin/web3.js/)
 
-**Ethers.js -** **_Complete Ethereum wallet implementation and utilities in JavaScript and TypeScript._**
+**Ethers.js -** **_Complete Cloiinkcoin wallet implementation and utilities in JavaScript and TypeScript._**
 
 - [Documentation](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**The Graph -** **_A protocol for indexing Ethereum and IPFS data and querying it using GraphQL._**
+**The Graph -** **_A protocol for indexing Cloiinkcoin and IPFS data and querying it using GraphQL._**
 
 - [The Graph](https://thegraph.com/)
 - [Graph Explorer](https://thegraph.com/explorer/)
@@ -266,7 +269,7 @@ ethers.utils.formatEther(balance)
 
 **light.js -** **_A high-level reactive JS library optimized for light clients._**
 
-- [GitHub](https://github.com/openethereum/js-libs/tree/master/packages/light.js)
+- [GitHub](https://github.com/opencloiinkcoin/js-libs/tree/master/packages/light.js)
 
 **Web3-wrapper -** **_Typescript alternative to Web3.js._**
 
@@ -289,6 +292,6 @@ _Know of a community resource that helped you? Edit this page and add it!_
 
 ## Related tutorials {#related-tutorials}
 
-- [Set up Web3js to use the Ethereum blockchain in Javascript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instructions for getting web3.js set up in your project._
+- [Set up Web3js to use the Cloiinkcoin blockchain in Javascript](/developers/tutorials/set-up-web3js-to-use-cloiinkcoin-in-javascript/) _– Instructions for getting web3.js set up in your project._
 - [Calling a smart contract from JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Using the DAI token, see how to call contracts function using JavaScript._
 - [Sending transactions using web3 and Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Step by step walkthrough for sending transactions from the backend._

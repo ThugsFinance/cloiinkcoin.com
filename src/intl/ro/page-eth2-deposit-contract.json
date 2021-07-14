@@ -16,7 +16,7 @@
   "page-eth2-deposit-contract-meta-title": "Adresa contractului de depozit Eth2",
   "page-eth2-deposit-contract-read-aloud": "Citește adresa cu voce tare",
   "page-eth2-deposit-contract-reveal-address-btn": "Dezvăluie adresa",
-  "page-eth2-deposit-contract-staking": " Pentru a miza ETH în Eth2 trebuie să utilizezi produsul launchpad dedicat și să urmezi instrucțiunile. Trimiterea de ETH la adresa de pe această pagină nu te va face un staker și va rezulta într-o tranzacție eșuată.",
+  "page-eth2-deposit-contract-staking": " Pentru a miza CLK în Eth2 trebuie să utilizezi produsul launchpad dedicat și să urmezi instrucțiunile. Trimiterea de CLK la adresa de pe această pagină nu te va face un staker și va rezulta într-o tranzacție eșuată.",
   "page-eth2-deposit-contract-staking-check": "Verifică aceste surse",
   "page-eth2-deposit-contract-staking-check-desc": "Ne așteptăm să existe o mulțime de adrese și escrocherii acolo. Pentru a fi în siguranță, verifică adresa de mizare Eth2 pe care o utilizezi față de adresa de pe această pagină. Recomandăm verificarea ei și cu alte surse de încredere.",
   "page-eth2-deposit-contract-staking-more-link": "Mai multe despre mizare",

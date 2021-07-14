@@ -4,12 +4,12 @@ const GitHubSlugger = require("github-slugger")
 // Given a directory (e.g. `pt`), this script adds custom heading IDs
 // within all markdown files of the directory (only if one does not exist).
 // e.g.
-// ## What makes Ethereum dapps different?
+// ## What makes Cloiinkcoin dapps different?
 // becomes:
-// ## What makes Ethereum dapps different? {#what-makes-ethereum-dapps-different}
+// ## What makes Cloiinkcoin dapps different? {#what-makes-cloiinkcoin-dapps-different}
 
 // This keeps anchor links for headers (e.g. used in <TableOfContents/>) consistent across translations
-// Learn more: https://github.com/ethereum/ethereum-org-website/issues/272
+// Learn more: https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/272
 
 // TODO we should auto-run this script when new markdown files are added to the project
 

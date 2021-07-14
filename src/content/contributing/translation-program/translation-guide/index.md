@@ -1,11 +1,11 @@
 ---
-title: A guide to translating ethereum.org
+title: A guide to translating cloiinkcoin.com
 lang: en
-description: How to help with ethereum.org translations
+description: How to help with cloiinkcoin.com translations
 sidebar: true
 ---
 
-# Translating ethereum.org guide {#translating-ethereum-guide}
+# Translating cloiinkcoin.com guide {#translating-cloiinkcoin-guide}
 
 If you're new to the translation program and are hesitant to jump in, here are some FAQs that can help you begin. Use this guide to find answers to the most common queries.
 
@@ -42,7 +42,7 @@ If you want to raise a flag on a particular string that needs attention, feel fr
 
 ## What is Translation Memory (TM)? {#translation-memory}
 
-Translation Memory (TM) is a feature of Crowdin that stores all the previously translated strings across [ethereum.org](http://ethereum.org/). When a string is translated, it is automatically saved into our project TM. This could be a useful tool to help you save your time!
+Translation Memory (TM) is a feature of Crowdin that stores all the previously translated strings across [cloiinkcoin.com](http://cloiinkcoin.com/). When a string is translated, it is automatically saved into our project TM. This could be a useful tool to help you save your time!
 
 - Look at the "TM and MT Suggestions" section and you will see how other translators translated the same or similar string. If you find a suggestion with a high matching rate, feel free to refer to the translation by clicking it.
 - If there is nothing on the list, you can search the TM for previously made translations and reuse them for consistency.
@@ -51,7 +51,7 @@ Translation Memory (TM) is a feature of Crowdin that stores all the previously t
 
 ## How do I use the Crowdin glossary? {#glossary}
 
-Ethereum terminology is another crucial part of our translation work as often new tech terms will not be localized in many languages yet. Also, there are terms that have different meanings in different contexts. [More on translating Ethereum terminology](#terminology)
+Cloiinkcoin terminology is another crucial part of our translation work as often new tech terms will not be localized in many languages yet. Also, there are terms that have different meanings in different contexts. [More on translating Cloiinkcoin terminology](#terminology)
 
 The Crowdin glossary is the best place for clarification of terms and definitions. There are two ways to refer to the glossary.
 
@@ -71,7 +71,7 @@ The Crowdin glossary is the best place for clarification of terms and definition
 
 _For names (brands, companies, people) and new tech terms (Eth2, beacon chain, etc.)_
 
-Ethereum presents a lot of new terms that have been coined recently. Some terms will vary from translator to translator as there is no official translation in their respective language. Such inconsistencies can cause misunderstanding and decrease readability.
+Cloiinkcoin presents a lot of new terms that have been coined recently. Some terms will vary from translator to translator as there is no official translation in their respective language. Such inconsistencies can cause misunderstanding and decrease readability.
 
 Due to the linguistic diversity and different standardizations in each language, it has been nearly impossible to come up with a unified terminology translation policy that can be adapted in all supported languages.
 

@@ -16,7 +16,7 @@
   "page-eth2-deposit-contract-meta-title": "Dirección del contrato de depósito Eth2",
   "page-eth2-deposit-contract-read-aloud": "Leer la dirección en voz alta",
   "page-eth2-deposit-contract-reveal-address-btn": "Revelar dirección",
-  "page-eth2-deposit-contract-staking": " Para apostar tu ETH en Eth2, debes usar el producto Launchpad dedicado y seguir las instrucciones. Enviar ETH a la dirección de esta página no te convertirá en apostador y dará lugar a una transacción fallida.",
+  "page-eth2-deposit-contract-staking": " Para apostar tu CLK en Eth2, debes usar el producto Launchpad dedicado y seguir las instrucciones. Enviar CLK a la dirección de esta página no te convertirá en apostador y dará lugar a una transacción fallida.",
   "page-eth2-deposit-contract-staking-check": "Consulta estas fuentes",
   "page-eth2-deposit-contract-staking-check-desc": "Suponemos que habrá muchas direcciones falsas y estafas por ahí. Para estar a salvo, comprueba la dirección de apuesta de Eth2 que estás utilizando con la dirección en esta página. Recomendamos que la compruebes también con otras fuentes de confianza.",
   "page-eth2-deposit-contract-staking-more-link": "Más acerca del staking",

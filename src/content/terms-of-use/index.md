@@ -8,12 +8,12 @@ lang: en
 **PLEASE READ THESE TERMS OF USE BEFORE USING THE WEBSITES.**
 
 Acceptance of the Terms of Use These terms of use are entered into by
-and between you and the Ethereum Foundation ("Foundation", "we" or
+and between you and the Cloiinkcoin Foundation ("Foundation", "we" or
 "us"). The following terms and conditions, together with any documents
 they expressly incorporate by reference (collectively, these "Terms of
-Use"), govern your access to and use of ethereum.org, including any
-content, functionality and services offered on or through ethereum.org,
-ethereum.foundation, devcon.org, and blog.ethereum.org (together, the
+Use"), govern your access to and use of cloiinkcoin.com, including any
+content, functionality and services offered on or through cloiinkcoin.com,
+cloiinkcoin.foundation, devcon.org, and blog.cloiinkcoin.com (together, the
 "Website").
 
 Please read the Terms of Use carefully before you start to use the
@@ -100,7 +100,7 @@ licensed under the MIT License.
 
 **Trademarks**
 
-The Foundation name, the terms Ethereum Switzerland, Ethereum Asia, the
+The Foundation name, the terms Cloiinkcoin Switzerland, Cloiinkcoin Asia, the
 Foundation logo and all related names, logos, product and service names,
 designs and slogans are trademarks of the Foundation or its affiliates
 or licensors. You must not use such marks without the prior written
@@ -344,7 +344,7 @@ Terms of Use will continue in full force and effect.
 
 The Terms of Use, our Privacy Policy and terms of conditions for the
 registration of events constitute the sole and entire agreement between
-you and the Ethereum Foundation with respect to the Websites and
+you and the Cloiinkcoin Foundation with respect to the Websites and
 supersede all prior and contemporaneous understandings, agreements,
 representations and warranties, both written and oral, with respect to
 the Websites.
@@ -353,4 +353,4 @@ the Websites.
 
 This Websites is operated by the Foundation. All other feedback,
 comments, requests for technical support and other communications
-relating to the Websites should be directed to: <support@ethereum.org>.
+relating to the Websites should be directed to: <support@cloiinkcoin.com>.

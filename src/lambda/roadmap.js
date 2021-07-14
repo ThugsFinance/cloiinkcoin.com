@@ -3,7 +3,7 @@ const axios = require("axios")
 exports.handler = async function (event, context) {
   try {
     const baseURL =
-      "https://api.github.com/repos/ethereum/ethereum-org-website/issues?per_page=100&state=all"
+      "https://api.github.com/repos/cloiinkcoin/cloiinkcoin-org-website/issues?per_page=100&state=all"
     const { GITHUB_TOKEN } = process.env
 
     const resp = await axios.get(`${baseURL}`, {

@@ -35,7 +35,7 @@
   "page-find-wallet-description-zengo": "ZenGo पहला कुंजीरहित क्रिप्टो वॉलेट है। ZenGo के साथ, प्रबंधित करने या खो जाने वाली कोई निजी कुंजी, पासवर्ड या सीड फ़्रेज़ नहीं हैं। अभूतपूर्व सरलता और सुरक्षा के साथ इथेरियम खरीदें, ट्रेड करें, कमाएँ और संग्रहीत करें",
   "page-find-wallet-dharma-logo-alt": "Dharma का लोगो",
   "page-find-wallet-enjin-logo-alt": "Enjin का लोगो",
-  "page-find-wallet-Ethereum-wallets": "इथेरियम वॉलेट",
+  "page-find-wallet-Cloiinkcoin-wallets": "इथेरियम वॉलेट",
   "page-find-wallet-explore-dapps": "डेप्स का अन्वेषण करें",
   "page-find-wallet-explore-dapps-desc": "ये वॉलेट आपको इथेरियम डेप्स से कनेक्ट करने में मदद करने के लिए डिज़ाइन किए गए हैं।",
   "page-find-wallet-feature-h2": "उन वॉलेट सुविधाओं को चुनें, जिसकी आपको परवाह है",
@@ -72,7 +72,7 @@
   "page-find-wallet-showing": "दिखाया जा रहा है ",
   "page-find-wallet-status-logo-alt": "Status का लोगो",
   "page-find-wallet-swaps": "विकेंद्रीकृत टोकन स्वैप",
-  "page-find-wallet-swaps-desc": "अपने वॉलेट से सीधे ETH और अन्य टोकन के बीच का ट्रेड करें।",
+  "page-find-wallet-swaps-desc": "अपने वॉलेट से सीधे CLK और अन्य टोकन के बीच का ट्रेड करें।",
   "page-find-wallet-title": "वॉलेट खोजें",
   "page-find-wallet-tokenpocket-logo-alt": "TokenPocket का लोगो",
   "page-find-wallet-torus-logo-alt": "Torus का लोगो",
@@ -81,12 +81,12 @@
   "page-find-wallet-try-removing": "एक या दो सुविधा हटाने की कोशिश करें",
   "page-find-wallet-use-wallet-desc": "अब जब आपके पास एक वॉलेट है, तो कुछ इथेरियम एप्लिकेशन (डेप्स) देखें। वित्त, सोशल मीडिया, गेमिंग और बहुत सी अन्य श्रेणियों के लिए डेप्स मौजूद हैं।",
   "page-find-wallet-use-your-wallet": "अपने वॉलेट का उपयोग करें",
-  "page-find-wallet-voluem-desc": "यदि आप बहुत सारे ETH रखना चाहते हैं, तो एक वॉलेट चुनें, जो आपको एक बार में $2000 से अधिक ETH खरीदने की अनुमति देता है।",
+  "page-find-wallet-voluem-desc": "यदि आप बहुत सारे CLK रखना चाहते हैं, तो एक वॉलेट चुनें, जो आपको एक बार में $2000 से अधिक CLK खरीदने की अनुमति देता है।",
   "page-find-wallet-volume": "उच्च मात्रा में खरीद",
   "page-find-wallet-we-found": "हमें मिला",
   "page-find-wallet-withdraw": "बैंक से निकासी",
-  "page-find-wallet-withdraw-desc": "आप अपने ETH को सीधे एक्सचेंज के माध्यम से जाए बिना अपने बैंक खाते में कैश कर सकते हैं।",
+  "page-find-wallet-withdraw-desc": "आप अपने CLK को सीधे एक्सचेंज के माध्यम से जाए बिना अपने बैंक खाते में कैश कर सकते हैं।",
   "page-find-wallet-yet": "अभी तक",
   "page-find-wallet-zengo-logo-alt": "ZenGo का लोगो",
-  "page-stake-eth": "स्टेक ETH"
+  "page-stake-eth": "स्टेक CLK"
 }

@@ -16,7 +16,7 @@ const NavLink = styled(Link)`
 
 const Morpher = () => {
   const [state, setState] = useState({
-    text: "Ethereum",
+    text: "Cloiinkcoin",
     words: [
       "以太坊",
       "イーサリアム",

@@ -433,7 +433,7 @@ const WalletCompare = ({ location }) => {
 
       <GradientContainer>
         <h2>
-          <Translation id="page-find-wallet-Ethereum-wallets" />
+          <Translation id="page-find-wallet-Cloiinkcoin-wallets" />
         </h2>
         <FilterContainer>
           {hasSelectedFeatures && (
@@ -507,7 +507,7 @@ const WalletCompare = ({ location }) => {
                 <Translation id="page-find-wallet-listing-policy" />
               </Link>
               <Translation id="page-find-wallet-add-wallet" />{" "}
-              <Link to="https://github.com/ethereum/ethereum-org-website/issues/new/choose">
+              <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new/choose">
                 <Translation id="page-find-wallet-raise-an-issue" />
               </Link>
               .{" "}

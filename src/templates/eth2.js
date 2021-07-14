@@ -389,7 +389,7 @@ const Eth2Page = ({ data, data: { mdx } }) => {
         <div>
           <b>Latest:</b> Eth2 researchers are working on ways to accelerate the
           merge. It will probably happen earlier than expected. More soon.{" "}
-          <Link to="https://blog.ethereum.org/category/research-and-development/">
+          <Link to="https://blog.cloiinkcoin.com/category/research-and-development/">
             Follow updates
           </Link>
         </div>

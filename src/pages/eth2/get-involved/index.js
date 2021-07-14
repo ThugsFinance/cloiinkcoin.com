@@ -272,9 +272,9 @@ const GetInvolvedPage = ({ data, location }) => {
       background: "#0B131E",
       description: <Translation id="page-eth2-get-involved-written-python" />,
       alt: "eth2-client-trinity-logo-alt",
-      url: "https://trinity.ethereum.org/",
+      url: "https://trinity.cloiinkcoin.com/",
       image: data.trinity.childImageSharp.fixed,
-      githubUrl: "https://github.com/ethereum/trinity",
+      githubUrl: "https://github.com/cloiinkcoin/trinity",
     },
   ]
 

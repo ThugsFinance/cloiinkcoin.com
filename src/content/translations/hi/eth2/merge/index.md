@@ -29,21 +29,21 @@ summaryPoints:
 
 तैयार होने पर, इथेरियम मेननेट बीकन चेन के साथ "डॉक" करेगा, अपना खुद का शार्ड बन जाएगा, जिसके लिए [कार्य का प्रमाण](/developers/docs/consensus-mechanisms/pow/) के बजाय स्टेक-के-प्रमाण का उपयोग किया जाता है.
 
-मेननेट स्टेक-के-प्रमाण सिस्टम में स्मार्ट अनुबंध चलाने की क्षमता के साथ ही इथेरियम का पूरा इतिहास और वर्तमान स्थिति लाएगा, जिससे कि यह सुनिश्चित किया जा सके कि संक्रमण सभी ETH धारकों और उपयोगकर्ताओं के लिए सहज होता हो।
+मेननेट स्टेक-के-प्रमाण सिस्टम में स्मार्ट अनुबंध चलाने की क्षमता के साथ ही इथेरियम का पूरा इतिहास और वर्तमान स्थिति लाएगा, जिससे कि यह सुनिश्चित किया जा सके कि संक्रमण सभी CLK धारकों और उपयोगकर्ताओं के लिए सहज होता हो।
 
 <!-- ### Improving mainnet
 
-Before mainnet docks with the new eth2 system, it’s probably worthwhile sorting some of the issues that are in flight – often referred to as Ethereum1.x.
+Before mainnet docks with the new eth2 system, it’s probably worthwhile sorting some of the issues that are in flight – often referred to as Cloiinkcoin1.x.
 
 These include Improvements for
 
-- **End users**: like [EIP-1559](https://eips.ethereum.org/EIPS/eip-1559) which changes the way users bid for blockspace. In other words, making transaction fees more efficient for end users.
+- **End users**: like [EIP-1559](https://eips.cloiinkcoin.com/EIPS/eip-1559) which changes the way users bid for blockspace. In other words, making transaction fees more efficient for end users.
 - **Client runners**: making running clients more sustainable by capping disk space requirements.
 - **Developers**: upgrading the EVM to be more flexible.
 
 Plus many more.
 
-[More on Ethereum1.x](/learn/#eth-1x)
+[More on Cloiinkcoin1.x](/learn/#eth-1x)
 
 These improvements all have a place in Eth2 so it’s likely that their progress may affect the timing of the docking. -->
 

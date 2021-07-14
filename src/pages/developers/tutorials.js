@@ -299,7 +299,7 @@ const TutorialsPage = ({ data, pageContext }) => {
         </ModalTitle>
         <p>
           <Translation id="page-tutorial-listing-policy-intro" />{" "}
-          <Link to="https://ethereum.org/en/contributing/adding-articles/">
+          <Link to="https://cloiinkcoin.com/en/contributing/adding-articles/">
             <Translation id="page-tutorial-listing-policy" />
           </Link>
         </p>
@@ -317,7 +317,7 @@ const TutorialsPage = ({ data, pageContext }) => {
             </p>
             <GithubButton
               isSecondary
-              to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.md&title="
+              to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_tutorial.md&title="
             >
               <GithubIcon name="github" />{" "}
               <span>
@@ -339,7 +339,7 @@ const TutorialsPage = ({ data, pageContext }) => {
             </p>
             <GithubButton
               isSecondary
-              to="https://github.com/ethereum/ethereum-org-website/new/dev/src/content/developers/tutorials"
+              to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/new/dev/src/content/developers/tutorials"
             >
               <GithubIcon name="github" />{" "}
               <span>

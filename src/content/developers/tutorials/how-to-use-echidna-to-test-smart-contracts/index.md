@@ -39,7 +39,7 @@ cd /home/training
 
 ## Introduction to property-based fuzzing {#introduction-to-property-based-fuzzing}
 
-Echidna is a property-based fuzzer, we described in our previous blogposts ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-ethereum/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
+Echidna is a property-based fuzzer, we described in our previous blogposts ([1](https://blog.trailofbits.com/2018/03/09/echidna-a-smart-fuzzer-for-cloiinkcoin/), [2](https://blog.trailofbits.com/2018/05/03/state-machine-testing-with-echidna/), [3](https://blog.trailofbits.com/2020/03/30/an-echidna-for-all-seasons/)).
 
 ### Fuzzing {#fuzzing}
 

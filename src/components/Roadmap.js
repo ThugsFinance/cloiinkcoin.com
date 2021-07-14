@@ -129,14 +129,14 @@ const Roadmap = () => {
         <Translation id="page-about-p-1" />
       </p>
       <p>
-        <Link to="https://github.com/ethereum/ethereum-org-website/blob/master/LICENSE">
+        <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/blob/master/LICENSE">
           <Translation id="page-about-link-1" />
         </Link>
         .
       </p>
       <p>
         <Translation id="page-about-p-2" />{" "}
-        <Link to="https://github.com/ethereum/ethereum-org-website">
+        <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website">
           <Translation id="page-about-link-2" />
         </Link>
         <Translation id="page-about-p-3" />
@@ -160,7 +160,7 @@ const Roadmap = () => {
       </h3>
       <p>
         <Translation id="page-about-p-5" />{" "}
-        <Link to="https://github.com/ethereum/ethereum-org-website/labels/Status%3A%20In%20Progress">
+        <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/labels/Status%3A%20In%20Progress">
           <Translation id="page-about-link-3" />{" "}
         </Link>
         .
@@ -171,7 +171,7 @@ const Roadmap = () => {
       </h3>
       <p>
         <Translation id="page-about-p-6" />{" "}
-        <Link to="https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Up+Next%22">
+        <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues?q=is%3Aissue+is%3Aopen+label%3A%22Status%3A+Up+Next%22">
           <Translation id="page-about-link-3" />
         </Link>
         .
@@ -182,7 +182,7 @@ const Roadmap = () => {
       </h3>
       <p>
         <Translation id="page-about-p-7" />{" "}
-        <Link to="https://github.com/ethereum/ethereum-org-website/issues?q=is%3Aissue+is%3Aclosed">
+        <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues?q=is%3Aissue+is%3Aclosed">
           <Translation id="page-about-link-6" />{" "}
         </Link>
         .
@@ -201,7 +201,7 @@ const Roadmap = () => {
           </Link>
         </li>
         <li>
-          <Link to="https://github.com/ethereum/ethereum-org-website/issues/new/choose">
+          <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new/choose">
             <Translation id="page-about-link-7" />
           </Link>
         </li>

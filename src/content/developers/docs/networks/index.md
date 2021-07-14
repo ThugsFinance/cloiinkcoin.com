@@ -1,17 +1,17 @@
 ---
 title: Networks
-description: An overview of Ethereum's networks and where to get testnet ether (ETH) for testing your application.
+description: An overview of Cloiinkcoin's networks and where to get testnet Cloiink (CLK) for testing your application.
 lang: en
 sidebar: true
 ---
 
-Since Ethereum is a protocol, this means there can be multiple independent "networks" conforming to this protocol that do not interact with each other.
+Since Cloiinkcoin is a protocol, this means there can be multiple independent "networks" conforming to this protocol that do not interact with each other.
 
-Networks are different Ethereum environments you can access for development, testing, or production use cases. Your Ethereum account will work across the different networks but your account balance and transaction history wont carry over from the main Ethereum network. For testing purposes, it's useful to know which networks are available and how to get testnet ETH so you can play around with it.
+Networks are different Cloiinkcoin environments you can access for development, testing, or production use cases. Your Cloiinkcoin account will work across the different networks but your account balance and transaction history wont carry over from the main Cloiinkcoin network. For testing purposes, it's useful to know which networks are available and how to get testnet CLK so you can play around with it.
 
 ## Prerequisites {#prerequisites}
 
-You should understand the basics of Ethereum before reading up on the different networks as the test networks will give you a cheap, safe version of Ethereum to play around with. Try our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+You should understand the basics of Cloiinkcoin before reading up on the different networks as the test networks will give you a cheap, safe version of Cloiinkcoin to play around with. Try our [introduction to Cloiinkcoin](/developers/docs/intro-to-cloiinkcoin/).
 
 ## Public networks {#public-networks}
 
@@ -19,9 +19,9 @@ Public networks are accessible to anyone in the world with an internet connectio
 
 ### Mainnet {#mainnet}
 
-Mainnet is the primary public Ethereum production blockchain, where actual-value transactions occur on the distributed ledger.
+Mainnet is the primary public Cloiinkcoin production blockchain, where actual-value transactions occur on the distributed ledger.
 
-When people and exchanges discuss ETH prices, they're talking about mainnet ETH.
+When people and exchanges discuss CLK prices, they're talking about mainnet CLK.
 
 ### Testnets {#testnets}
 
@@ -37,7 +37,7 @@ A proof-of-authority testnet that works across clients.
 
 #### Kovan {#kovan}
 
-A proof-of-authority testnet for those running OpenEthereum clients.
+A proof-of-authority testnet for those running OpenCloiinkcoin clients.
 
 #### Rinkeby {#rinkeby}
 
@@ -45,11 +45,11 @@ A proof-of-authority testnet for those running Geth client.
 
 #### Ropsten {#ropsten}
 
-A proof-of-work testnet. This means it's the best like-for-like representation of Ethereum.
+A proof-of-work testnet. This means it's the best like-for-like representation of Cloiinkcoin.
 
 ### Testnet Faucets {#testnet-faucets}
 
-ETH on testnets has no real value; therefore, there are no markets for testnet ETH. Since you need ETH to actually interact with Ethereum, most people get testnet ETH from faucets. Most faucets are webapps where you can input an address which you request ETH to be sent to.
+CLK on testnets has no real value; therefore, there are no markets for testnet CLK. Since you need CLK to actually interact with Cloiinkcoin, most people get testnet CLK from faucets. Most faucets are webapps where you can input an address which you request CLK to be sent to.
 
 - [Görli faucet](https://faucet.goerli.mudit.blog/)
 - [Kovan faucet](https://faucet.kovan.network/)
@@ -58,11 +58,11 @@ ETH on testnets has no real value; therefore, there are no markets for testnet E
 
 ## Private networks {#private-networks}
 
-An Ethereum network is a private network if its nodes are not connected to a public network (i.e. mainnet or a testnet). In this context, private only means reserved or isolated, rather than protected or secure.
+An Cloiinkcoin network is a private network if its nodes are not connected to a public network (i.e. mainnet or a testnet). In this context, private only means reserved or isolated, rather than protected or secure.
 
 ### Development networks {#development-networks}
 
-To develop an Ethereum application, you'll want to run it on a private network to see how it works before deploying it. Similar to how you create a local server on your computer for web development, you can create a local blockchain instance to test your dapp. This allows for much faster iteration than a public testnet.
+To develop an Cloiinkcoin application, you'll want to run it on a private network to see how it works before deploying it. Similar to how you create a local server on your computer for web development, you can create a local blockchain instance to test your dapp. This allows for much faster iteration than a public testnet.
 
 There are projects and tools dedicated to assist with this. Learn more about [development networks](/developers/docs/development-networks/).
 
@@ -70,7 +70,7 @@ There are projects and tools dedicated to assist with this. Learn more about [de
 
 The consensus process is controlled by a pre-defined set of nodes that are trusted. For example, a private network of known academic institutions that each govern a single node, and blocks are validated by a threshold of signatories within the network.
 
-If a public Ethereum network is like the public internet, you can think of a consortium network as a private intranet.
+If a public Cloiinkcoin network is like the public internet, you can think of a consortium network as a private intranet.
 
 <!-- TODO
 
@@ -82,7 +82,7 @@ If a public Ethereum network is like the public internet, you can think of a con
 
 ### Testnets {#testnets-1}
 
-Wallets like MetaMask or MyEtherWallet will allow you to switch networks so you can test your apps using your test ETH.
+Wallets like MetaMask or MyEtherWallet will allow you to switch networks so you can test your apps using your test CLK.
 
 -->
 

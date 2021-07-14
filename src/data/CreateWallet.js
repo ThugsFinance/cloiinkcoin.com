@@ -32,7 +32,7 @@ const tx = {
 walletMnemonic.signTransaction(tx)
 // { Promise: '0xf865808080948ba1f109551bd432803012645ac136ddd64dba72880de0b6b3a7640000801ca0918e294306d177ab7bd664f5e141436563854ebe0a3e523b9690b4922bbb52b8a01181612cec9c431c4257a79b8c9f0c980a2c49bb5a0e6ac52949163eeb565dfc' }
 
-// Connect to the Ethereum network using a provider
+// Connect to the Cloiinkcoin network using a provider
 const wallet = walletMnemonic.connect(provider)
 
 // Query the network
@@ -41,7 +41,7 @@ wallet.getBalance()
 wallet.getTransactionCount()
 // { Promise: 0 }
 
-// Send ether
+// Send Cloiink
 wallet.sendTransaction(tx)
 
 // Content adapted from ethers documentation by Richard Moore

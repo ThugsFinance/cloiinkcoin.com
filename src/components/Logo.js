@@ -32,7 +32,7 @@ const Logo = () => {
   return (
     <Img
       fixed={image.childImageSharp.fixed}
-      alt={translateMessageId("ethereum-foundation-logo", intl)}
+      alt={translateMessageId("cloiinkcoin-foundation-logo", intl)}
     />
   )
 }

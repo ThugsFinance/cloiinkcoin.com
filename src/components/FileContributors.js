@@ -194,7 +194,7 @@ const Contributor = styled.li`
 
 const COMMIT_HISTORY = gql`
   query CommitHistory($relativePath: String) {
-    repository(name: "ethereum-org-website", owner: "ethereum") {
+    repository(name: "cloiinkcoin-org-website", owner: "cloiinkcoin") {
       ref(qualifiedName: "master") {
         target {
           ... on Commit {

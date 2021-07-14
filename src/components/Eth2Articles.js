@@ -35,22 +35,22 @@ const dannyArticles = [
     title: "The State of Eth2, Jan 2021",
     description: "20 January 2021",
     link:
-      "https://blog.ethereum.org/2021/01/20/the-state-of-eth2-january-2021/",
+      "https://blog.cloiinkcoin.com/2021/01/20/the-state-of-eth2-january-2021/",
   },
   {
     title: "Eth2 quick update no. 21",
     description: "27 November 2020",
-    link: "https://blog.ethereum.org/2020/11/27/eth2-quick-update-no-21/",
+    link: "https://blog.cloiinkcoin.com/2020/11/27/eth2-quick-update-no-21/",
   },
   {
     title: "Eth2 quick update no. 20",
     description: "13 November 2020",
-    link: "https://blog.ethereum.org/2020/11/13/eth2-quick-update-no-20/",
+    link: "https://blog.cloiinkcoin.com/2020/11/13/eth2-quick-update-no-20/",
   },
   {
     title: "Eth2 quick update no. 19",
     description: "4 November 2020",
-    link: "https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19/",
+    link: "https://blog.cloiinkcoin.com/2020/11/04/eth2-quick-update-no-19/",
   },
 ]
 
@@ -85,7 +85,7 @@ const benArticles = [
 const Eth2Articles = () => (
   <Container>
     <LeftColumn>
-      <h4>Danny Ryan (Ethereum Foundation)</h4>
+      <h4>Danny Ryan (Cloiinkcoin Foundation)</h4>
       <CardList content={dannyArticles} />
     </LeftColumn>
     <RightColumn>

@@ -1,19 +1,19 @@
 ---
 title: How to turn your Raspberry Pi 4 into a node just by flashing the MicroSD card
-description: Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Ethereum 1.0 node or an Ethereum 2.0 node (beacon chain / validator)
-author: "EthereumOnArm"
+description: Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Cloiinkcoin 1.0 node or an Cloiinkcoin 2.0 node (beacon chain / validator)
+author: "CloiinkcoinOnArm"
 tags: ["clients", "eth2", "nodes"]
 lang: en
 sidebar: true
 skill: intermediate
 published: 2020-05-07
-source: r/ethereum
-sourceUrl: https://www.reddit.com/r/ethereum/comments/gf3nhg/ethereum_on_arm_raspberry_pi_4_images_release/
+source: r/cloiinkcoin
+sourceUrl: https://www.reddit.com/r/cloiinkcoin/comments/gf3nhg/cloiinkcoin_on_arm_raspberry_pi_4_images_release/
 ---
 
-**TL;DR**: Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Ethereum 1.0 node or an Ethereum 2.0 node (beacon chain / validator)
+**TL;DR**: Flash your Raspberry Pi 4, plug in an ethernet cable, connect the SSD disk and power up the device to turn the Raspberry Pi 4 into a full Cloiinkcoin 1.0 node or an Cloiinkcoin 2.0 node (beacon chain / validator)
 
-[Learn about Ethereum 2.0 (Eth2)](/eth2/)
+[Learn about Cloiinkcoin 2.0 (Eth2)](/eth2/)
 
 Some background first. As you know, we’ve been running into some memory issues [[1]](/developers/tutorials/run-node-raspberry-pi/#references) with the Raspberry Pi 4 image as Raspbian OS is still on 32bits [[2]](/developers/tutorials/run-node-raspberry-pi/#references) (at least the userland). While we prefer to stick with the official OS we came to the conclusion that, in order to solve these issues, we need to migrate to a native 64 bits OS
 
@@ -23,7 +23,7 @@ So, after several tests we are now releasing 2 different images based on Ubuntu 
 
 Basically, both are the same image and include the same features of the Raspbian based images. But they are setup for running Eth 1.0 or Eth 2.0 software by default.
 
-**Images take care of all the necessary steps**, from setting up the environment and formatting the SSD disk to installing and running the Ethereum software as well as starting the blockchain synchronization.
+**Images take care of all the necessary steps**, from setting up the environment and formatting the SSD disk to installing and running the Cloiinkcoin software as well as starting the blockchain synchronization.
 
 ## Main features {#main-features}
 
@@ -32,26 +32,26 @@ Basically, both are the same image and include the same features of the Raspbian
 - Adds swap memory (ZRAM kernel module + a swap file) based on Armbian work [[7]](/developers/tutorials/run-node-raspberry-pi/#references)
 - Changes the hostname to something like “ethnode-e2a3e6fe” based on MAC hash
 - Runs software as a systemd service and starts syncing the Blockchain
-- Includes an APT repository for installing and upgrading Ethereum software
+- Includes an APT repository for installing and upgrading Cloiinkcoin software
 - Includes a monitoring dashboard based on Grafana / Prometheus
 
 ## Software included {#software-included}
 
 Both images include the same packages, the only difference between them is that Eth 1.0 runs Geth by default and Eth 2.0 runs Prysm beacon chain by default.
 
-### Ethereum 1.0 clients {#ethereum-10-clients}
+### Cloiinkcoin 1.0 clients {#cloiinkcoin-10-clients}
 
 - Geth [[8]](/developers/tutorials/run-node-raspberry-pi/#references): 1.9.13 (official binary)
 - Parity [[9]](/developers/tutorials/run-node-raspberry-pi/#references): 2.7.2 (cross compiled)
 - Nethermind [[10]](/developers/tutorials/run-node-raspberry-pi/#references): 1.8.28 (cross compiled)
 - Hyperledger Besu [[11]](/developers/tutorials/run-node-raspberry-pi/#references): 1.4.4 (compiled)
 
-### Ethereum 2.0 clients {#ethereum-20-clients}
+### Cloiinkcoin 2.0 clients {#cloiinkcoin-20-clients}
 
 - Prysm [[12]](/developers/tutorials/run-node-raspberry-pi/#references): 1.0.0-alpha6 (official binary)
 - Lighthouse [[13]](/developers/tutorials/run-node-raspberry-pi/#references): 0.1.1 (compiled)
 
-### Ethereum framework {#ethereum-framework}
+### Cloiinkcoin framework {#cloiinkcoin-framework}
 
 - Swarm [[14]](/developers/tutorials/run-node-raspberry-pi/#references): 0.5.7 (official binary)
 - Raiden Network [[15]](/developers/tutorials/run-node-raspberry-pi/#references): 0.200.0~rc1 (official binary)
@@ -74,7 +74,7 @@ Both images include the same packages, the only difference between them is that 
 
 ## Storage {#storage}
 
-You will need and SSD to run the Ethereum clients (without an SSD drive there’s absolutely no chance of syncing the Ethereum blockchain). There are 2 options:
+You will need and SSD to run the Cloiinkcoin clients (without an SSD drive there’s absolutely no chance of syncing the Cloiinkcoin blockchain). There are 2 options:
 
 - Use a USB portable SSD disk such as the Samsung T5 Portable SSD.
 - Use a USB 3.0 External Hard Drive Case with a SSD Disk. In our case we used a Inateck 2.5 Hard Drive Enclosure FE2011. Make sure to buy a case with an UAS compliant chip, particularly, one of these: JMicron (JMS567 or JMS578) or ASMedia (ASM1153E).
@@ -122,7 +122,7 @@ sudo dd bs=1M if=ubuntu-20.04-preinstalled-server-arm64+raspi-eth1.img of=/dev/m
 
 ### 4. Power on the device {#4-power-on-the-device}
 
-The Ubuntu OS will boot up in less than one minute but **you will need to wait approximately 10 minutes** in order to allow the script to perform the necessary tasks to turn the device into an Ethereum node and reboot the Raspberry.
+The Ubuntu OS will boot up in less than one minute but **you will need to wait approximately 10 minutes** in order to allow the script to perform the necessary tasks to turn the device into an Cloiinkcoin node and reboot the Raspberry.
 
 Depending on the image, you will be running:
 
@@ -134,8 +134,8 @@ Depending on the image, you will be running:
 You can log in through SSH or using the console (if you have a monitor and keyboard attached)
 
 ```bash
-User: ethereum
-Password: ethereum
+User: cloiinkcoin
+Password: cloiinkcoin
 ```
 
 You will be prompted to change the password on first login, so you will need to login twice.
@@ -150,7 +150,7 @@ You can see what’s happening in the background by typing:
 sudo tail -f /var/log/syslog
 ```
 
-**Congratulations. You are now running a full Ethereum node on your Raspberry Pi 4.**
+**Congratulations. You are now running a full Cloiinkcoin node on your Raspberry Pi 4.**
 
 ## Syncing the Blockchain {#syncing-the-blockchain}
 
@@ -165,7 +165,7 @@ For this first release, we included 3 monitoring dashboards based on Prometheus 
 ```bash
 URL: http://your_raspberrypi_IP:3000
 User: admin
-Password: ethereum
+Password: cloiinkcoin
 ```
 
 ## Switching clients {#switching-clients}
@@ -195,29 +195,29 @@ sudo systemctl start lighthouse && sudo systemctl enable lighthouse
 
 ## Changing parameters {#changing-parameters}
 
-Clients’ config files are located in the /etc/ethereum/ directory. You can edit these files and restart the systemd service in order for the changes to take effect. The only exception is Nethermind which, additionally, has a mainnet config file located here:
+Clients’ config files are located in the /etc/cloiinkcoin/ directory. You can edit these files and restart the systemd service in order for the changes to take effect. The only exception is Nethermind which, additionally, has a mainnet config file located here:
 
 ```bash
 /etc/nethermind/configs/mainnet.cfg
 ```
 
-Blockchain clients’ data is stored on the Ethereum home account as follows (note the dot before the directory name):
+Blockchain clients’ data is stored on the Cloiinkcoin home account as follows (note the dot before the directory name):
 
 ### Eth 1.0 {#eth-10}
 
 ```bash
-/home/ethereum/.geth
-/home/ethereum/.parity
-/home/ethereum/.besu
-/home/ethereum/.nethermind
+/home/cloiinkcoin/.geth
+/home/cloiinkcoin/.parity
+/home/cloiinkcoin/.besu
+/home/cloiinkcoin/.nethermind
 ```
 
 ### Eth2 {#eth2}
 
 ```bash
-/home/ethereum/.eth2
-/home/ethereum/.eth2validators
-/home/ethereum/.lighthouse
+/home/cloiinkcoin/.eth2
+/home/cloiinkcoin/.eth2validators
+/home/cloiinkcoin/.lighthouse
 ```
 
 ## Nethermind and Hyperledger Besu {#nethermind-and-hyperledger-besu}
@@ -230,25 +230,25 @@ Both need further testing so feel free to play with them and report back your fe
 
 Once the Topaz testnet beacon chain is synchronized you can run a validator in the same device. You will need to follow [these participation steps](https://prylabs.net/participate).
 
-The first time, you need to create manually an account by running the “validator” binary and setup a password. Once you have completed this step you can add the password to `/etc/ethereum/prysm-validator.conf` and start the validator as a systemd service.
+The first time, you need to create manually an account by running the “validator” binary and setup a password. Once you have completed this step you can add the password to `/etc/cloiinkcoin/prysm-validator.conf` and start the validator as a systemd service.
 
 ## Feedback appreciated {#feedback-appreciated}
 
-We put a lot of work trying to setup the Raspberry Pi 4 as a full Ethereum node as we know the massive user base of this device may have a very positive impact in the network.
+We put a lot of work trying to setup the Raspberry Pi 4 as a full Cloiinkcoin node as we know the massive user base of this device may have a very positive impact in the network.
 
-Please, take into account that this is the first image based on Ubuntu 20.04 so there may be some bugs. If so, open an issue on [Github](https://github.com/diglos/pi-gen) or reach us on [Twitter](https://twitter.com/EthereumOnARM).
+Please, take into account that this is the first image based on Ubuntu 20.04 so there may be some bugs. If so, open an issue on [Github](https://github.com/diglos/pi-gen) or reach us on [Twitter](https://twitter.com/CloiinkcoinOnARM).
 
 ## References {#references}
 
-1. [geth repeatedly crashes with SIGSEGV](https://github.com/ethereum/go-ethereum/issues/20190)
+1. [geth repeatedly crashes with SIGSEGV](https://github.com/cloiinkcoin/go-cloiinkcoin/issues/20190)
 2. [https://github.com/diglos/pi-gen](https://github.com/diglos/pi-gen)
 3. https://ubuntu.com/download/raspberry-pi
 4. https://en.wikipedia.org/wiki/Port_forwarding
 5. https://prometheus.io
 6. https://grafana.com
 7. https://forum.armbian.com/topic/5565-zram-vs-swap/
-8. https://geth.ethereum.org
-9. https://github.com/openethereum/openethereum
+8. https://geth.cloiinkcoin.com
+9. https://github.com/opencloiinkcoin/opencloiinkcoin
 10. https://nethermind.io
 11. https://www.hyperledger.org/projects/besu
 12. https://github.com/prysmaticlabs/prysm

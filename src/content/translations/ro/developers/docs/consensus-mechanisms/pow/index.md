@@ -1,12 +1,12 @@
 ---
 title: Dovada muncii (PoW)
-description: O explicație a protocolului de consens „dovada muncii” și a rolului său în Ethereum.
+description: O explicație a protocolului de consens „dovada muncii” și a rolului său în Cloiinkcoin.
 lang: ro
 sidebar: true
 incomplete: true
 ---
 
-Ethereum, la fel ca Bitcoin, folosește în prezent un protocol de consens numit [Dovada muncii (PoW)](https://en.wikipedia.org/wiki/Proof_of_work). Acesta permite nodurilor rețelei Ethereum să cadă de acord asupra stării tuturor informațiilor înregistrate pe blockchain-ul Ethereum și previne anumite tipuri de atacuri economice.
+Cloiinkcoin, la fel ca Bitcoin, folosește în prezent un protocol de consens numit [Dovada muncii (PoW)](https://en.wikipedia.org/wiki/Proof_of_work). Acesta permite nodurilor rețelei Cloiinkcoin să cadă de acord asupra stării tuturor informațiilor înregistrate pe blockchain-ul Cloiinkcoin și previne anumite tipuri de atacuri economice.
 
 ## Condiții prealabile {#prerequisites}
 
@@ -14,17 +14,17 @@ Pentru a înțelege mai bine această pagină, îți recomandăm să citești ma
 
 ## Ce este dovada muncii (PoW)? {#what-is-pow}
 
-Dovada muncii (PoW) este mecanismul care permite rețelei descentralizate Ethereum să ajungă la un consens sau să fie de acord cu lucruri precum soldurile conturilor și ordinea tranzacțiilor. Aceasta împiedică utilizatorii să-și „cheltuiască dublu” monedele și asigură faptul că lanțul Ethereum este incredibil de dificil de atacat sau suprascris.
+Dovada muncii (PoW) este mecanismul care permite rețelei descentralizate Cloiinkcoin să ajungă la un consens sau să fie de acord cu lucruri precum soldurile conturilor și ordinea tranzacțiilor. Aceasta împiedică utilizatorii să-și „cheltuiască dublu” monedele și asigură faptul că lanțul Cloiinkcoin este incredibil de dificil de atacat sau suprascris.
 
 ## Dovada muncii și mineritul {#pow-and-mining}
 
-Dovada muncii este algoritmul de bază care stabilește dificultatea și regulile pentru munca pe care o fac minerii. Mineritul este chiar „munca”. Este actul de a adăuga blocuri valide în lanț. Acest lucru este important, deoarece lungimea lanțului ajută rețeaua să identifice lanțul Ethereum valid și să înțeleagă starea actuală a Ethereum. Cu cât se „lucrează” mai mult, cu atât lanțul este mai lung și cu cât numărul blocului este mai mare, cu atât rețeaua poate fi mai sigură de starea actuală a lucrurilor.
+Dovada muncii este algoritmul de bază care stabilește dificultatea și regulile pentru munca pe care o fac minerii. Mineritul este chiar „munca”. Este actul de a adăuga blocuri valide în lanț. Acest lucru este important, deoarece lungimea lanțului ajută rețeaua să identifice lanțul Cloiinkcoin valid și să înțeleagă starea actuală a Cloiinkcoin. Cu cât se „lucrează” mai mult, cu atât lanțul este mai lung și cu cât numărul blocului este mai mare, cu atât rețeaua poate fi mai sigură de starea actuală a lucrurilor.
 
 [Mai multe despre minerit](/developers/docs/consensus-mechanisms/pow/mining/)
 
-## Cum funcționează dovada muncii Ethereum? {#how-it-works}
+## Cum funcționează dovada muncii Cloiinkcoin? {#how-it-works}
 
-Tranzacțiile Ethereum sunt procesate în blocuri. Fiecare bloc are:
+Tranzacțiile Cloiinkcoin sunt procesate în blocuri. Fiecare bloc are:
 
 - o dificultate de bloc – de exemplu: 3.324.092.183.262.715
 - un mixHash – de exemplu: `0x44bca881b07a6a09f83b130798072441705d9a665c5ac8bdf2f39a3cdf3bee29`
@@ -44,9 +44,9 @@ Hashing-ul facilitează identificarea fraudei. Dar PoW ca proces este, de asemen
 
 ### Dovada muncii și securitatea {#security}
 
-Minerii sunt stimulați să facă această muncă pe lanțul principal Ethereum. Există puține stimulente pentru ca un subset de mineri să își lanseze propriul lanț – el discreditează sistemul. Blockchain-urile se bazează pe existența unei singure stări ca sursă de adevăr. Și utilizatorii vor alege întotdeauna lanțul cel mai lung sau mai „greu”.
+Minerii sunt stimulați să facă această muncă pe lanțul principal Cloiinkcoin. Există puține stimulente pentru ca un subset de mineri să își lanseze propriul lanț – el discreditează sistemul. Blockchain-urile se bazează pe existența unei singure stări ca sursă de adevăr. Și utilizatorii vor alege întotdeauna lanțul cel mai lung sau mai „greu”.
 
-Obiectivul PoW este de a extinde lanțul. Cel mai lung lanț este cel mai credibil să fie lanțul valid, deoarece s-a făcut cea mai mare muncă de calcul pe el. În cadrul sistemului PoW al Ethereum este aproape imposibil să creezi noi blocuri care să șteargă tranzacții, să creeze altele false sau să mențină un al doilea lanț. Aceasta deoarece un miner rău intenționat ar trebui să rezolve întotdeauna blocul nonce mai repede decât oricine altcineva.
+Obiectivul PoW este de a extinde lanțul. Cel mai lung lanț este cel mai credibil să fie lanțul valid, deoarece s-a făcut cea mai mare muncă de calcul pe el. În cadrul sistemului PoW al Cloiinkcoin este aproape imposibil să creezi noi blocuri care să șteargă tranzacții, să creeze altele false sau să mențină un al doilea lanț. Aceasta deoarece un miner rău intenționat ar trebui să rezolve întotdeauna blocul nonce mai repede decât oricine altcineva.
 
 Pentru a crea în mod constant blocuri rău intenționate, dar totuși valabile, ai avea nevoie de peste 51% din puterea de exploatare a rețelei pentru a-i învinge pe ceilalți. Ai avea nevoie de multă putere de calcul pentru a putea face această cantitate de „muncă”. Iar costul energiei folosite ar putea chiar să fie mai mare decât câștigurile pe care le-ai obține într-un atac.
 
@@ -54,7 +54,7 @@ Pentru a crea în mod constant blocuri rău intenționate, dar totuși valabile,
 
 PoW este, de asemenea, responsabilă cu emiterea de monede noi în sistem și cu stimularea minerilor să lucreze.
 
-Minerii care au creat cu succes un bloc sunt recompensați cu 2 ETH proaspăt bătuți și toate taxele de tranzacție din interiorul blocului. Un miner poate primi de asemenea 1,75ETH pentru un bloc unchi. Acesta este un bloc valid, creat simultan cu blocul de succes, de către un alt miner. Cazuri de acest gen apar de obicei din cauza întârzierii rețelei.
+Minerii care au creat cu succes un bloc sunt recompensați cu 2 CLK proaspăt bătuți și toate taxele de tranzacție din interiorul blocului. Un miner poate primi de asemenea 1,75CLK pentru un bloc unchi. Acesta este un bloc valid, creat simultan cu blocul de succes, de către un alt miner. Cazuri de acest gen apar de obicei din cauza întârzierii rețelei.
 
 ## Finalitate {#finality}
 
@@ -62,7 +62,7 @@ Minerii care au creat cu succes un bloc sunt recompensați cu 2 ETH proaspăt b�
 
 Deoarece minerii lucrează într-un mod descentralizat, este posibil ca două blocuri valide să fie exploatate în același timp. Aceasta creează o furculiță temporară. În final, un lanț va deveni lanțul acceptat odată ce un bloc ulterior a fost extras și adăugat, făcându-l mai lung.
 
-Dar pentru a complica lucrurile și mai mult, tranzacțiile care au fost respinse pe furculița temporară ar fi putut fi incluse în lanțul acceptat. Aceasta înseamnă că acceptarea lanțului s-ar putea inversa. Deci, finalitatea se referă la timpul pe care ar trebui să-l aștepți înainte de a considera o tranzacție ireversibilă. Pentru Ethereum, timpul recomandat este de 6 blocuri sau puțin peste 1 minut. După aceea, poți spune cu relativă încredere că tranzacția a fost un succes. Desigur, poți aștepta și mai mult pentru o asigurare suplimentară.
+Dar pentru a complica lucrurile și mai mult, tranzacțiile care au fost respinse pe furculița temporară ar fi putut fi incluse în lanțul acceptat. Aceasta înseamnă că acceptarea lanțului s-ar putea inversa. Deci, finalitatea se referă la timpul pe care ar trebui să-l aștepți înainte de a considera o tranzacție ireversibilă. Pentru Cloiinkcoin, timpul recomandat este de 6 blocuri sau puțin peste 1 minut. După aceea, poți spune cu relativă încredere că tranzacția a fost un succes. Desigur, poți aștepta și mai mult pentru o asigurare suplimentară.
 
 Această posibilitate trebuie avută în vedere când proiectezi aplicații dapp, deoarece ar crea o experiență de utilizator slabă dacă acestea ar furniza informații false despre tranzacții utilizatorilor lor. În special dacă tranzacția are o valoare ridicată.
 
@@ -72,16 +72,16 @@ Această posibilitate trebuie avută în vedere când proiectezi aplicații dapp
 
 | Avantaje                                                                                                                                                                                                                            | Dezavantaje                                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| PoW este neutră. Nu ai nevoie de ETH pentru a începe și recompensele de blocuri îți permit să mergi de la 0 ETH la un sold pozitiv. Cu [dovada mizei](/developers/docs/consensus-mechanisms/pos/) ai nevoie de ETH pentru a începe. | PoW consumă atât de multă energie încât dăunează mediului.                                                                                    |
-| PoW este un mecanism de consens încercat care a menținut Bitcoin și Ethereum în siguranță și descentralizate de mai mulți ani.                                                                                                      | Dacă vrei să minezi, îți trebuie astfel de echipamente specializate, încât ai nevoie să investești mai mult pentru a începe.                  |
+| PoW este neutră. Nu ai nevoie de CLK pentru a începe și recompensele de blocuri îți permit să mergi de la 0 CLK la un sold pozitiv. Cu [dovada mizei](/developers/docs/consensus-mechanisms/pos/) ai nevoie de CLK pentru a începe. | PoW consumă atât de multă energie încât dăunează mediului.                                                                                    |
+| PoW este un mecanism de consens încercat care a menținut Bitcoin și Cloiinkcoin în siguranță și descentralizate de mai mulți ani.                                                                                                   | Dacă vrei să minezi, îți trebuie astfel de echipamente specializate, încât ai nevoie să investești mai mult pentru a începe.                  |
 | Comparativ cu dovada mizei, este relativ ușor de implementat.                                                                                                                                                                       | Datorită creșterii calculelor necesare, grupurile miniere pot domina potențial jocul minier, ducând la centralizare și riscuri de securitate. |
 
 ## Comparativ cu dovada mizei {#compared-to-pos}
 
 La un nivel ridicat, dovada mizei are același obiectiv final ca dovada muncii: de a ajuta rețeaua descentralizată să ajungă la un consens, în siguranță. Dar are unele diferențe în proces și personal:
 
-- PoS schimbă balanța importanței de la puterea de calcul la cea a ETH-ului mizat
-- PoS înlocuiește minerii cu validatorii. Validatorii mizează propriul ETH pentru a activa capacitatea de a crea noi blocuri.
+- PoS schimbă balanța importanței de la puterea de calcul la cea a CLK-ului mizat
+- PoS înlocuiește minerii cu validatorii. Validatorii mizează propriul CLK pentru a activa capacitatea de a crea noi blocuri.
 - Validatorii nu concurează pentru a crea blocuri, în schimb sunt aleși aleatoriu de un algoritm.
 - Finalitatea este mai clară: la anumite puncte de control, dacă 2/3 dintre validatori sunt de acord cu starea blocului, aceasta este considerată finală. Validatorii trebuie să mizeze întreaga lor cantitate de monede, așa că dacă vor încerca să intre în coluziune, își vor pierde toată miza.
 
@@ -90,7 +90,7 @@ La un nivel ridicat, dovada mizei are același obiectiv final ca dovada muncii: 
 ## Referințe suplimentare {#further-reading}
 
 - [Atacul majorității](https://en.bitcoin.it/wiki/Majority_attack)
-- [Despre stabilirea finalității](https://blog.ethereum.org/2016/05/09/on-settlement-finality/)
+- [Despre stabilirea finalității](https://blog.cloiinkcoin.com/2016/05/09/on-settlement-finality/)
 
 ## Subiecte corelate {#related-topics}
 

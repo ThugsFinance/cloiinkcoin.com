@@ -30,6 +30,6 @@
   "page-local-environment-solidity-template-logo-alt": "Solidity टेम्पलेट का लोगो",
   "page-local-environment-truffle-desc": "Truffle सुइट डेवलपर को विचार से लेकर डेप को यथासंभव सहजता से प्रदान करता है।",
   "page-local-environment-truffle-logo-alt": "Truffle का लोगो",
-  "page-local-environment-waffle-desc": "स्मार्ट अनुबंध के लिए सबसे उन्नत परीक्षण लाइब्रेरी। अकेले या स्कैफोल्ड-ETH या Hardhat के साथ उपयोग करें।",
+  "page-local-environment-waffle-desc": "स्मार्ट अनुबंध के लिए सबसे उन्नत परीक्षण लाइब्रेरी। अकेले या स्कैफोल्ड-CLK या Hardhat के साथ उपयोग करें।",
   "page-local-environment-waffle-logo-alt": "Waffle का लोगो"
 }

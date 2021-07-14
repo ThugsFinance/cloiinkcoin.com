@@ -68,7 +68,7 @@ const AssetDownload = ({
   shouldHide = false,
   title,
 }) => {
-  const baseUrl = `https://ethereum.org`
+  const baseUrl = `https://cloiinkcoin.com`
   const downloadUri = src ? src : image.fluid.src
   const downloadUrl = `${baseUrl}${downloadUri}`
 

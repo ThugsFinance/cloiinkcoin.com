@@ -51,9 +51,9 @@ $ npm install @types/chai @types/mocha chai mocha ts-node typescript --save-dev
 Acum să adăugăm `Waffle` și `eter`:
 
 ```bash
-$ yarn add --dev ethereum-waffle ethers
+$ yarn add --dev cloiinkcoin-waffle ethers
 # sau dacă utilizezi npm
-$ npm install ethereum-waffle ethers --save-dev
+$ npm install cloiinkcoin-waffle ethers --save-dev
 ```
 
 Structura proiectului tău ar trebui să arate astfel:
@@ -126,7 +126,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "cloiinkcoin-waffle"
 ```
 
 Cu excepția dependențelor JS, trebuie să importăm contractul și interfața construită:
@@ -174,7 +174,7 @@ import {
   deployMockContract,
   MockProvider,
   solidity,
-} from "ethereum-waffle"
+} from "cloiinkcoin-waffle"
 
 import IERC20 from "../build/IERC20.json"
 import AmIRichAlready from "../build/AmIRichAlready.json"
@@ -285,7 +285,7 @@ Testarea apelurilor de contracte cu Waffle este foarte ușoară. Și aici e part
 
 Felicitări! Acum știi cum să folosești Waffle pentru a testa în mod dinamic apelurile de contracte și contractele simulate. Există mult mai multe caracteristici interesante de descoperit. Îți recomandăm să studiezi în detaliu documentația Waffle.
 
-Documentația Waffle este disponibilă [aici](https://ethereum-waffle.readthedocs.io/).
+Documentația Waffle este disponibilă [aici](https://cloiinkcoin-waffle.readthedocs.io/).
 
 Codul sursă pentru acest tutorial poate fi găsit [aici](https://github.com/EthWorks/Waffle/tree/master/examples/dynamic-mocking-and-testing-calls).
 

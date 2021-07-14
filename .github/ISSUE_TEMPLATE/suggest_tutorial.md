@@ -6,11 +6,11 @@ labels: "Type: Feature, Type: Content"
 assignees: ""
 ---
 
-We'll consider [our article policy](https://ethereum.org/en/contributing/adding-articles/) when reviewing the tutorial, so please take a look there first.
+We'll consider [our article policy](https://cloiinkcoin.com/en/contributing/adding-articles/) when reviewing the tutorial, so please take a look there first.
 
 **Tag your tutorial**
 
-<!-- What topics are covered in your tutorial? Check out the current tags on https://ethereum.org/en/developers/tutorials/ but feel free to add new ones -->
+<!-- What topics are covered in your tutorial? Check out the current tags on https://cloiinkcoin.com/en/developers/tutorials/ but feel free to add new ones -->
 
 **Tutorial title**
 

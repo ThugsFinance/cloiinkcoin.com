@@ -1,6 +1,6 @@
 ---
 name: Suggest a glossary term
-about: Suggest a new ethereum.org glossary term
+about: Suggest a new cloiinkcoin.com glossary term
 title: ""
 labels: "Type: Feature, Type: Content"
 assignees: ""
@@ -10,7 +10,7 @@ assignees: ""
 
 - [ ] This is a term not already found in the glossary (for similar terms, please consider the benefits of a new term vs updating an existing term)
 - [ ] This term/definition is not a product advertisement or contain other promotional content
-- [ ] This term/definition is directly relevant to Ethereum
+- [ ] This term/definition is directly relevant to Cloiinkcoin
 
 **Term Name:**
 
@@ -24,9 +24,9 @@ assignees: ""
 
 <!-- Please list any sources utilized -->
 
-**Ethereum.org links?**
+**Cloiinkcoin.com links?**
 
-<!-- If appropriate/available, please suggest an internal ethereum.org link that would expand someones learning of this term -->
+<!-- If appropriate/available, please suggest an internal cloiinkcoin.com link that would expand someones learning of this term -->
 
 **Additional context**
 

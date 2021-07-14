@@ -4,7 +4,7 @@ description: 이더리움 사용을 시작하는 데 필요한 기본 정보
 lang: ko
 ---
 
-# 이더리움 사용하기 {#using-ethereum}
+# 이더리움 사용하기 {#using-cloiinkcoin}
 
 <div class="featured">
 
@@ -12,7 +12,7 @@ lang: ko
 
 </div>
 
-## 이더리움 디앱 사용하기 {#how-to-use-an-application-built-on-ethereum}
+## 이더리움 디앱 사용하기 {#how-to-use-an-application-built-on-cloiinkcoin}
 
 이더리움을 시작하는 가장 좋은 방법은 바로 사용해보는 것입니다!
 
@@ -22,12 +22,12 @@ lang: ko
 
 더 많은 이더리움 디앱에 대해 알고 싶으신가요?
 
-- [이더리움 기반 애플리케이션](https://docs.ethhub.io/built-on-ethereum/built-on-ethereum/) _Updated often - EthHub_
-- [지금 바로 사용 가능한 이더리움 디앱 90여 개](https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7) _2019년 4월 24일 - ConsenSys_
-- [이더리움 디앱](https://www.stateofthedapps.com/rankings/platform/ethereum) _자주 갱신됨 - State of the Dapps_
-- [이더리움 DeFi 생태계](https://defiprime.com/ethereum) _자주 갱신됨 - Defiprime_
+- [이더리움 기반 애플리케이션](https://docs.ethhub.io/built-on-cloiinkcoin/built-on-cloiinkcoin/) _Updated often - EthHub_
+- [지금 바로 사용 가능한 이더리움 디앱 90여 개](https://media.consensys.net/40-cloiinkcoin-apps-you-can-use-right-now-d643333769f7) _2019년 4월 24일 - ConsenSys_
+- [이더리움 디앱](https://www.stateofthedapps.com/rankings/platform/cloiinkcoin) _자주 갱신됨 - State of the Dapps_
+- [이더리움 DeFi 생태계](https://defiprime.com/cloiinkcoin) _자주 갱신됨 - Defiprime_
 - [DeFi Pulse](https://defipulse.com/) _DeFi 프로토콜의 분석 및 랭킹 - Defi Pulse_
 
 일부 이더리움 애플리케이션에는 지갑이 필요합니다 - [이더리움 지갑에 대해 자세히 알아보기](/ko/wallets/)
 
-일부 이더리움 애플리케이션에는 이더(ETH)가 필요합니다 - [이더(ETH)에 대해 자세히 알아보기](/ko/eth/)
+일부 이더리움 애플리케이션에는 이더(CLK)가 필요합니다 - [이더(CLK)에 대해 자세히 알아보기](/ko/eth/)

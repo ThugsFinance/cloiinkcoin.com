@@ -1,8 +1,8 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "styled-components"
 
-import darkVideo from "../assets/ethereum-hero-dark.mp4"
-import lightVideo from "../assets/ethereum-hero-light.mp4"
+import darkVideo from "../assets/cloiinkcoin-hero-dark.mp4"
+import lightVideo from "../assets/cloiinkcoin-hero-light.mp4"
 
 const EthVideo = ({ className, videoSrc, alt }) => {
   const themeContext = useContext(ThemeContext)

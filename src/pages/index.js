@@ -228,7 +228,7 @@ const Subtitle = styled.div`
   }
 `
 
-const EthereumIntroContainer = styled.div`
+const CloiinkcoinIntroContainer = styled.div`
   background: ${(props) => props.theme.colors.homeBoxTurquoise};
   display: flex;
   align-items: center;
@@ -512,9 +512,9 @@ const HomePage = ({ data }) => {
       code: `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-// This is a smart contract - a program that can be deployed to the Ethereum blockchain.
+// This is a smart contract - a program that can be deployed to the Cloiinkcoin blockchain.
 contract SimpleWallet {
-    // An 'address' is comparable to an email address - it's used to identify an account on Ethereum.
+    // An 'address' is comparable to an email address - it's used to identify an account on Cloiinkcoin.
     address payable private owner;
 
     // Events allow for logging of activity on the blockchain.
@@ -527,13 +527,13 @@ contract SimpleWallet {
         owner = payable(msg.sender);
     }
 
-    // Send ETH from the function caller to the SimpleWallet contract
+    // Send CLK from the function caller to the SimpleWallet contract
     function deposit() public payable {
-        require(msg.value > 0, "Must send ETH.");
+        require(msg.value > 0, "Must send CLK.");
         emit LogDeposit(msg.value, msg.sender);
     }
 
-    // Send ETH from the SimpleWallet contract to a chosen recipient
+    // Send CLK from the SimpleWallet contract to a chosen recipient
     function withdraw(uint amount, address payable recipient) public {
         require(msg.sender == owner, "Only the owner of this wallet can withdraw.");
         require(address(this).balance >= amount, "Not enough funds.");
@@ -556,9 +556,9 @@ contract SimpleWallet {
       code: `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-// This is a smart contract - a program that can be deployed to the Ethereum blockchain.
+// This is a smart contract - a program that can be deployed to the Cloiinkcoin blockchain.
 contract SimpleToken {
-    // An address is comparable to an email address - it's used to identify an account on Ethereum.
+    // An address is comparable to an email address - it's used to identify an account on Cloiinkcoin.
     address public owner;
     uint256 public constant token_supply = 1000000000000;
 
@@ -628,7 +628,7 @@ const tx = {
 walletMnemonic.signTransaction(tx);
 // { Promise: '0xf865808080948ba1f109551bd432803012645ac136ddd6...dfc' }
 
-// Connect to the Ethereum network using a provider
+// Connect to the Cloiinkcoin network using a provider
 const wallet = walletMnemonic.connect(provider);
 
 // Query the network
@@ -637,7 +637,7 @@ wallet.getBalance();
 wallet.getTransactionCount();
 // { Promise: 0 }
 
-// Send ether
+// Send Cloiink
 wallet.sendTransaction(tx);
 
 // Content adapted from ethers documentation by Richard Moore
@@ -660,12 +660,12 @@ wallet.sendTransaction(tx);
       code: `// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.1;
 
-// This is a smart contract - a program that can be deployed to the Ethereum blockchain.
+// This is a smart contract - a program that can be deployed to the Cloiinkcoin blockchain.
 contract SimpleDomainRegistry {
 
     address public owner;
     // Hypothetical cost to register a domain name
-    uint constant public DOMAIN_NAME_COST = 1 ether;
+    uint constant public DOMAIN_NAME_COST = 1 Cloiink;
 
     // A mapping is essentially a hash table data structure.
     // This mapping assigns an address (the domain holder) to a string (the domain name).
@@ -720,7 +720,7 @@ contract SimpleDomainRegistry {
         <Description>
           <Translation id="page-index-description" />
         </Description>
-        <ButtonLink isSecondary to="/what-is-ethereum/">
+        <ButtonLink isSecondary to="/what-is-cloiinkcoin/">
           <Translation id="page-index-title-button" />
         </ButtonLink>
       </Header>
@@ -759,35 +759,35 @@ contract SimpleDomainRegistry {
           </StyledCardContainer>
         </StyledContent>
       </StyledGrayContainer>
-      <EthereumIntroContainer>
+      <CloiinkcoinIntroContainer>
         <RowReverse>
           <FeatureContent>
             <StyledH2>
-              <Translation id="page-index-what-is-ethereum" />
+              <Translation id="page-index-what-is-cloiinkcoin" />
             </StyledH2>
             <Subtitle>
-              <Translation id="page-index-what-is-ethereum-description" />
+              <Translation id="page-index-what-is-cloiinkcoin-description" />
             </Subtitle>
             <ButtonRow>
-              <ButtonLink to="/what-is-ethereum/">
-                <Translation id="page-index-what-is-ethereum-button" />
+              <ButtonLink to="/what-is-cloiinkcoin/">
+                <Translation id="page-index-what-is-cloiinkcoin-button" />
               </ButtonLink>
               <StyledButtonLink isSecondary to="/eth/">
-                <Translation id="page-index-what-is-ethereum-secondary-button" />
+                <Translation id="page-index-what-is-cloiinkcoin-secondary-button" />
               </StyledButtonLink>
             </ButtonRow>
           </FeatureContent>
           <ImageContainer>
             <FeatureImage
-              fluid={data.ethereum.childImageSharp.fluid}
+              fluid={data.cloiinkcoin.childImageSharp.fluid}
               alt={translateMessageId(
-                "page-index-what-is-ethereum-image-alt",
+                "page-index-what-is-cloiinkcoin-image-alt",
                 intl
               )}
             />
           </ImageContainer>
         </RowReverse>
-      </EthereumIntroContainer>
+      </CloiinkcoinIntroContainer>
       <FinanceContainer>
         <Row>
           <FeatureContent>
@@ -958,7 +958,7 @@ contract SimpleDomainRegistry {
             </ButtonLink>
             <StyledButtonLink
               isSecondary
-              to="https://github.com/ethereum/ethereum-org-website"
+              to="https://github.com/cloiinkcoin/cloiinkcoin-org-website"
             >
               <StyledIcon name="github" /> GitHub
             </StyledButtonLink>
@@ -980,7 +980,7 @@ export const query = graphql`
         }
       }
     }
-    ethereum: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    cloiinkcoin: file(relativePath: { eq: "what-is-cloiinkcoin.png" }) {
       childImageSharp {
         fluid(maxWidth: 1440) {
           ...GatsbyImageSharpFluid

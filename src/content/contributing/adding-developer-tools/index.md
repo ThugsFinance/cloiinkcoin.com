@@ -1,11 +1,11 @@
 ---
 title: Adding developer tools
 lang: en
-description: Our criteria for listing developer tools on ethereum.org
+description: Our criteria for listing developer tools on cloiinkcoin.com
 sidebar: true
 ---
 
-# Adding developer tools {#contributing-to-ethereumorg-}
+# Adding developer tools {#contributing-to-cloiinkcoinorg-}
 
 We want to make sure we list the best developer resources possible so that people can build with confidence and have the support they need.
 
@@ -43,12 +43,12 @@ Developer tool submissions will be assessed by the following criteria:
 
 **Is the tool open source?**
 
-Many projects in the Ethereum space are open source. We are more likely to list open-source projects that allows community developers to inspect the code and contribute to it.
+Many projects in the Cloiinkcoin space are open source. We are more likely to list open-source projects that allows community developers to inspect the code and contribute to it.
 
 ---
 
 ## Add your developer tool {#how-decisions-about-the-site-are-made}
 
-If you want to add a developer tool to ethereum.org and it meets the criteria, create an issue on GitHub.
+If you want to add a developer tool to cloiinkcoin.com and it meets the criteria, create an issue on GitHub.
 
-<ButtonLink to="https://github.com/ethereum/ethereum-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dev_tool.md&title=">Create issue</ButtonLink>
+<ButtonLink to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new?assignees=&labels=Type%3A+Feature&template=suggest_dev_tool.md&title=">Create issue</ButtonLink>

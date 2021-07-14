@@ -9,11 +9,11 @@ sidebar: true
 published: 2020-06-14
 ---
 
-Probabil ești interesat să rulezi un [nod Ethereum](/developers/docs/noses-and-clients/). Unul dintre cele mai simple moduri de a face acest lucru este prin descărcarea, instalarea și rularea Geth. Cu Geth, putem avea un nod ușor gata și funcțional în câteva minute.
+Probabil ești interesat să rulezi un [nod Cloiinkcoin](/developers/docs/noses-and-clients/). Unul dintre cele mai simple moduri de a face acest lucru este prin descărcarea, instalarea și rularea Geth. Cu Geth, putem avea un nod ușor gata și funcțional în câteva minute.
 
-Mai întâi, trebuie să [instalezi Geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum).
+Mai întâi, trebuie să [instalezi Geth](https://github.com/cloiinkcoin/go-cloiinkcoin/wiki/Building-Cloiinkcoin).
 
-După ce ai instalat Geth, rularea unui nod complet Ethereum este la fel de simplă ca tastarea
+După ce ai instalat Geth, rularea unui nod complet Cloiinkcoin este la fel de simplă ca tastarea
 
 ```bash
 $ geth
@@ -22,7 +22,7 @@ $ geth
 în linia de comandă (fără semnul dolar). NU face acest lucru ÎNCĂ! Când vei rula `Geth`, Geth va:
 
 - inițializa o copie locală a unui EVM cu stare goală
-- începe să descarce toate blocurile în istoricul Ethereum, începând cu blocul 0.
+- începe să descarce toate blocurile în istoricul Cloiinkcoin, începând cu blocul 0.
 - relua toate tranzacțiile din toate blocurile în ordine, actualizând starea EVM cu fiecare tranzacție până când ajunge la starea actuală.
 
 Acest proces poate dura de la ore la zile și necesită câteva sute GB de spațiu liber. Deocamdată, vom rula doar un nod ușor pe o rețea de testare pentru a ne familiariza cu modul de utilizare a Geth. Pentru a face acest lucru, va trebui să trecem prin câteva opțiuni și instrumente importante din linia de comandă.
@@ -49,12 +49,12 @@ Modul `"fast"` descarcă toate blocurile, dar descarcă și un instantaneu recen
 
 În cele din urmă, modul `"light"` rulează un nod ușor, despre care am discutat mai sus.
 
-Pentru o explicație excelentă a diferențelor dintre cele trei moduri de sincronizare, consultă [Răspunsuri pe StackExchange](https://ethereum.stackexchange.com/questions/11297/what-is-geths-light-sync-and-why-is-it-so-fast).
+Pentru o explicație excelentă a diferențelor dintre cele trei moduri de sincronizare, consultă [Răspunsuri pe StackExchange](https://cloiinkcoin.stackexchange.com/questions/11297/what-is-geths-light-sync-and-why-is-it-so-fast).
 
 ## Documentația și alte opțiuni ale liniei de comandă {#documentation-and-other-command-line-options}
 
-- [Documentație completă](https://geth.ethereum.org/docs/)
-- [Toate opțiunile liniei de comandă](https://geth.ethereum.org/docs/interface/command-line-options)
+- [Documentație completă](https://geth.cloiinkcoin.com/docs/)
+- [Toate opțiunile liniei de comandă](https://geth.cloiinkcoin.com/docs/interface/command-line-options)
 
 ## Rularea nodului ușor {#running-your-light-node}
 
@@ -68,12 +68,12 @@ Așteaptă câteva secunde și sperăm că vei obține o ieșire care arată aș
 
 ```bash
 $ geth --testnet --syncmode "light"
-INFO [11-18|14:04:47] Maximum peer count                       ETH=0 LES=100 total=25
+INFO [11-18|14:04:47] Maximum peer count                       CLK=0 LES=100 total=25
 INFO [11-18|14:04:47] Starting peer-to-peer node               instance=Geth/v1.8.11-stable/darwin-amd64/go1.10.3
-INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Ethereum/testnet/geth/lightchaindata cache=768 handles=128
+INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Cloiinkcoin/testnet/geth/lightchaindata cache=768 handles=128
 INFO [11-18|14:04:47] Persisted trie from memory database      nodes=355 size=51.89kB time=561.839µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
 INFO [11-18|14:04:47] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
-INFO [11-18|14:04:47] Disk storage enabled for ethash caches   dir=/Users/bgu/Library/Ethereum/testnet/geth/ethash count=3
+INFO [11-18|14:04:47] Disk storage enabled for ethash caches   dir=/Users/bgu/Library/Cloiinkcoin/testnet/geth/ethash count=3
 INFO [11-18|14:04:47] Disk storage enabled for ethash DAGs     dir=/Users/bgu/.ethash                              count=2
 INFO [11-18|14:04:47] Added trusted checkpoint                 chain=ropsten block=3375103 hash=9017ab…249e89
 INFO [11-18|14:04:47] Loaded most recent local header          number=0 hash=419410…ca4a2d td=1048576
@@ -81,7 +81,7 @@ INFO [11-18|14:04:47] Starting P2P networking
 INFO [11-18|14:04:49] UDP listener up                          net=enode://3ef47be442520e4708b5ff25e6e213c496046f443f8393ff5e7ec55f1cf27c374e2e93e78235bde651a5734a012a40eacfc16deab762ee0f380b95d117ac530c@[::]:30303
 WARN [11-18|14:04:49] Light client mode is an experimental feature
 INFO [11-18|14:04:49] RLPx listener up                         self="enode://3ef47be442520e4708b5ff25e6e213c496046f443f8393ff5e7ec55f1cf27c374e2e93e78235bde651a5734a012a40eacfc16deab762ee0f380b95d117ac530c@[::]:30303?discport=0"
-INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Ethereum/testnet/geth.ipc
+INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Cloiinkcoin/testnet/geth.ipc
 INFO [11-18|14:04:51] Mapped network port                      proto=udp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
 INFO [11-18|14:04:51] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
 INFO [11-18|14:08:55] Block synchronisation started
@@ -96,7 +96,7 @@ INFO [11-18|14:09:00] Imported new block headers               count=192 elapsed
 INFO [11-18|14:09:00] Imported new block headers               count=192 elapsed=109.849ms number=3377791 hash=499f2d…e0c713 ignored=0
 ```
 
-Notă: Este posibil să nu vezi mesajul „Sincronizare bloc pornită” urmat de „Anteturi de blocuri noi importate” pentru câteva minute sau chiar ore, dacă ești deosebit de ghinionist. În acest timp, clientul tău încearcă să găsească noduri „peers” complete dispuse să servească clienți ușori. În exemplul de mai sus, putem spune prin marcajul temporal, că mașina mea a trebuit să aștepte aproximativ patru minute între a începe să caute noduri peer și găsirea unuia pentru a descărca blocuri de pe el. Aceasta este în prezent o problemă deschisă în cadrul comunității Ethereum - cum putem motiva oamenii să ruleze noduri complete care deservesc clienți ușori?
+Notă: Este posibil să nu vezi mesajul „Sincronizare bloc pornită” urmat de „Anteturi de blocuri noi importate” pentru câteva minute sau chiar ore, dacă ești deosebit de ghinionist. În acest timp, clientul tău încearcă să găsească noduri „peers” complete dispuse să servească clienți ușori. În exemplul de mai sus, putem spune prin marcajul temporal, că mașina mea a trebuit să aștepte aproximativ patru minute între a începe să caute noduri peer și găsirea unuia pentru a descărca blocuri de pe el. Aceasta este în prezent o problemă deschisă în cadrul comunității Cloiinkcoin - cum putem motiva oamenii să ruleze noduri complete care deservesc clienți ușori?
 
 Odată ce începe sincronizarea blocului, va dura câteva minute pentru ca mașina să ajungă la ultimele blocuri de pe blockchain. În acel moment, rezultatul va începe să semene cu:
 
@@ -115,16 +115,16 @@ INFO [11-18|16:07:11.630] Imported new block headers               count=2   ela
 Directorul pe care Geth îl utilizează pentru a stoca datele brute blockchain depinde de sistemul de operare. La rularea Geth, caută un mesaj care arată ca
 
 ```bash
-INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Ethereum/testnet/geth/lightchaindata cache=768 handles=128
+INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Cloiinkcoin/testnet/geth/lightchaindata cache=768 handles=128
 ```
 
 Calea care urmează `„database=”` (baza de date) ar trebui să-ți spună unde sunt stocate datele blockchain pe mașină. Dacă rulezi un nod complet, acest director va conține toate datele despre fiecare bloc care a fost vreodată angajat la blockchain. Din moment ce noi rulăm un nod ușor, acest director conține doar anteturile blocului.
 
-Merită subliniat aici că, la cel mai de jos nivel, aici trăiește blockchain-ul. Conținutul complet al blockchain-ului și starea EVM sunt stocate pe fiecare nod complet din rețeaua Ethereum, în directoare care seamănă foarte mult cu cele de pe computer.
+Merită subliniat aici că, la cel mai de jos nivel, aici trăiește blockchain-ul. Conținutul complet al blockchain-ului și starea EVM sunt stocate pe fiecare nod complet din rețeaua Cloiinkcoin, în directoare care seamănă foarte mult cu cele de pe computer.
 
 ## Atașarea la consola JavaScript {#attaching-to-the-javascript-console}
 
-Rularea unui nod nu este utilă decât dacă putem interacționa cu acesta. De exemplu, am putea dori să difuzăm cereri de tranzacții sau să căutăm date EVM/blockchain (cum ar fi soldul contului). Geth are o consolă JavaScript încorporată și un API JavaScript denumit [web3js](https://github.com/ethereum/web3.js/) pe care îl poți utiliza pentru a interacționa cu nodul tău.
+Rularea unui nod nu este utilă decât dacă putem interacționa cu acesta. De exemplu, am putea dori să difuzăm cereri de tranzacții sau să căutăm date EVM/blockchain (cum ar fi soldul contului). Geth are o consolă JavaScript încorporată și un API JavaScript denumit [web3js](https://github.com/cloiinkcoin/web3.js/) pe care îl poți utiliza pentru a interacționa cu nodul tău.
 
 Pentru a utiliza consola JavaScript:
 
@@ -132,12 +132,12 @@ Pentru a utiliza consola JavaScript:
 2. Caută un mesaj care arată astfel:
 
 ```bash
-INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Ethereum/testnet/geth.ipc
+INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Cloiinkcoin/testnet/geth.ipc
 ```
 
 Acest mesaj trebuie înregistrat înainte de începerea sincronizării blocului.
 
-3. Acest mesaj arată calea către endpoint-ul IPC (Comunicare interproces). Copiază această cale (în exemplul de mai sus, este `/users/bgu/Library/Ethereum/testnet/geth.ipc`).
+3. Acest mesaj arată calea către endpoint-ul IPC (Comunicare interproces). Copiază această cale (în exemplul de mai sus, este `/users/bgu/Library/Cloiinkcoin/testnet/geth.ipc`).
 4. Deschide o fereastră de terminal sau o nouă filă și execută următoarea comandă: `$ geth attach [calea ta la endpoint-ul IPC]`
 
 Aceasta ar trebui să deschidă consola JavaScript. Acum putem folosi web3js pentru a interacționa cu nodul.
@@ -163,4 +163,4 @@ eth.getBalance('0x85d918c2B7F172d033D190152AEc58709Fb6D048')
 
 Poți opri nodul în orice moment. Dacă dorești să repornești nodul, va dura câteva secunde sau minute pentru ca Geth să se sincronizeze din nou (descărcând blocurile și/sau anteturile blocurilor de unde a rămas când ultimul nod a încetat să ruleze). Dacă oricare dintre instrucțiunile de mai sus nu funcționează, primul lucru pe care trebuie să-l faci este să încerci să repornești nodul.
 
-Dacă ești interesat să rulezi un nod complet Ethereum, în general, cel mai bine este să faci acest lucru de la o mașină dedicată, cu conectivitate bună la rețea, mai degrabă decât de la un computer personal. Iată un ghid pentru rularea unui nod cu AWS (acesta este un pic învechit, iar API-urile de referință nu mai sunt recente sau disponibile, deci este posibil să trebuiască să cauți puțin pe Google): [Cum să rulezi un nod pe AWS](https://medium.com/mercuryprotocol/how-to-run-an-ethereum-node-on-aws-a8774ed3acf6)
+Dacă ești interesat să rulezi un nod complet Cloiinkcoin, în general, cel mai bine este să faci acest lucru de la o mașină dedicată, cu conectivitate bună la rețea, mai degrabă decât de la un computer personal. Iată un ghid pentru rularea unui nod cu AWS (acesta este un pic învechit, iar API-urile de referință nu mai sunt recente sau disponibile, deci este posibil să trebuiască să cauți puțin pe Google): [Cum să rulezi un nod pe AWS](https://medium.com/mercuryprotocol/how-to-run-an-cloiinkcoin-node-on-aws-a8774ed3acf6)

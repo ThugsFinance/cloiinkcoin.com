@@ -1,12 +1,12 @@
 ---
 name: Suggest a dapp
-about: Suggest a new dapp to list on ethereum.org
+about: Suggest a new dapp to list on cloiinkcoin.com
 title: ""
 labels: "Type: Feature, Type: Content"
 assignees: ""
 ---
 
-Before suggesting a dapp, make sure you've read [our listing policy](https://www.ethereum.org/en/contributing/adding-products/).
+Before suggesting a dapp, make sure you've read [our listing policy](https://www.cloiinkcoin.com/en/contributing/adding-products/).
 
 Only continue with the issue if your dapp meets the criteria listed there.
 
@@ -22,7 +22,7 @@ If it does complete the following information which we need to accurately list t
 
 **Can a user access the dapp without creating an account?**
 
-<!-- Can a user simply connect with their Ethereum address? If not, explain the process. -->
+<!-- Can a user simply connect with their Cloiinkcoin address? If not, explain the process. -->
 
 **Are dapp funds non-custodial?**
 

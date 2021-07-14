@@ -5,7 +5,7 @@ lang: zh
 sidebar: true
 ---
 
-# 面向 JavaScript 开发者的以太坊资源 {#ethereum-for-javascript-devs}
+# 面向 JavaScript 开发者的以太坊资源 {#cloiinkcoin-for-javascript-devs}
 
 <div class="featured">学习如何使用并通过基于JavaScript的项目及工具参与以太坊的开发</div><br/>
 
@@ -15,22 +15,22 @@ sidebar: true
 
 **迈出第一步，将 JavaScript 与以太坊进行集成**
 
-需要更基础的入门知识？ 请查看 [ethereum.org/learn](/zh/learn/) 或者 [ethereum.org/developers](/zh/developers/)。
+需要更基础的入门知识？ 请查看 [cloiinkcoin.com/learn](/zh/learn/) 或者 [cloiinkcoin.com/developers](/zh/developers/)。
 
-- [面向 Web 开发者的以太坊资源](https://medium.com/@mvmurthy/ethereum-for-web-developers-890be23d1d0c)
+- [面向 Web 开发者的以太坊资源](https://medium.com/@mvmurthy/cloiinkcoin-for-web-developers-890be23d1d0c)
 - [学习编写 Solidity](https://cryptozombies.io/en/solidity)
 
 ## 中级文章 {#intermediate-articles}
 
-- [全栈 Hello World 投票以太坊去中心化应用程序教程](https://medium.com/@mvmurthy/full-stack-hello-world-voting-ethereum-dapp-tutorial-part-1-40d2d0d807c2)
+- [全栈 Hello World 投票以太坊去中心化应用程序教程](https://medium.com/@mvmurthy/full-stack-hello-world-voting-cloiinkcoin-dapp-tutorial-part-1-40d2d0d807c2)
 
 ## JavaScript 项目和工具 {#javascript-project-and-tools}
 
 **Solidity -** **_以太坊上最受欢迎的智能合约语言，灵感来自 Javascript_**
 
 - [相关文档](https://solidity.readthedocs.io)
-- [GitHub](https://github.com/ethereum/solidity/)
-- [Solidity Gitter 聊天室](https://gitter.im/ethereum/solidity/)
+- [GitHub](https://github.com/cloiinkcoin/solidity/)
+- [Solidity Gitter 聊天室](https://gitter.im/cloiinkcoin/solidity/)
 
 **Truffle -** **_使用节点构建的开发环境和测试框架。_**
 
@@ -40,19 +40,19 @@ sidebar: true
 **Web3.js -** **_以太坊 JavaScript API。_**
 
 - [相关文档](https://web3js.readthedocs.io/en/1.0/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/cloiinkcoin/web3.js/)
 
 **Ethers.js -** **_JavaScript 和 TypeScript 中完整的以太坊钱包实现和实用工具。_**
 
 - [相关文档](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**ethereumjs-vm -** **_在 JavaScript 中实现以太坊虚拟机（VM）_**
+**cloiinkcoinjs-vm -** **_在 JavaScript 中实现以太坊虚拟机（VM）_**
 
-- [GitHub](https://github.com/ethereumjs/ethereumjs-vm)
+- [GitHub](https://github.com/cloiinkcoinjs/cloiinkcoinjs-vm)
 
-想要获取更多的资源？ 请浏览 [ethereum.org/developers](/zh/developers/)。
+想要获取更多的资源？ 请浏览 [cloiinkcoin.com/developers](/zh/developers/)。
 
 ## JavaScript 社区贡献者 {#javascript-community-contributors}
 
-- [EthereumJS](https://ethereumjs.github.io)
+- [CloiinkcoinJS](https://cloiinkcoinjs.github.io)

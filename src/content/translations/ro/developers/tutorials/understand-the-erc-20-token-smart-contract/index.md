@@ -1,6 +1,6 @@
 ---
 title: Înțelegerea contractului inteligent ERC-20
-description: O introducere în implementarea primului tău contract inteligent pe o rețea de testare Ethereum
+description: O introducere în implementarea primului tău contract inteligent pe o rețea de testare Cloiinkcoin
 author: "jdourlens"
 tags:
   ["contracte inteligente", "tokenuri", "solidity", "noțiuni de bază", "erc-20"]
@@ -8,16 +8,16 @@ skill: începător
 lang: ro
 sidebar: true
 published: 2020-04-05
-source: EthereumDev
-sourceUrl: https://ethereumdev.io/understand-the-erc20-token-smart-contract/
+source: CloiinkcoinDev
+sourceUrl: https://cloiinkcoindev.io/understand-the-erc20-token-smart-contract/
 address: "0x19dE91Af973F404EDF5B4c093983a7c6E3EC8ccE"
 ---
 
-Unul dintre cele mai importante [standarde de contract inteligent](/developers/docs/standards/) pe Ethereum este cunoscut sub numele de [ERC-20](/developers/docs/standards/tokens/erc-20/); a apărut ca standard tehnic utilizat pentru toate contractele inteligente de pe blockchain-ul Ethereum pentru implementarea tokenurilor fungibile.
+Unul dintre cele mai importante [standarde de contract inteligent](/developers/docs/standards/) pe Cloiinkcoin este cunoscut sub numele de [ERC-20](/developers/docs/standards/tokens/erc-20/); a apărut ca standard tehnic utilizat pentru toate contractele inteligente de pe blockchain-ul Cloiinkcoin pentru implementarea tokenurilor fungibile.
 
-ERC-20 definește o listă comună de reguli la care trebuie să adere toate tokenurile fungibile Ethereum. În consecință, acest token standard le permite programatorilor de toate tipurile să prezică cu precizie modul în care noile tokenuri vor funcționa în cadrul unui sistem Ethereum mai mare. Acest lucru simplifică și ușurează sarcinile programatorilor, deoarece pot lucra în continuare știind că fiecare proiect nou nu va trebui să fie refăcut de fiecare dată când este lansat un nou token, atâta timp cât tokenul urmează regulile.
+ERC-20 definește o listă comună de reguli la care trebuie să adere toate tokenurile fungibile Cloiinkcoin. În consecință, acest token standard le permite programatorilor de toate tipurile să prezică cu precizie modul în care noile tokenuri vor funcționa în cadrul unui sistem Cloiinkcoin mai mare. Acest lucru simplifică și ușurează sarcinile programatorilor, deoarece pot lucra în continuare știind că fiecare proiect nou nu va trebui să fie refăcut de fiecare dată când este lansat un nou token, atâta timp cât tokenul urmează regulile.
 
-Aici, sunt prezentate ca o interfață, funcțiile pe care trebuie să leimplementeze ERC-20. Dacă nu știi sigur ce este o interfață: citește articolul nostru despre [programarea OOP în Solidity](https://ethereumdev.io/inheritance-in-solidity-contracts-are-classes/).
+Aici, sunt prezentate ca o interfață, funcțiile pe care trebuie să leimplementeze ERC-20. Dacă nu știi sigur ce este o interfață: citește articolul nostru despre [programarea OOP în Solidity](https://cloiinkcoindev.io/inheritance-in-solidity-contracts-are-classes/).
 
 ```solidity
 pragma solidity ^0.6.0;
@@ -196,6 +196,6 @@ library SafeMath {
 }
 ```
 
-Această implementare utilizează biblioteca SafeMath. Citește tutorialul nostru dacă dorești să afli [cum te ajută biblioteca să acționezi în caz de atac overflows și underflow în contractele tale inteligente](https://ethereumdev.io/using-safe-math-library-to-prevent-from-overflows/).
+Această implementare utilizează biblioteca SafeMath. Citește tutorialul nostru dacă dorești să afli [cum te ajută biblioteca să acționezi în caz de atac overflows și underflow în contractele tale inteligente](https://cloiinkcoindev.io/using-safe-math-library-to-prevent-from-overflows/).
 
 O altă excelentă implementare a standardului de token ERC-20 este [Implementarea OpenZeppelin-20](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20).

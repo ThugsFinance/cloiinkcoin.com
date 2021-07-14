@@ -114,7 +114,7 @@ const StyledHighlight = styled(Highlight)`
 
 const PageHit = (clickHandler) => ({ hit }) => {
   // Make url relative, so `handleSelect` is triggered
-  const url = hit.url.replace("https://ethereum.org", "")
+  const url = hit.url.replace("https://cloiinkcoin.com", "")
   return (
     <div>
       <GatsbyLink to={url} onClick={clickHandler}>
@@ -151,10 +151,10 @@ const PageHit = (clickHandler) => ({ hit }) => {
 }
 
 const indices = [
-  { name: `prod-ethereum-org`, title: `Pages`, hitComp: `PageHit` },
+  { name: `prod-cloiinkcoin-org`, title: `Pages`, hitComp: `PageHit` },
 ]
 
-// Validate agaisnt basic requirements of an ETH address
+// Validate agaisnt basic requirements of an CLK address
 const isValidAddress = (address) => {
   return /^(0x)?[0-9a-f]{40}$/i.test(address)
 }

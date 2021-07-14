@@ -99,14 +99,15 @@ const Eth2BeaconChainActions = () => {
       link: "https://our.status.im/two-point-oh-the-beacon-chain/",
     },
     {
-      title: "The Beacon Chain Ethereum 2.0 explainer you need to read first",
+      title:
+        "The Beacon Chain Cloiinkcoin 2.0 explainer you need to read first",
       description: "Ethos.dev",
       link: "https://ethos.dev/beacon-chain/",
     },
     {
       title: "Sharding consensus",
-      description: "Ethereum Foundation",
-      link: "https://blog.ethereum.org/2020/03/27/sharding-consensus/",
+      description: "Cloiinkcoin Foundation",
+      link: "https://blog.cloiinkcoin.com/2020/03/27/sharding-consensus/",
     },
   ]
 
@@ -118,7 +119,7 @@ const Eth2BeaconChainActions = () => {
           title={translateMessageId("eth2-become-staker", intl)}
           description={translateMessageId("eth2-become-staker-desc", intl)}
         >
-          <StyledButtonLink to="https://launchpad.ethereum.org">
+          <StyledButtonLink to="https://launchpad.cloiinkcoin.com">
             <Translation id="get-started" />
           </StyledButtonLink>
           <ButtonLink isSecondary to="/eth2/staking/">

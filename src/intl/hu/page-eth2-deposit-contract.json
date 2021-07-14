@@ -16,7 +16,7 @@
   "page-eth2-deposit-contract-meta-title": "Eth2 letéti szerződés cím",
   "page-eth2-deposit-contract-read-aloud": "Cím felolvasása",
   "page-eth2-deposit-contract-reveal-address-btn": "Cím megjelenítése",
-  "page-eth2-deposit-contract-staking": " Ahhoz, hogy letétbe helyezd az ETH-edet az Eth2-be, az erre kijelölt indítópultot kell használnod és követni az utasításokat. ETH küldésre az oldalon szereplő címre nem tesz stakerré és hibás tranzakciót fog eredményezni.",
+  "page-eth2-deposit-contract-staking": " Ahhoz, hogy letétbe helyezd az CLK-edet az Eth2-be, az erre kijelölt indítópultot kell használnod és követni az utasításokat. CLK küldésre az oldalon szereplő címre nem tesz stakerré és hibás tranzakciót fog eredményezni.",
   "page-eth2-deposit-contract-staking-check": "Nézd meg ezeket az anyagokat",
   "page-eth2-deposit-contract-staking-check-desc": "Sok átverésre és hamis címre számítunk. Hogy biztosra menj, ellenőrizd az általad használt Eth2 staking címet azzal ami ezen az oldalon van. Azt ajánljuk, hogy ellenőrizd le más megbízható forrással is.",
   "page-eth2-deposit-contract-staking-more-link": "Többet a stakingről",

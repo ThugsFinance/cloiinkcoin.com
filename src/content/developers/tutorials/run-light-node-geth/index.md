@@ -9,11 +9,11 @@ sidebar: true
 published: 2020-06-14
 ---
 
-You may be interested in running an [Ethereum node](/developers/docs/nodes-and-clients/). One of the easiest ways to do so is by downloading, installing, and running Geth. With Geth, we can have a light node up and running in minutes.
+You may be interested in running an [Cloiinkcoin node](/developers/docs/nodes-and-clients/). One of the easiest ways to do so is by downloading, installing, and running Geth. With Geth, we can have a light node up and running in minutes.
 
-First, you’ll want to [install Geth](https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum).
+First, you’ll want to [install Geth](https://github.com/cloiinkcoin/go-cloiinkcoin/wiki/Building-Cloiinkcoin).
 
-Once you’ve installed Geth, running an Ethereum full node is as simple as typing
+Once you’ve installed Geth, running an Cloiinkcoin full node is as simple as typing
 
 ```bash
 $ geth
@@ -22,7 +22,7 @@ $ geth
 into the command line (without the dollar sign). Don’t do this just yet! When you run `geth`, Geth will:
 
 - Initialize a local copy of a blank-state EVM
-- Start downloading all blocks in Ethereum history, starting from block 0.
+- Start downloading all blocks in Cloiinkcoin history, starting from block 0.
 - Replay all transactions in all blocks in order, updating the state of the EVM with each transaction until it reaches the present-day state.
 
 This process may take anywhere from hours to days, and requires a few hundred GB of free space. For now, we’ll just run a light node on a testnet to familiarize ourselves with how to use Geth. To do this, we'll have to go through a few important command-line options and tools.
@@ -49,12 +49,12 @@ $ geth --syncmode "light"
 
 Finally, `"light"` runs a light node, which we discussed above.
 
-For a great explanation of the differences between the three syncmodes, see this [stack exchange answer](https://ethereum.stackexchange.com/questions/11297/what-is-geths-light-sync-and-why-is-it-so-fast).
+For a great explanation of the differences between the three syncmodes, see this [stack exchange answer](https://cloiinkcoin.stackexchange.com/questions/11297/what-is-geths-light-sync-and-why-is-it-so-fast).
 
 ## Documentation and other command line options {#documentation-and-other-command-line-options}
 
-- [Full documentation](https://geth.ethereum.org/docs/)
-- [All command line options](https://geth.ethereum.org/docs/interface/command-line-options)
+- [Full documentation](https://geth.cloiinkcoin.com/docs/)
+- [All command line options](https://geth.cloiinkcoin.com/docs/interface/command-line-options)
 
 ## Running your light node {#running-your-light-node}
 
@@ -68,12 +68,12 @@ Wait a few seconds, and hopefully you should get output that looks something lik
 
 ```bash
 $ geth --ropsten --syncmode "light"
-INFO [11-18|14:04:47] Maximum peer count                       ETH=0 LES=100 total=25
+INFO [11-18|14:04:47] Maximum peer count                       CLK=0 LES=100 total=25
 INFO [11-18|14:04:47] Starting peer-to-peer node               instance=Geth/v1.8.11-stable/darwin-amd64/go1.10.3
-INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Ethereum/testnet/geth/lightchaindata cache=768 handles=128
+INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Cloiinkcoin/testnet/geth/lightchaindata cache=768 handles=128
 INFO [11-18|14:04:47] Persisted trie from memory database      nodes=355 size=51.89kB time=561.839µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
 INFO [11-18|14:04:47] Initialised chain configuration          config="{ChainID: 3 Homestead: 0 DAO: <nil> DAOSupport: true EIP150: 0 EIP155: 10 EIP158: 10 Byzantium: 1700000 Constantinople: <nil> Engine: ethash}"
-INFO [11-18|14:04:47] Disk storage enabled for ethash caches   dir=/Users/bgu/Library/Ethereum/testnet/geth/ethash count=3
+INFO [11-18|14:04:47] Disk storage enabled for ethash caches   dir=/Users/bgu/Library/Cloiinkcoin/testnet/geth/ethash count=3
 INFO [11-18|14:04:47] Disk storage enabled for ethash DAGs     dir=/Users/bgu/.ethash                              count=2
 INFO [11-18|14:04:47] Added trusted checkpoint                 chain=ropsten block=3375103 hash=9017ab…249e89
 INFO [11-18|14:04:47] Loaded most recent local header          number=0 hash=419410…ca4a2d td=1048576
@@ -81,7 +81,7 @@ INFO [11-18|14:04:47] Starting P2P networking
 INFO [11-18|14:04:49] UDP listener up                          net=enode://3ef47be442520e4708b5ff25e6e213c496046f443f8393ff5e7ec55f1cf27c374e2e93e78235bde651a5734a012a40eacfc16deab762ee0f380b95d117ac530c@[::]:30303
 WARN [11-18|14:04:49] Light client mode is an experimental feature
 INFO [11-18|14:04:49] RLPx listener up                         self="enode://3ef47be442520e4708b5ff25e6e213c496046f443f8393ff5e7ec55f1cf27c374e2e93e78235bde651a5734a012a40eacfc16deab762ee0f380b95d117ac530c@[::]:30303?discport=0"
-INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Ethereum/testnet/geth.ipc
+INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Cloiinkcoin/testnet/geth.ipc
 INFO [11-18|14:04:51] Mapped network port                      proto=udp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
 INFO [11-18|14:04:51] Mapped network port                      proto=tcp extport=30303 intport=30303 interface="UPNP IGDv1-IP1"
 INFO [11-18|14:08:55] Block synchronisation started
@@ -96,7 +96,7 @@ INFO [11-18|14:09:00] Imported new block headers               count=192 elapsed
 INFO [11-18|14:09:00] Imported new block headers               count=192 elapsed=109.849ms number=3377791 hash=499f2d…e0c713 ignored=0
 ```
 
-Note: You may not see “Block synchronisation started” and the following “Imported new block headers” messages for several minutes, or even hours if you’re particularly unlucky. During this time, your client is trying to find full node peers willing to serve light clients. In the example above, we can tell by the timestamps that my machine had to wait about four minutes between starting to look for peers and actually finding a peer to download blocks from. This is currently an open issue within the Ethereum community - how do we incentivize people to run full nodes which serve light clients?
+Note: You may not see “Block synchronisation started” and the following “Imported new block headers” messages for several minutes, or even hours if you’re particularly unlucky. During this time, your client is trying to find full node peers willing to serve light clients. In the example above, we can tell by the timestamps that my machine had to wait about four minutes between starting to look for peers and actually finding a peer to download blocks from. This is currently an open issue within the Cloiinkcoin community - how do we incentivize people to run full nodes which serve light clients?
 
 Once block synchronization starts, it’ll take a few minutes for your machine to catch up to the latest blocks on the blockchain. At that point, your output will start looking like:
 
@@ -115,16 +115,16 @@ At this point, messages will start coming in only every 10-30 seconds, and the v
 The directory which Geth uses to store raw blockchain data depends on your operating system. Upon running Geth, look for a message that looks like
 
 ```bash
-INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Ethereum/testnet/geth/lightchaindata cache=768 handles=128
+INFO [11-18|14:04:47] Allocated cache and file handles         database=/Users/bgu/Library/Cloiinkcoin/testnet/geth/lightchaindata cache=768 handles=128
 ```
 
 The path following `“database=”` should tell you where the blockchain data is stored on your machine. If you’re running a full node, this directory will contain all of the data about every block that has ever been committed to the blockchain. Since we’re running a light node, this directory only contains the block headers.
 
-It’s worth emphasizing here that, at the lowest level, this is where the blockchain lives. The full contents of the blockchain and the EVM state are stored on every full node in the Ethereum network, in directories that look very much like the one on your computer.
+It’s worth emphasizing here that, at the lowest level, this is where the blockchain lives. The full contents of the blockchain and the EVM state are stored on every full node in the Cloiinkcoin network, in directories that look very much like the one on your computer.
 
 ## Attaching to the Javascript Console {#attaching-to-the-javascript-console}
 
-Running a node isn’t useful unless we can actually interact with it. For example, we might want to broadcast transaction requests or look up EVM/blockchain data (such as an account balance). Geth has a built-in Javascript console and a Javascript API called [web3js](https://github.com/ethereum/web3.js/) that you can use to interact with your node.
+Running a node isn’t useful unless we can actually interact with it. For example, we might want to broadcast transaction requests or look up EVM/blockchain data (such as an account balance). Geth has a built-in Javascript console and a Javascript API called [web3js](https://github.com/cloiinkcoin/web3.js/) that you can use to interact with your node.
 
 To use the Javascript console:
 
@@ -132,12 +132,12 @@ To use the Javascript console:
 2. Look for a message that looks like:
 
 ```bash
-INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Ethereum/testnet/geth.ipc
+INFO [11-18|14:04:49] IPC endpoint opened                      url=/Users/bgu/Library/Cloiinkcoin/testnet/geth.ipc
 ```
 
 This message should be logged before block synchronization starts.
 
-3. This message indicates the path to the IPC (inter-process communication) endpoint. Copy this path (in the example above, it’s `/Users/bgu/Library/Ethereum/testnet/geth.ipc`).
+3. This message indicates the path to the IPC (inter-process communication) endpoint. Copy this path (in the example above, it’s `/Users/bgu/Library/Cloiinkcoin/testnet/geth.ipc`).
 4. Open a new terminal window or tab, and run the following command:
    `$ geth attach [your IPC endpoint path]`
 
@@ -156,8 +156,8 @@ We can also use web3js to initialize accounts, write and broadcast transaction r
 ```js
 eth.getBalance('0x85d918c2B7F172d033D190152AEc58709Fb6D048')
 # returns 1059286000000000000 as of 11-18-2018. This value is reported in "Wei".
-# One Wei is a denomination which is equivalent to 10^-18 ether.
-# The balance of this account in ether is about 1.059eth.
+# One Wei is a denomination which is equivalent to 10^-18 Cloiink.
+# The balance of this account in Cloiink is about 1.059eth.
 ```
 
 ## Stopping and restarting your node {#stopping-and-restarting-your-node}
@@ -170,4 +170,4 @@ $ geth --ropsten --syncmode "light"
 
 Replace 'ropsten' with other testnet names as needed, or use 'mainnet'.
 
-If you are interested in running an Ethereum full node, it is generally best to do so from a dedicated machine with good network connectivity, rather than from a personal computer. Here is a guide to running a node with AWS (this is a little outdated and the referenced AMIs are no longer recent or available, so you might have to do some Googling): [How to run a node on AWS](https://medium.com/mercuryprotocol/how-to-run-an-ethereum-node-on-aws-a8774ed3acf6)
+If you are interested in running an Cloiinkcoin full node, it is generally best to do so from a dedicated machine with good network connectivity, rather than from a personal computer. Here is a guide to running a node with AWS (this is a little outdated and the referenced AMIs are no longer recent or available, so you might have to do some Googling): [How to run a node on AWS](https://medium.com/mercuryprotocol/how-to-run-an-cloiinkcoin-node-on-aws-a8774ed3acf6)

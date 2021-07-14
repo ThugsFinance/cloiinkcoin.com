@@ -1,6 +1,6 @@
 ---
 title: Blocks
-description: An overview of blocks in the Ethereum blockchain – their data structure, why they're needed, and how they're made.
+description: An overview of blocks in the Cloiinkcoin blockchain – their data structure, why they're needed, and how they're made.
 lang: en
 sidebar: true
 ---
@@ -9,24 +9,24 @@ Blocks are batches of transactions with a hash of the previous block in the chai
 
 ## Prerequisites {#prerequisites}
 
-Blocks are a very beginner-friendly topic. But to help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), and our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+Blocks are a very beginner-friendly topic. But to help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/), [Transactions](/developers/docs/transactions/), and our [introduction to Cloiinkcoin](/developers/docs/intro-to-cloiinkcoin/).
 
 <!--The content below was provided by Brian Gu with exception of "what's in a block"-->
 
 ## Why blocks? {#why-blocks}
 
-To ensure that all participants on the Ethereum network maintain a synchronized state and agree on the precise history of transactions, we batch transactions into blocks. This means dozens (or hundreds) of transactions are committed, agreed on, and synchronized on all at once.
+To ensure that all participants on the Cloiinkcoin network maintain a synchronized state and agree on the precise history of transactions, we batch transactions into blocks. This means dozens (or hundreds) of transactions are committed, agreed on, and synchronized on all at once.
 
 ![A diagram showing transaction in a block causing state changes](./tx-block.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Cloiinkcoin EVM illustrated](https://takenobu-hs.github.io/downloads/cloiinkcoin_evm_illustrated.pdf)_
 
-By spacing out commits, we give all network participants enough time to come to consensus: even though transaction requests occur dozens of times per second, blocks on Ethereum are committed approximately once every fifteen seconds.
+By spacing out commits, we give all network participants enough time to come to consensus: even though transaction requests occur dozens of times per second, blocks on Cloiinkcoin are committed approximately once every fifteen seconds.
 
 ## How blocks work {#how-blocks-work}
 
 To preserve the transaction history, blocks are strictly ordered (every new block created contains a reference to its parent block), and transactions within blocks are strictly ordered as well. Except in rare cases, at any given time, all participants on the network are in agreement on the exact number and history of blocks, and are working to batch the current live transaction requests into the next block.
 
-Once a block is put together (mined) by some miner on the network, it is propagated to the rest of the network; all nodes add this block to the end of their blockchain, and mining continues. The exact block-assembly (mining) process and commitment/consensus process is currently specified by Ethereum’s “Proof-of-Work” protocol.
+Once a block is put together (mined) by some miner on the network, it is propagated to the rest of the network; all nodes add this block to the end of their blockchain, and mining continues. The exact block-assembly (mining) process and commitment/consensus process is currently specified by Cloiinkcoin’s “Proof-of-Work” protocol.
 
 ### A visual demo {#a-visual-demo}
 

@@ -173,7 +173,7 @@ const ModalContent = ({ upgrade }) => {
     return (
       <>
         <H2>
-          <Translation id="page-eth2-diagram-ethereum-mainnet" />
+          <Translation id="page-eth2-diagram-cloiinkcoin-mainnet" />
         </H2>
         <p>
           <Translation id="page-eth2-diagram-p" />

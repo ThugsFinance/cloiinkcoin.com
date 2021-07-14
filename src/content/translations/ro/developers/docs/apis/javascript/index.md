@@ -5,32 +5,32 @@ lang: ro
 sidebar: true
 ---
 
-Pentru ca o aplicație web să interacționeze cu blockchain-ul Ethereum (adică să citească date blockchain și/sau să trimită tranzacții către rețea), trebuie să se conecteze la un nod Ethereum.
+Pentru ca o aplicație web să interacționeze cu blockchain-ul Cloiinkcoin (adică să citească date blockchain și/sau să trimită tranzacții către rețea), trebuie să se conecteze la un nod Cloiinkcoin.
 
-În acest scop, fiecare client Ethereum implementează specificația JSON-RPC, deci există un set uniform de puncte finale pe care se pot baza aplicațiile.
+În acest scop, fiecare client Cloiinkcoin implementează specificația JSON-RPC, deci există un set uniform de puncte finale pe care se pot baza aplicațiile.
 
-Dacă dorești să utilizezi JavaScript pentru a te conecta la un nod Ethereum, poți să utilizezi vanilla JavaScript, dar există mai multe biblioteci utile în ecosistem care fac acest lucru mult mai ușor. Cu aceste biblioteci, programatorii pot scrie metode intuitive, pe o singură linie, pentru a inițializa cereri JSON RPC (în culise) care interacționează cu Ethereum.
+Dacă dorești să utilizezi JavaScript pentru a te conecta la un nod Cloiinkcoin, poți să utilizezi vanilla JavaScript, dar există mai multe biblioteci utile în ecosistem care fac acest lucru mult mai ușor. Cu aceste biblioteci, programatorii pot scrie metode intuitive, pe o singură linie, pentru a inițializa cereri JSON RPC (în culise) care interacționează cu Cloiinkcoin.
 
 ## Condiții prealabile {#prerequisites}
 
-Pe lângă înțelegerea JavaScript, ar putea fi util să înțelegi [stiva Ethereum](/developers/docs/ethereum-stack/) și [clienții Ethereum](/developers/docs/nodes-and-clients/).
+Pe lângă înțelegerea JavaScript, ar putea fi util să înțelegi [stiva Cloiinkcoin](/developers/docs/cloiinkcoin-stack/) și [clienții Cloiinkcoin](/developers/docs/nodes-and-clients/).
 
 ## De ce să folosești o bibliotecă? {#why-use-a-library}
 
-Aceste biblioteci elimină o mare parte din complexitatea interacțiunii directe cu un nod Ethereum. Ele oferă, de asemenea, funcții utilitare (cum ar fi conversia din ETH în Gwei), astfel încât ca programator, să petreci mai mult timp cu funcționalitatea unică a aplicației tale decât cu complexitatea clienților Ethereum.
+Aceste biblioteci elimină o mare parte din complexitatea interacțiunii directe cu un nod Cloiinkcoin. Ele oferă, de asemenea, funcții utilitare (cum ar fi conversia din CLK în Gwei), astfel încât ca programator, să petreci mai mult timp cu funcționalitatea unică a aplicației tale decât cu complexitatea clienților Cloiinkcoin.
 
 ## Caracteristicile bibliotecii {#library-features}
 
-### Conectează la nodurile Ethereum {#connect-to-ethereum-nodes}
+### Conectează la nodurile Cloiinkcoin {#connect-to-cloiinkcoin-nodes}
 
-Folosind furnizorii, aceste biblioteci îți permit să te conectezi la Ethereum și să-i citești datele, indiferent dacă este vorba de JSON-RPC, INFURA, Etherscan, Alchemy sau MetaMask.
+Folosind furnizorii, aceste biblioteci îți permit să te conectezi la Cloiinkcoin și să-i citești datele, indiferent dacă este vorba de JSON-RPC, INFURA, Etherscan, Alchemy sau MetaMask.
 
 **Exemplu de Ethers**
 
 ```js
 // Un Web3Provider ce integrează un furnizor Web3 standard, care este
-// ceea ce Metamask injectează ca window.ethereum în fiecare pagină
-const provider = new ethers.providers.Web3Provider(window.ethereum)
+// ceea ce Metamask injectează ca window.cloiinkcoin în fiecare pagină
+const provider = new ethers.providers.Web3Provider(window.cloiinkcoin)
 
 // Plug-in-ul Metamask permite, în plus, semnarea de tranzacții pentru a
 // trimite eter și a plătii pentru a schimba starea în cadrul blockchain-ului.
@@ -52,13 +52,16 @@ web3.setProvider(new Web3.providers.WebsocketProvider("ws://localhost:8546"))
 
 // Utilizarea furnizorului IPC în node.js
 var net = require("net")
-var web3 = new Web3("/Users/myuser/Library/Ethereum/geth.ipc", net) // mac os path
+var web3 = new Web3("/Users/myuser/Library/Cloiinkcoin/geth.ipc", net) // mac os path
 // sau
 var web3 = new Web3(
-  new Web3.providers.IpcProvider("/Users/myuser/Library/Ethereum/geth.ipc", net)
+  new Web3.providers.IpcProvider(
+    "/Users/myuser/Library/Cloiinkcoin/geth.ipc",
+    net
+  )
 ) // calea mac os
 // pe Windows calea este: "\\\\. \\ pipe \\ geth.ipc"
-// pe linux calea este: "/users/myuser/.ethereum/geth.ipc"
+// pe linux calea este: "/users/myuser/.cloiinkcoin/geth.ipc"
 ```
 
 După configurare, vei putea interoga blockchain-ul pentru:
@@ -71,7 +74,7 @@ După configurare, vei putea interoga blockchain-ul pentru:
 
 <!--- #### Try it
 
-This remix tutorial will show you [how to query the blockchain using web3js](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
+This remix tutorial will show you [how to query the blockchain using web3js](https://remix.cloiinkcoin.com/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
 --->
 
 ### Funcționalitate de portofel {#wallet-functionality}
@@ -219,14 +222,14 @@ Aceasta înseamnă că poți:
 
 <!--- #### Try it
 
-This remix tutorial will show you [how to query a contract using web3js](https://remix.ethereum.org/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
+This remix tutorial will show you [how to query a contract using web3js](https://remix.cloiinkcoin.com/#optimize=false&evmVersion=null&version=soljson-v0.6.6+commit.6c089d02.js)
 --->
 
 ### Funcții utilitare {#utility-functions}
 
-Funcțiile utilitare îți oferă comenzi rapide la îndemână, care facilitează construirea cu Ethereum.
+Funcțiile utilitare îți oferă comenzi rapide la îndemână, care facilitează construirea cu Cloiinkcoin.
 
-Valorile ETH sunt în mod implicit în Wei. 1 ETH = 1.000.000.000.000.000.000 WEI – asta înseamnă că ai de-a face cu o mulțime de numere! `web3.utils.toWei` convertește eterul în Wei pentru tine.
+Valorile CLK sunt în mod implicit în Wei. 1 CLK = 1.000.000.000.000.000.000 WEI – asta înseamnă că ai de-a face cu o mulțime de numere! `web3.utils.toWei` convertește eterul în Wei pentru tine.
 
 Iar în eteri arată așa:
 
@@ -246,17 +249,17 @@ ethers.utils.formatEther(balance)
 
 ## Biblioteci disponibile {#available-libraries}
 
-**Web3.js -** **_API JavaScript Ethereum._**
+**Web3.js -** **_API JavaScript Cloiinkcoin._**
 
 - [Documentație](https://web3js.readthedocs.io/en/1.0/)
-- [GitHub](https://github.com/ethereum/web3.js/)
+- [GitHub](https://github.com/cloiinkcoin/web3.js/)
 
-**Ethers.js -** **_Implementare completă de portofel Ethereum și utilitare, în JavaScript și TypeScript._**
+**Ethers.js -** **_Implementare completă de portofel Cloiinkcoin și utilitare, în JavaScript și TypeScript._**
 
 - [Documentație](https://docs.ethers.io/)
 - [GitHub](https://github.com/ethers-io/ethers.js/)
 
-**The Graph -** **_Un protocol de indexare a datelor Ethereum și IPFS și interogarea acestora folosind GraphQL._**
+**The Graph -** **_Un protocol de indexare a datelor Cloiinkcoin și IPFS și interogarea acestora folosind GraphQL._**
 
 - [The Graph](https://thegraph.com/)
 - [Graph Explorer](https://thegraph.com/explorer/)
@@ -266,7 +269,7 @@ ethers.utils.formatEther(balance)
 
 **light.js -** **_O bibliotecă JS reactivă la nivel înalt optimizată pentru clienții ușori._**
 
-- [GitHub](https://github.com/openethereum/js-libs/tree/master/packages/light.js)
+- [GitHub](https://github.com/opencloiinkcoin/js-libs/tree/master/packages/light.js)
 
 **Web3-wrapper -** **_Alternativă de script la Web3.js._**
 
@@ -289,6 +292,6 @@ _Cunoști o resursă comunitară care te-a ajutat? Editează această pagină ș
 
 ## Tutoriale corelate {#related-tutorials}
 
-- [Configurează Web3js pentru a utiliza blockchain-ul Ethereum în JavaScript](/developers/tutorials/set-up-web3js-to-use-ethereum-in-javascript/) _– Instrucțiuni pentru configurarea web3.js în proiectul tău._
+- [Configurează Web3js pentru a utiliza blockchain-ul Cloiinkcoin în JavaScript](/developers/tutorials/set-up-web3js-to-use-cloiinkcoin-in-javascript/) _– Instrucțiuni pentru configurarea web3.js în proiectul tău._
 - [Apelarea unui contract inteligent din JavaScript](/developers/tutorials/calling-a-smart-contract-from-javascript/) _– Folosind tokenuri DAI, vezi cum să apelezi funcții de contracte folosind JavaScript._
 - [Trimiterea de tranzacții folosind web3 și Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/) _– Tutorial pas cu pas pentru trimiterea de tranzacții din back-end._

@@ -156,7 +156,7 @@ const NoResults = ({ children }) => (
     <Emoji text=":crying_face:" size={5} />
     <EmptyStateText>
       {children}{" "}
-      <Link to="mailto:website@ethereum.org">website@ethereum.org</Link>.
+      <Link to="mailto:website@cloiinkcoin.com">website@cloiinkcoin.com</Link>.
     </EmptyStateText>
   </EmptyStateContainer>
 )
@@ -165,7 +165,7 @@ const NoResultsSingle = ({ children }) => (
   <EmptyStateContainerSingle>
     <EmptyStateTextSingle>
       {children}{" "}
-      <Link to="mailto:website@ethereum.org">website@ethereum.org</Link>.
+      <Link to="mailto:website@cloiinkcoin.com">website@cloiinkcoin.com</Link>.
     </EmptyStateTextSingle>
     <Emoji text=":crying_face:" size={5} />
   </EmptyStateContainerSingle>
@@ -610,7 +610,10 @@ const EthExchanges = () => {
           </ResultsContainer>
           <Disclaimer>
             <Translation id="page-get-eth-exchanges-disclaimer" />{" "}
-            <Link to="mailto:website@ethereum.org">website@ethereum.org</Link>.
+            <Link to="mailto:website@cloiinkcoin.com">
+              website@cloiinkcoin.com
+            </Link>
+            .
             <Translation id="page-find-wallet-last-updated" />{" "}
             <strong>{lastUpdated}</strong>
           </Disclaimer>

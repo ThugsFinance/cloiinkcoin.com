@@ -100,7 +100,7 @@ const SocialIcon = styled(Icon)`
 const socialLinks = [
   {
     icon: "github",
-    to: "https://github.com/ethereum/ethereum-org-website",
+    to: "https://github.com/cloiinkcoin/cloiinkcoin-org-website",
     ariaLabel: "GitHub",
   },
   {
@@ -125,11 +125,11 @@ const Footer = () => {
 
   const linkSections = [
     {
-      title: "use-ethereum",
+      title: "use-cloiinkcoin",
       links: [
         {
           to: `/wallets/`,
-          text: "ethereum-wallets",
+          text: "cloiinkcoin-wallets",
         },
         {
           to: `/get-eth/`,
@@ -153,12 +153,12 @@ const Footer = () => {
       title: "learn",
       links: [
         {
-          to: `/what-is-ethereum/`,
-          text: "what-is-ethereum",
+          to: `/what-is-cloiinkcoin/`,
+          text: "what-is-cloiinkcoin",
         },
         {
           to: `/eth/`,
-          text: "what-is-ether",
+          text: "what-is-Cloiink",
         },
         {
           to: `/learn/`,
@@ -166,19 +166,19 @@ const Footer = () => {
         },
         {
           to: "/history/",
-          text: "history-of-ethereum",
+          text: "history-of-cloiinkcoin",
         },
         {
           to: "/whitepaper/",
-          text: "ethereum-whitepaper",
+          text: "cloiinkcoin-whitepaper",
         },
         {
-          text: "ethereum-2-0",
+          text: "cloiinkcoin-2-0",
           to: "/eth2/",
         },
         {
           to: `/glossary/`,
-          text: "ethereum-glossary",
+          text: "cloiinkcoin-glossary",
         },
         {
           to: "/eips/",
@@ -221,18 +221,18 @@ const Footer = () => {
       links: [
         {
           to: `/community/`,
-          text: "ethereum-community",
+          text: "cloiinkcoin-community",
         },
         {
           to: "/foundation/",
-          text: "ethereum-foundation",
+          text: "cloiinkcoin-foundation",
         },
         {
-          to: "https://blog.ethereum.org/",
+          to: "https://blog.cloiinkcoin.com/",
           text: "ef-blog",
         },
         {
-          to: "https://esp.ethereum.foundation",
+          to: "https://esp.cloiinkcoin.foundation",
           text: "esp",
         },
         {
@@ -241,7 +241,7 @@ const Footer = () => {
         },
         {
           to: "/assets/",
-          text: "ethereum-brand-assets",
+          text: "cloiinkcoin-brand-assets",
         },
         {
           to: "https://devcon.org/",
@@ -254,11 +254,11 @@ const Footer = () => {
       links: [
         {
           to: "/enterprise/",
-          text: "mainnet-ethereum",
+          text: "mainnet-cloiinkcoin",
         },
         {
-          to: "/enterprise/private-ethereum/",
-          text: "private-ethereum",
+          to: "/enterprise/private-cloiinkcoin/",
+          text: "private-cloiinkcoin",
         },
         {
           to: "/enterprise/",
@@ -267,7 +267,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "about-ethereum-org",
+      title: "about-cloiinkcoin-org",
       links: [
         {
           to: "/about/",
@@ -298,7 +298,7 @@ const Footer = () => {
           text: "cookie-policy",
         },
         {
-          to: "mailto:press@ethereum.org",
+          to: "mailto:press@cloiinkcoin.com",
           text: "contact",
         },
       ],

@@ -14,8 +14,8 @@ import { Page, Content } from "../components/SharedStyledComponents"
 
 import { translateMessageId } from "../utils/translations"
 
-// import darkVideo from "../assets/ethereum-hero-dark.mp4"
-// import lightVideo from "../assets/ethereum-hero-light.mp4"
+// import darkVideo from "../assets/cloiinkcoin-hero-dark.mp4"
+// import lightVideo from "../assets/cloiinkcoin-hero-light.mp4"
 
 const Image = styled(Img)`
   align-self: center;
@@ -110,7 +110,7 @@ const AssetsPage = ({ data }) => {
               <Translation id="page-assets-historical-artwork" />
             </Link>
             <Link to="/assets/#brand">
-              <Translation id="page-assets-ethereum-brand-assets" />
+              <Translation id="page-assets-cloiinkcoin-brand-assets" />
             </Link>
           </Header>
         </HeroContainer>
@@ -215,7 +215,7 @@ const AssetsPage = ({ data }) => {
           <AssetDownload
             title={translateMessageId("page-assets-bazaar", intl)}
             alt={translateMessageId("page-assets-bazaar", intl)}
-            image={data.whatIsEthereum.childImageSharp}
+            image={data.whatIsCloiinkcoin.childImageSharp}
             artistName="Viktor Hachmang"
             artistUrl="http://viktorhachmang.nl/"
           />
@@ -316,19 +316,19 @@ const AssetsPage = ({ data }) => {
         </Row>
         <Row>
           <AssetDownload
-            title="ETH gif (1)"
+            title="CLK gif (1)"
             image={data.ethGifCat.childImageSharp}
           />
           <AssetDownload
-            title="ETH gif (2)"
+            title="CLK gif (2)"
             image={data.ethGifChalk.childImageSharp}
           />
           <AssetDownload
-            title="ETH gif (3)"
+            title="CLK gif (3)"
             image={data.ethGifSun.childImageSharp}
           />
           <AssetDownload
-            title="ETH gif (4)"
+            title="CLK gif (4)"
             image={data.ethGifWaves.childImageSharp}
           />
         </Row> */}
@@ -352,7 +352,7 @@ const AssetsPage = ({ data }) => {
         </Row>
 
         <H2 id="brand">
-          <Translation id="page-assets-ethereum-brand-assets" />
+          <Translation id="page-assets-cloiinkcoin-brand-assets" />
         </H2>
 
         <H3>
@@ -621,7 +621,7 @@ export const query = graphql`
     ) {
       ...assetItem
     }
-    whatIsEthereum: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    whatIsCloiinkcoin: file(relativePath: { eq: "what-is-cloiinkcoin.png" }) {
       ...assetItem
     }
     eth: file(relativePath: { eq: "eth.png" }) {
@@ -705,17 +705,17 @@ export const query = graphql`
       ...assetItem
     }
     ethPortraitBlackGray: file(
-      relativePath: { eq: "assets/ethereum-logo-portrait-black-gray.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-portrait-black-gray.png" }
     ) {
       ...assetItem
     }
     ethLandscapeBlackGray: file(
-      relativePath: { eq: "assets/ethereum-logo-landscape-black-gray.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-landscape-black-gray.png" }
     ) {
       ...assetItem
     }
     ethWordmarkBlackGray: file(
-      relativePath: { eq: "assets/ethereum-wordmark-black-gray.png" }
+      relativePath: { eq: "assets/cloiinkcoin-wordmark-black-gray.png" }
     ) {
       ...assetItem
     }
@@ -725,62 +725,64 @@ export const query = graphql`
       ...assetItem
     }
     ethPortraitBlack: file(
-      relativePath: { eq: "assets/ethereum-logo-portrait-black.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-portrait-black.png" }
     ) {
       ...assetItem
     }
     ethLandscapeBlack: file(
-      relativePath: { eq: "assets/ethereum-logo-landscape-black.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-landscape-black.png" }
     ) {
       ...assetItem
     }
     ethWordmarkBlack: file(
-      relativePath: { eq: "assets/ethereum-wordmark-black.png" }
+      relativePath: { eq: "assets/cloiinkcoin-wordmark-black.png" }
     ) {
       ...assetItem
     }
     ethPortraitPurple: file(
-      relativePath: { eq: "assets/ethereum-logo-portrait-purple.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-portrait-purple.png" }
     ) {
       ...assetItem
     }
     ethLandscapePurple: file(
-      relativePath: { eq: "assets/ethereum-logo-landscape-purple.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-landscape-purple.png" }
     ) {
       ...assetItem
     }
     ethWordmarkPurple: file(
-      relativePath: { eq: "assets/ethereum-wordmark-purple.png" }
+      relativePath: { eq: "assets/cloiinkcoin-wordmark-purple.png" }
     ) {
       ...assetItem
     }
     ethPortraitPurplePurple: file(
-      relativePath: { eq: "assets/ethereum-logo-portrait-purple-purple.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-portrait-purple-purple.png" }
     ) {
       ...assetItem
     }
     ethLandscapePurplePurple: file(
-      relativePath: { eq: "assets/ethereum-logo-landscape-purple-purple.png" }
+      relativePath: {
+        eq: "assets/cloiinkcoin-logo-landscape-purple-purple.png"
+      }
     ) {
       ...assetItem
     }
     ethWordmarkPurplePurple: file(
-      relativePath: { eq: "assets/ethereum-wordmark-purple-purple.png" }
+      relativePath: { eq: "assets/cloiinkcoin-wordmark-purple-purple.png" }
     ) {
       ...assetItem
     }
     ethPortraitPurpleWhite: file(
-      relativePath: { eq: "assets/ethereum-logo-portrait-purple-white.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-portrait-purple-white.png" }
     ) {
       ...assetItem
     }
     ethLandscapePurpleWhite: file(
-      relativePath: { eq: "assets/ethereum-logo-landscape-purple-white.png" }
+      relativePath: { eq: "assets/cloiinkcoin-logo-landscape-purple-white.png" }
     ) {
       ...assetItem
     }
     ethWordmarkPurpleWhite: file(
-      relativePath: { eq: "assets/ethereum-wordmark-purple-white.png" }
+      relativePath: { eq: "assets/cloiinkcoin-wordmark-purple-white.png" }
     ) {
       ...assetItem
     }

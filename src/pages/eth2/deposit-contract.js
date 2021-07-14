@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import makeBlockie from "ethereum-blockies-base64"
+import makeBlockie from "cloiinkcoin-blockies-base64"
 import { useIntl } from "gatsby-plugin-intl"
 
 import Breadcrumbs from "../../components/Breadcrumbs"
@@ -267,8 +267,8 @@ const DepositContractPage = ({ data, location }) => {
       image: data.consensys.childImageSharp.fixed,
     },
     {
-      title: "Ethereum Foundation",
-      link: "https://blog.ethereum.org/2020/11/04/eth2-quick-update-no-19/",
+      title: "Cloiinkcoin Foundation",
+      link: "https://blog.cloiinkcoin.com/2020/11/04/eth2-quick-update-no-19/",
       image: data.ef.childImageSharp.fixed,
     },
     {
@@ -279,7 +279,7 @@ const DepositContractPage = ({ data, location }) => {
     {
       title: "EthHub",
       link:
-        "https://docs.ethhub.io/ethereum-roadmap/ethereum-2.0/deposit-contract/",
+        "https://docs.ethhub.io/cloiinkcoin-roadmap/cloiinkcoin-2.0/deposit-contract/",
       image: data.ethhub.childImageSharp.fixed,
     },
   ]
@@ -324,7 +324,7 @@ const DepositContractPage = ({ data, location }) => {
             <Translation id="page-eth2-deposit-contract-staking-more-link" />
           </Link>
         </p>
-        <StyledButton to="https://launchpad.ethereum.org">
+        <StyledButton to="https://launchpad.cloiinkcoin.com">
           <Translation id="page-eth2-deposit-contract-launchpad" />
         </StyledButton>
         <h2>
@@ -453,7 +453,7 @@ const DepositContractPage = ({ data, location }) => {
             <InfoBanner isWarning={true} emoji=":warning:" mt={`2rem`}>
               <div>
                 <Translation id="page-eth2-deposit-contract-warning-2" />{" "}
-                <Link to="https://launchpad.ethereum.org">
+                <Link to="https://launchpad.cloiinkcoin.com">
                   <Translation id="page-eth2-deposit-contract-launchpad-2" />
                 </Link>
               </div>

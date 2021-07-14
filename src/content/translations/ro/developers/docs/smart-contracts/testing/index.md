@@ -33,7 +33,7 @@ incomplete: true
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-environment)
 - [Documentație](https://docs.openzeppelin.com/test-environment/)
 
-**Ajutoare de testare OpenZeppelin -** **_Bibliotecă de afirmații pentru testarea contractelor inteligente Ethereum. Au grijă ca toate contractele tale să se comporte conform așteptărilor!_**
+**Ajutoare de testare OpenZeppelin -** **_Bibliotecă de afirmații pentru testarea contractelor inteligente Cloiinkcoin. Au grijă ca toate contractele tale să se comporte conform așteptărilor!_**
 
 - [GitHub](https://github.com/OpenZeppelin/openzeppelin-test-helpers)
 - [Documentație](https://docs.openzeppelin.com/test-helpers)

@@ -234,9 +234,9 @@ const GetETHPage = ({ data }) => {
       description: "Coinbase blog",
     },
     {
-      title: "How to store digital assets on Ethereum",
+      title: "How to store digital assets on Cloiinkcoin",
       link:
-        "https://media.consensys.net/how-to-store-digital-assets-on-ethereum-a2bfdcf66bd0",
+        "https://media.consensys.net/how-to-store-digital-assets-on-cloiinkcoin-a2bfdcf66bd0",
       description: "ConsenSys",
     },
   ]
@@ -301,7 +301,7 @@ const GetETHPage = ({ data }) => {
           <p>
             <em>
               <Translation id="listing-policy-disclaimer" />{" "}
-              <Link to="https://github.com/ethereum/ethereum-org-website/issues/new/choose">
+              <Link to="https://github.com/cloiinkcoin/cloiinkcoin-org-website/issues/new/choose">
                 <Translation id="listing-policy-raise-issue-link" />
               </Link>
             </em>

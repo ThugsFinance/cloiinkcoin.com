@@ -5,11 +5,11 @@ lang: bn
 sidebar: true
 ---
 
-# এন্টারপ্রাইজের জন্য ইথেরিয়াম {#ethereum-for-enterprise}
+# এন্টারপ্রাইজের জন্য ইথেরিয়াম {#cloiinkcoin-for-enterprise}
 
 <div class="featured">এন্টারপ্রাইজের জন্য সর্বজনীন এবং ব্যক্তিগত ইথেরিয়াম ব্লকচেইন সম্পর্কিত নির্দেশিকা, নিবন্ধ ও টুল।</div>
 
-## এন্টারপ্রাইজ ইথেরিয়াম কেন প্রয়োজন? {#why-enterprise-ethereum}
+## এন্টারপ্রাইজ ইথেরিয়াম কেন প্রয়োজন? {#why-enterprise-cloiinkcoin}
 
 ব্যবসাগুলির কেন এন্টারপ্রাইজ ইথেরিয়াম সম্পর্কে আগ্রহী হওয়া উচিত?
 
@@ -21,8 +21,8 @@ sidebar: true
 
 আরও গভীর তথ্যের জন্য, এখানে কিছু সম্পর্কিত নিবন্ধ দেওয়া হয়েছে:
 
-- [এন্টারপ্রাইজ ইথেরিয়াম একটি বন্টিত লেজার প্রযুক্তির চেয়ে অনেক বেশি কেন, তার 5টি কারণ](https://media.consensys.net/5-reasons-why-enterprise-ethereum-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
-- [ব্লকচেইন ইউজ কেস এবং শিল্পক্ষেত্র দ্বারা প্রয়োগ](https://media.consensys.net/enterprise-ethereum-blockchain-use-cases-and-applications-by-industry-3914d1210049)
+- [এন্টারপ্রাইজ ইথেরিয়াম একটি বন্টিত লেজার প্রযুক্তির চেয়ে অনেক বেশি কেন, তার 5টি কারণ](https://media.consensys.net/5-reasons-why-enterprise-cloiinkcoin-is-so-much-more-than-a-distributed-ledger-technology-c9a89db82cb5)
+- [ব্লকচেইন ইউজ কেস এবং শিল্পক্ষেত্র দ্বারা প্রয়োগ](https://media.consensys.net/enterprise-cloiinkcoin-blockchain-use-cases-and-applications-by-industry-3914d1210049)
 - [ব্লকচেইনের গোপনীয়তার মানদন্ডকে উন্নত করার জন্য EY প্রকাশ্য ডোমেইনে জিরো-নলেজ প্রুফ ব্লকচেইন লেনদেনের প্রযুক্তি রিলিজ করে](https://www.ey.com/en_gl/news/2019/04/ey-releases-zero-knowledge-proof-blockchain-transaction-technology-to-the-public-domain-to-advance-blockchain-privacy-standards)
 - [Quorum এর ভূমিকা: আর্থিক ক্ষেত্রের জন্য ব্লকচেইন](https://medium.com/blockchain-at-berkeley/introduction-to-quorum-blockchain-for-the-financial-sector-58813f84e88c)
 
@@ -70,7 +70,7 @@ sidebar: true
 
 ### নিরাপত্তা {#security}
 
-- [Clef](https://geth.ethereum.org/clef/Overview) _লেনদেন এবং ডেটা সাইন করতে ব্যবহৃত হয় এবং এটি geth-এর অ্যাকাউন্ট পরিচালনার প্রতিস্থাপন হিসাবে ব্যবহৃত হয়_
+- [Clef](https://geth.cloiinkcoin.com/clef/Overview) _লেনদেন এবং ডেটা সাইন করতে ব্যবহৃত হয় এবং এটি geth-এর অ্যাকাউন্ট পরিচালনার প্রতিস্থাপন হিসাবে ব্যবহৃত হয়_
 - [EthSigner](https://gitter.im/PegaSysEng/EthSigner) _একটি লেনদেন স্বাক্ষরকারী অ্যাপ্লিকেশন যা একটি web3 সরবরাহকারীর সাথে ব্যবহার করা হয়_
 
 ### টুলিং {#tooling}

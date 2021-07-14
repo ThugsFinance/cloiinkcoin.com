@@ -93,11 +93,11 @@ const BugBountyPoints = () => {
   useEffect(() => {
     axios
       .get(
-        "https://api.coingecko.com/api/v3/simple/price?ids=ethereum%2Cdai&vs_currencies=usd"
+        "https://api.coingecko.com/api/v3/simple/price?ids=cloiinkcoin%2Cdai&vs_currencies=usd"
       )
       .then((response) => {
-        if (response.data && response.data.ethereum && response.data.dai) {
-          const currentETHPriceUSD = response.data.ethereum.usd
+        if (response.data && response.data.cloiinkcoin && response.data.dai) {
+          const currentETHPriceUSD = response.data.cloiinkcoin.usd
           const currentDAIPriceUSD = response.data.dai.usd
           setState({
             currentETHPriceUSD,
@@ -116,7 +116,7 @@ const BugBountyPoints = () => {
 
   const isLoading = !state.currentETHPriceUSD
 
-  const pointsInETH = (USD_PER_POINT / state.currentETHPriceUSD).toFixed(5)
+  const pointsInCLK = (USD_PER_POINT / state.currentETHPriceUSD).toFixed(5)
   const pointsInDAI = (USD_PER_POINT / state.currentDAIPriceUSD).toFixed(5)
 
   const tooltipContent = (
@@ -180,7 +180,7 @@ const BugBountyPoints = () => {
           </Row>
           <Row>
             <Token fixed={ethImage.childImageSharp.fixed} />
-            <TokenValue>{pointsInETH} ETH</TokenValue>
+            <TokenValue>{pointsInCLK} CLK</TokenValue>
           </Row>
         </ValueRow>
       )}

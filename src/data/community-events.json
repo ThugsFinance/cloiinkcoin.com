@@ -1,17 +1,17 @@
 [
   {
     "title": "This is old, should not display",
-    "to": "https://www.ethereum.com/",
-    "sponsor": "Ethereum Foundation",
+    "to": "https://www.cloiinkcoin.com/",
+    "sponsor": "Cloiinkcoin Foundation",
     "description": "test event that happened in the past and should not be rendered",
     "startDate": "2021-04-20",
     "endDate": "2021-04-21"
   },
   {
-    "title": "Ethereum Community Conference 4 (EthCC) - Paris",
+    "title": "Cloiinkcoin Community Conference 4 (EthCC) - Paris",
     "to": "https://ethcc.io/",
     "sponsor": null,
-    "description": "The largest annual European Ethereum event focused on technology and community. Three intense days of conferences, networking and learning.",
+    "description": "The largest annual European Cloiinkcoin event focused on technology and community. Three intense days of conferences, networking and learning.",
     "startDate": "2021-07-20",
     "endDate": "2021-07-22"
   },
@@ -27,7 +27,7 @@
     "title": "ETHOdyssey",
     "to": "https://ethodyssey.devfolio.co/",
     "sponsor": null,
-    "description": "Global Online Ethereum Hackathon",
+    "description": "Global Online Cloiinkcoin Hackathon",
     "startDate": "2021-07-02",
     "endDate": "2021-08-01"
   }

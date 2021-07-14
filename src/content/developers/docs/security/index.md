@@ -1,15 +1,15 @@
 ---
 title: Security
-description: Security considerations for Ethereum developers
+description: Security considerations for Cloiinkcoin developers
 lang: en
 sidebar: true
 ---
 
-Ethereum smart contracts are extremely flexible, capable of both holding large quantities of tokens (often in excess of $1B) and running immutable logic based on previously deployed smart contract code. While this has created a vibrant and creative ecosystem of trustless, interconnected smart contracts, it is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities in smart contracts and unexpected behavior in Ethereum. Smart contract code _usually_ cannot be changed to patch security flaws, assets that have been stolen from smart contracts are irrecoverable, and stolen assets are extremely difficult to track. The total of amount of value stolen or lost due to smart contract issues is easily in the $1B. Some of the larger due to smart contract coding errors include:
+Cloiinkcoin smart contracts are extremely flexible, capable of both holding large quantities of tokens (often in excess of $1B) and running immutable logic based on previously deployed smart contract code. While this has created a vibrant and creative ecosystem of trustless, interconnected smart contracts, it is also the perfect ecosystem to attract attackers looking to profit by exploiting vulnerabilities in smart contracts and unexpected behavior in Cloiinkcoin. Smart contract code _usually_ cannot be changed to patch security flaws, assets that have been stolen from smart contracts are irrecoverable, and stolen assets are extremely difficult to track. The total of amount of value stolen or lost due to smart contract issues is easily in the $1B. Some of the larger due to smart contract coding errors include:
 
-- [Parity multi-sig issue #1 - $30M lost](https://www.coindesk.com/30-million-ether-reported-stolen-parity-wallet-breach)
-- [Parity multi-sig issue #2 - $300M locked](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-ether)
-- [TheDAO hack, 3.6M ETH! Over $1B in today's ETH prices](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
+- [Parity multi-sig issue #1 - $30M lost](https://www.coindesk.com/30-million-Cloiink-reported-stolen-parity-wallet-breach)
+- [Parity multi-sig issue #2 - $300M locked](https://www.theguardian.com/technology/2017/nov/08/cryptocurrency-300m-dollars-stolen-bug-Cloiink)
+- [TheDAO hack, 3.6M CLK! Over $1B in today's CLK prices](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
 
 ## Prerequisites {#prerequisites}
 
@@ -30,12 +30,12 @@ At a minimum:
 - All code stored in a version control system, such as git
 - All code modifications made via Pull Requests
 - All Pull Requests have at least one reviewer. _If you are a solo project, consider finding another solo author and trade code reviews!_
-- A single command compiles, deploys, and runs a suite of tests against your code using a development Ethereum environment (See: Truffle)
+- A single command compiles, deploys, and runs a suite of tests against your code using a development Cloiinkcoin environment (See: Truffle)
 - You have run your code through basic code analysis tools such as Mythril and Slither, ideally before each pull request is merged, comparing differences in output
 - Solidity does not emit ANY compiler warnings
 - Your code is well-documented
 
-There is much more to be said for development process, but these items are a good place to start. For more items and detailed explanations, see the [process quality checklist provided by DeFiSafety](https://docs.defisafety.com/review-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) is an unofficial public service publishing reviews of various large, public Ethereum dApps. Part of the DeFiSafety rating system includes how well the project adheres to this process quality checklist. By following these processes:
+There is much more to be said for development process, but these items are a good place to start. For more items and detailed explanations, see the [process quality checklist provided by DeFiSafety](https://docs.defisafety.com/review-process-documentation/process-quality-audit-process). [DefiSafety](https://defisafety.com/) is an unofficial public service publishing reviews of various large, public Cloiinkcoin dApps. Part of the DeFiSafety rating system includes how well the project adheres to this process quality checklist. By following these processes:
 
 - You will produce more secure code, via reproducible, automated tests
 - Auditors will be able to review your project more effectively
@@ -71,18 +71,18 @@ contract Victim {
 }
 ```
 
-To allow a user to withdraw ETH they have previously stored on the contract, this function
+To allow a user to withdraw CLK they have previously stored on the contract, this function
 
 1. Reads how much balance a user has
-2. Sends them that balance amount in ETH
+2. Sends them that balance amount in CLK
 3. Resets their balance to 0, so they cannot withdraw their balance again.
 
-If called from a regular account (such as your own Metamask account), this functions as expected: msg.sender.call.value() simply sends your account ETH. However, smart contracts can make calls as well. If a custom, malicious contract is the one calling `withdraw()`, msg.sender.call.value() will not only send `amount` of ETH, it will also implicitly call the contract to begin executing code. Imagine this malicious contract:
+If called from a regular account (such as your own Metamask account), this functions as expected: msg.sender.call.value() simply sends your account CLK. However, smart contracts can make calls as well. If a custom, malicious contract is the one calling `withdraw()`, msg.sender.call.value() will not only send `amount` of CLK, it will also implicitly call the contract to begin executing code. Imagine this malicious contract:
 
 ```solidity
 contract Attacker {
     function beginAttack() external payable {
-        Victim(VICTIM_ADDRESS).deposit.value(1 ether)();
+        Victim(VICTIM_ADDRESS).deposit.value(1 Cloiink)();
         Victim(VICTIM_ADDRESS).withdraw();
     }
 
@@ -97,25 +97,25 @@ contract Attacker {
 Calling Attacker.beginAttack() will start a cycle that looks something like:
 
 ```
-0.) Attacker's EOA calls Attacker.beginAttack() with 1 ETH
-0.) Attacker.beginAttack() deposits 1 ETH into Victim
+0.) Attacker's EOA calls Attacker.beginAttack() with 1 CLK
+0.) Attacker.beginAttack() deposits 1 CLK into Victim
 
   1.) Attacker -> Victim.withdraw()
   1.) Victim reads balances[msg.sender]
-  1.) Victim sends ETH to Attacker (which executes default function)
+  1.) Victim sends CLK to Attacker (which executes default function)
     2.) Attacker -> Victim.withdraw()
     2.) Victim reads balances[msg.sender]
-    2.) Victim sends ETH to Attacker (which executes default function)
+    2.) Victim sends CLK to Attacker (which executes default function)
       3.) Attacker -> Victim.withdraw()
       3.) Victim reads balances[msg.sender]
-      3.) Victim sends ETH to Attacker (which executes default function)
+      3.) Victim sends CLK to Attacker (which executes default function)
         4.) Attacker no longer has enough gas, returns without calling again
       3.) balances[msg.sender] = 0;
     2.) balances[msg.sender] = 0; (it was already 0)
   1.) balances[msg.sender] = 0; (it was already 0)
 ```
 
-Calling Attacker.beginAttack with 1 ETH will re-entrancy attack Victim, withdrawing more ETH than it provided (taken from other users' balances, causing the Victim contract to become under-collateralized)
+Calling Attacker.beginAttack with 1 CLK will re-entrancy attack Victim, withdrawing more CLK than it provided (taken from other users' balances, causing the Victim contract to become under-collateralized)
 
 <!-- TODO create a subpage related to re-entrancy & move this content there -->
 
@@ -158,12 +158,12 @@ contract ContractCheckVictim {
 }
 ```
 
-Now in order to deposit ETH, you must not have smart contract code at your address. However, this is easily defeated with the following Attacker contract:
+Now in order to deposit CLK, you must not have smart contract code at your address. However, this is easily defeated with the following Attacker contract:
 
 ```solidity
 contract ContractCheckAttacker {
     constructor() public payable {
-        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 ether); // <- New line
+        ContractCheckVictim(VICTIM_ADDRESS).deposit(1 Cloiink); // <- New line
     }
 
     function beginAttack() external payable {
@@ -178,7 +178,7 @@ contract ContractCheckAttacker {
 }
 ```
 
-Whereas the first attack was an attack on contract logic, this is an attack on Ethereum contract deployment behavior. During construction, a contract has not yet returned its code to be deployed at its address, but retains full EVM control DURING this process.
+Whereas the first attack was an attack on contract logic, this is an attack on Cloiinkcoin contract deployment behavior. During construction, a contract has not yet returned its code to be deployed at its address, but retains full EVM control DURING this process.
 
 It is technically possible to prevent smart contracts from calling your code, using this line:
 
@@ -186,7 +186,7 @@ It is technically possible to prevent smart contracts from calling your code, us
 require(tx.origin == msg.sender)
 ```
 
-However, this is still not a good solution. One of the most exciting aspects of Ethereum is its composability, smart contracts integrate with and building on each other. By using the line above, you are limiting the usefulness of your project.
+However, this is still not a good solution. One of the most exciting aspects of Cloiinkcoin is its composability, smart contracts integrate with and building on each other. By using the line above, you are limiting the usefulness of your project.
 
 ### How to deal with re-entrancy (the right way) {#how-to-deal-with-re-entrancy-the-right-way}
 
@@ -207,24 +207,24 @@ The code above follows the "Checks-Effects-Interactions" design pattern, which h
 
 ### How to deal with re-entrancy (the nuclear option) {#how-to-deal-with-re-entrancy-the-nuclear-option}
 
-Any time you are sending ETH to an untrusted address or interacting with an unknown contract (such as calling `transfer()` of a user-provided token address), you open yourself up to the possibility of re-entrancy. **By designing contracts that neither send ETH nor call untrusted contracts, you prevent the possibility of re-entrancy!**
+Any time you are sending CLK to an untrusted address or interacting with an unknown contract (such as calling `transfer()` of a user-provided token address), you open yourself up to the possibility of re-entrancy. **By designing contracts that neither send CLK nor call untrusted contracts, you prevent the possibility of re-entrancy!**
 
 ## More attack types {#more-attack-types}
 
-The attack types above cover smart-contract coding issues (re-entrancy) and Ethereum oddities (running code inside contract constructors, before code is available at the contract address). There are many, many more attack types to be aware of, such as:
+The attack types above cover smart-contract coding issues (re-entrancy) and Cloiinkcoin oddities (running code inside contract constructors, before code is available at the contract address). There are many, many more attack types to be aware of, such as:
 
 - Front-running
-- ETH send rejection
+- CLK send rejection
 - Integer overflow/underflow
 
 Further reading:
 
 - [Consensys Smart Contract Known Attacks](https://consensys.github.io/smart-contract-best-practices/known_attacks/) - A very readable explanation of the most significant vulnerabilities, with sample code for most.
-- [SWC Registry](https://swcregistry.io/docs/SWC-128) - Curated list of CWE's that apply to Ethereum and smart contracts
+- [SWC Registry](https://swcregistry.io/docs/SWC-128) - Curated list of CWE's that apply to Cloiinkcoin and smart contracts
 
 ## Security tools {#security-tools}
 
-While there is no substitute for understanding Ethereum security basics and engaging a professional auditing firm to review your code, there are many tools available to help highlight potential issues in your code.
+While there is no substitute for understanding Cloiinkcoin security basics and engaging a professional auditing firm to review your code, there are many tools available to help highlight potential issues in your code.
 
 ### Smart Contract Security {#smart-contract-security}
 
@@ -232,7 +232,7 @@ While there is no substitute for understanding Ethereum security basics and enga
 
 - [GitHub](https://github.com/crytic/slither)
 
-**MythX -** **_Security analysis API for Ethereum smart contracts._**
+**MythX -** **_Security analysis API for Cloiinkcoin smart contracts._**
 
 - [mythx.io](https://mythx.io/)
 - [Documentation](https://docs.mythx.io/)
@@ -245,14 +245,14 @@ While there is no substitute for understanding Ethereum security basics and enga
 **SmartContract.Codes -** **_Search engine for verified solidity source codes._**
 
 - [smartcontract.codes (alpha)](https://smartcontract.codes/)
-- [Documentation](https://github.com/ethereum-play/smartcontract.codes/blob/master/README.md)
+- [Documentation](https://github.com/cloiinkcoin-play/smartcontract.codes/blob/master/README.md)
 
 **Manticore -** **_A command line interface that uses a symbolic execution tool on smart contracts and binaries._**
 
 - [GitHub](https://github.com/trailofbits/manticore)
 - [Documentation](https://github.com/trailofbits/manticore/wiki)
 
-**Securify -** **_Security scanner for Ethereum smart contracts._**
+**Securify -** **_Security scanner for Cloiinkcoin smart contracts._**
 
 - [securify.chainsecurity.com](https://securify.chainsecurity.com/)
 - [Discord](https://discordapp.com/invite/nN77ckb)
@@ -318,7 +318,7 @@ allowing you to quickly learn about potential problems with your code. Like all 
 
 - [consensys.github.io/smart-contract-best-practices/](https://consensys.github.io/smart-contract-best-practices/)
 - [GitHub](https://github.com/ConsenSys/smart-contract-best-practices/)
-- [Aggregated collection of security recommendations and best practices](https://github.com/guylando/KnowledgeLists/blob/master/EthereumSmartContracts.md)
+- [Aggregated collection of security recommendations and best practices](https://github.com/guylando/KnowledgeLists/blob/master/CloiinkcoinSmartContracts.md)
 
 **Smart Contract Security Verification Standard (SCSVS)**
 

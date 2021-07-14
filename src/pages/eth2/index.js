@@ -245,8 +245,8 @@ const Eth2IndexPage = ({ data }) => {
         path: "/eth2/beacon-chain/",
       },
       {
-        content: translateMessageId("page-eth2-whats-ethereum", intl),
-        path: "/what-is-ethereum/",
+        content: translateMessageId("page-eth2-whats-cloiinkcoin", intl),
+        path: "/what-is-cloiinkcoin/",
         isSecondary: "isSecondary",
       },
     ],
@@ -287,7 +287,7 @@ const Eth2IndexPage = ({ data }) => {
         <div>
           <b>Latest:</b> Eth2 researchers are working on ways to accelerate the
           merge. It will probably happen earlier than expected. More soon.{" "}
-          <Link to="https://blog.ethereum.org/category/research-and-development/">
+          <Link to="https://blog.cloiinkcoin.com/category/research-and-development/">
             Follow updates
           </Link>
         </div>
@@ -401,7 +401,7 @@ const Eth2IndexPage = ({ data }) => {
             <p>
               <Translation id="page-eth2-index-staking-step-1-desc" />
             </p>
-            <ButtonLink to="https://launchpad.ethereum.org">
+            <ButtonLink to="https://launchpad.cloiinkcoin.com">
               <Translation id="page-eth2-index-staking-step-1-btn" />
             </ButtonLink>
             <h3>
@@ -602,7 +602,7 @@ const Eth2IndexPage = ({ data }) => {
               </ul>
               <p>
                 <Translation id="page-eth2-question-6-answer-3" />{" "}
-                <Link to="https://blog.ethereum.org">
+                <Link to="https://blog.cloiinkcoin.com">
                   <Translation id="page-eth2-eth-blog" />
                 </Link>
               </p>
@@ -631,7 +631,7 @@ const Eth2IndexPage = ({ data }) => {
               </p>
               <ul>
                 <li>
-                  <Link to="https://trinity.ethereum.org/">
+                  <Link to="https://trinity.cloiinkcoin.com/">
                     <Translation id="page-eth2-question-7-trinity" />
                   </Link>{" "}
                   <Translation id="page-eth2-question-7-trinity-lang" />
@@ -661,7 +661,7 @@ const Eth2IndexPage = ({ data }) => {
                   <Translation id="page-eth2-question-7-cortex-lang" />
                 </li>
                 <li>
-                  <Link to="https://pegasys.tech/teku-ethereum-2-for-enterprise/">
+                  <Link to="https://pegasys.tech/teku-cloiinkcoin-2-for-enterprise/">
                     <Translation id="page-eth2-question-7-teku" />
                   </Link>{" "}
                   <Translation id="page-eth2-question-7-teku-lang" />

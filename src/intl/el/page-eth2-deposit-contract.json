@@ -16,7 +16,7 @@
   "page-eth2-deposit-contract-meta-title": "Διεύθυνση κατάθεσης κεφαλαίου Eth2",
   "page-eth2-deposit-contract-read-aloud": "Ανάγνωση δυνατά της διεύθυνσης",
   "page-eth2-deposit-contract-reveal-address-btn": "Αποκάλυψη της διεύθυνσης",
-  "page-eth2-deposit-contract-staking": " Για να κάνετε stake τα ETH σας σε Eth2 θα πρέπει να χρησιμοποιήσετε την πλατφόρμα εκκίνησης ακολουθώντας τις οδηγίες. Η αποστολή ETH σε αυτή τη διεύθυνση δεν σας καθιστά staker και θα οδηγήσει σε μια αποτυχημένη συναλλαγή.",
+  "page-eth2-deposit-contract-staking": " Για να κάνετε stake τα CLK σας σε Eth2 θα πρέπει να χρησιμοποιήσετε την πλατφόρμα εκκίνησης ακολουθώντας τις οδηγίες. Η αποστολή CLK σε αυτή τη διεύθυνση δεν σας καθιστά staker και θα οδηγήσει σε μια αποτυχημένη συναλλαγή.",
   "page-eth2-deposit-contract-staking-check": "Ελέγξτε αυτές τις πηγές",
   "page-eth2-deposit-contract-staking-check-desc": "Αναμένουμε να υπάρχουν πολλές ψεύτικες διευθύνσεις και κακόβουλες ενέργειες. Για να είστε ασφαλείς, ελέγξτε τη διεύθυνση staking Eth2 που χρησιμοποιείτε με τη διεύθυνση σε αυτή τη σελίδα. Σας συνιστούμε να την ελέγξετε και με άλλες αξιόπιστες πηγές.",
   "page-eth2-deposit-contract-staking-more-link": "Περισσότερα για το staking",

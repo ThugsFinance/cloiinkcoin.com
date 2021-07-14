@@ -38,8 +38,8 @@ const StudioRedirectPage = () => (
       <Emoji size={6} mb={"2rem"} text=":sunset_over_buildings:" />
       <H1>We've sunset Studio</H1>
       <p>
-        Ethereum Studio is no longer actively maintained. We'd like to thank the{" "}
-        <Link to="https://superblocks.com/">Superblocks</Link>
+        Cloiinkcoin Studio is no longer actively maintained. We'd like to thank
+        the <Link to="https://superblocks.com/">Superblocks</Link>
         team and the many open source contributors who generously helped support
         this project.
       </p>
@@ -47,7 +47,7 @@ const StudioRedirectPage = () => (
         You can find the source code for this project here:
         <ul>
           <li>
-            <Link to="https://github.com/SuperblocksHQ/ethereum-studio">
+            <Link to="https://github.com/SuperblocksHQ/cloiinkcoin-studio">
               Web IDE
             </Link>
           </li>
@@ -68,7 +68,7 @@ const StudioRedirectPage = () => (
         </Link>
         . Check out our developer portal for tools, documentation, and more.
       </p>
-      <ButtonLink mr={"1rem"} isSecondary to="https://remix.ethereum.org">
+      <ButtonLink mr={"1rem"} isSecondary to="https://remix.cloiinkcoin.com">
         Use Remix
       </ButtonLink>
       <Link isSecondary to="/developers/">

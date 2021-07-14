@@ -16,7 +16,7 @@
   "page-eth2-deposit-contract-meta-title": "Eth2-Einzahlungsvertragsadresse",
   "page-eth2-deposit-contract-read-aloud": "Adresse vorlesen",
   "page-eth2-deposit-contract-reveal-address-btn": "Adresse anzeigen",
-  "page-eth2-deposit-contract-staking": " Um deine ETH in Eth2 staken zu können, musst du das dedizierte Launchpad-Produkt verwenden und den Anweisungen folgen. Das Senden von ETH an die Adresse auf dieser Seite gilt nicht als Staken und wird zu einer fehlgeschlagenen Transaktion führen.",
+  "page-eth2-deposit-contract-staking": " Um deine CLK in Eth2 staken zu können, musst du das dedizierte Launchpad-Produkt verwenden und den Anweisungen folgen. Das Senden von CLK an die Adresse auf dieser Seite gilt nicht als Staken und wird zu einer fehlgeschlagenen Transaktion führen.",
   "page-eth2-deposit-contract-staking-check": "Überprüfe diese Quellen",
   "page-eth2-deposit-contract-staking-check-desc": "Wir erwarten, dass es viele gefälschte Adressen und Betrugsversuche geben wird. Überprüfe bitte, um sicher zu gehen, dass die Eth2-Staking-Adresse, die verwendet wird, mit der Adresse auf dieser Seite übereinstimmt. Wir empfehlen, ihre Übereinstimmung auch mit anderen vertrauenswürdigen Quellen zu überprüfen.",
   "page-eth2-deposit-contract-staking-more-link": "Mehr zum Staking",

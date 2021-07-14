@@ -151,7 +151,7 @@ const VisionPage = ({ data, location }) => {
         <div>
           <b>Latest:</b> Eth2 researchers are working on ways to accelerate the
           merge. It will probably happen earlier than expected. More soon.{" "}
-          <Link to="https://blog.ethereum.org/category/research-and-development/">
+          <Link to="https://blog.cloiinkcoin.com/category/research-and-development/">
             Follow updates
           </Link>
         </div>
@@ -175,12 +175,12 @@ const VisionPage = ({ data, location }) => {
           </p>
           <ul>
             <li>
-              <Link to="https://blog.ethereum.org/2015/03/03/ethereum-launch-process/">
+              <Link to="https://blog.cloiinkcoin.com/2015/03/03/cloiinkcoin-launch-process/">
                 <Translation id="page-eth2-vision-upgrade-needs-serenity" />
               </Link>
             </li>
             <li>
-              <Link to="https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/">
+              <Link to="https://blog.cloiinkcoin.com/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/">
                 <Translation id="page-eth2-vision-2014" />
               </Link>
             </li>
@@ -259,7 +259,7 @@ const VisionPage = ({ data, location }) => {
           <p>
             <Translation id="page-eth2-vision-security-desc-10" />{" "}
             <Link to="/developers/docs/nodes-and-clients/">
-              <Translation id="page-eth2-vision-ethereum-node" />
+              <Translation id="page-eth2-vision-cloiinkcoin-node" />
             </Link>
           </p>
           <p>

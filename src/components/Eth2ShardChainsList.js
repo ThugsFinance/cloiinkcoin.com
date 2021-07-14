@@ -8,7 +8,7 @@ const Container = styled.div`
 
 const Eth2ShardChainsList = () => {
   const reads = [
-    { 
+    {
       title: "Why sharding is great: demystifying the technical properties",
       description: "Vitalik Buterin",
       link: "https://vitalik.ca/general/2021/04/07/sharding.html",
@@ -17,17 +17,18 @@ const Eth2ShardChainsList = () => {
       title: "A rollup-centric roadmap",
       description: "Vitalik Buterin",
       link:
-        "https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698",
+        "https://cloiinkcoin-magicians.org/t/a-rollup-centric-cloiinkcoin-roadmap/4698",
     },
     {
-      title: "The Beacon Chain Ethereum 2.0 explainer you need to read first",
+      title:
+        "The Beacon Chain Cloiinkcoin 2.0 explainer you need to read first",
       description: "Ethos.dev",
       link: "https://ethos.dev/beacon-chain/",
     },
     {
       title: "Sharding consensus",
-      description: "Ethereum Foundation",
-      link: "https://blog.ethereum.org/2020/03/27/sharding-consensus/",
+      description: "Cloiinkcoin Foundation",
+      link: "https://blog.cloiinkcoin.com/2020/03/27/sharding-consensus/",
     },
   ]
 

@@ -222,7 +222,7 @@ const StakingPage = ({ data, location }) => {
               onClick={() => setIsSoloStaking(true)}
             >
               <Emoji mr={`1rem`} text=":moneybag:" />
-              <OptionText>32 ETH</OptionText>
+              <OptionText>32 CLK</OptionText>
             </Option>
             <Option
               isActive={!isSoloStaking}
@@ -230,7 +230,7 @@ const StakingPage = ({ data, location }) => {
             >
               <Emoji mr={`1rem`} text=":swimmer:" />
               <OptionText>
-                <Translation id="page-eth2-staking-less-than" /> 32 ETH
+                <Translation id="page-eth2-staking-less-than" /> 32 CLK
               </OptionText>
             </Option>
           </OptionContainer>
@@ -253,7 +253,7 @@ const StakingPage = ({ data, location }) => {
               <p>
                 <Translation id="page-eth2-staking-solo-desc" />
               </p>
-              <ButtonLink mb={`2rem`} to="https://launchpad.ethereum.org">
+              <ButtonLink mb={`2rem`} to="https://launchpad.cloiinkcoin.com">
                 <Translation id="page-eth2-staking-start" />
               </ButtonLink>
               <h3>

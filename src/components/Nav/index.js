@@ -145,11 +145,11 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
 
   const linkSections = [
     {
-      text: "use-ethereum",
-      ariaLabel: "use-ethereum-menu",
+      text: "use-cloiinkcoin",
+      ariaLabel: "use-cloiinkcoin-menu",
       items: [
         {
-          text: "ethereum-wallets",
+          text: "cloiinkcoin-wallets",
           to: "/wallets/",
         },
         {
@@ -175,11 +175,11 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
       ariaLabel: "learn-menu",
       items: [
         {
-          text: "what-is-ethereum",
-          to: "/what-is-ethereum/",
+          text: "what-is-cloiinkcoin",
+          to: "/what-is-cloiinkcoin/",
         },
         {
-          text: "what-is-ether",
+          text: "what-is-Cloiink",
           to: "/eth/",
         },
         {
@@ -195,19 +195,19 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
           to: "/nft/",
         },
         {
-          text: "history-of-ethereum",
+          text: "history-of-cloiinkcoin",
           to: "/history/",
         },
         {
-          text: "ethereum-whitepaper",
+          text: "cloiinkcoin-whitepaper",
           to: "/whitepaper/",
         },
         {
-          text: "ethereum-2-0",
+          text: "cloiinkcoin-2-0",
           to: "/eth2/",
         },
         {
-          text: "ethereum-glossary",
+          text: "cloiinkcoin-glossary",
           to: "/glossary/",
         },
         {
@@ -251,12 +251,12 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
       ariaLabel: "enterprise-menu",
       items: [
         {
-          text: "mainnet-ethereum",
+          text: "mainnet-cloiinkcoin",
           to: "/enterprise/",
         },
         {
-          text: "private-ethereum",
-          to: "/enterprise/private-ethereum/",
+          text: "private-cloiinkcoin",
+          to: "/enterprise/private-cloiinkcoin/",
         },
       ],
     },
@@ -265,7 +265,7 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
       ariaLabel: "community-menu",
       items: [
         {
-          text: "ethereum-community",
+          text: "cloiinkcoin-community",
           to: "/community/",
         },
         {
@@ -320,7 +320,7 @@ const Nav = ({ handleThemeChange, isDarkTheme, path }) => {
           <HomeLogoNavLink to="/">
             <HomeLogo
               fixed={data.file.childImageSharp.fixed}
-              alt={translateMessageId("ethereum-logo", intl)}
+              alt={translateMessageId("cloiinkcoin-logo", intl)}
             />
           </HomeLogoNavLink>
           {/* Desktop */}

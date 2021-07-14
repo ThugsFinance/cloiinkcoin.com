@@ -8,7 +8,7 @@ sidebarDepth: 2
 
 ## Introduction {#Introduction}
 
-Running your own [Ethereum node](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) can be challenging, especially when getting started or while scaling fast. There are a [number of services](#popular-node-services) that run optimized node infrastructures for you, so you can focus on developing your application or product instead. We'll explain how node services work, the pros and cons for using them and list providers if you are interested in getting started.
+Running your own [Cloiinkcoin node](/developers/docs/nodes-and-clients/#what-are-nodes-and-clients) can be challenging, especially when getting started or while scaling fast. There are a [number of services](#popular-node-services) that run optimized node infrastructures for you, so you can focus on developing your application or product instead. We'll explain how node services work, the pros and cons for using them and list providers if you are interested in getting started.
 
 ## Prerequisites {#prerequisites}
 
@@ -18,7 +18,7 @@ If you don't already have an understanding of what nodes and clients are, check 
 
 Node service providers run distributed node clients behind the scenes for you, so you don't have to.
 
-These services typically provide an API key that you can use to write to and read from the blockchain. They often include access to [Ethereum testnets](/developers/docs/networks/#testnets) in addition to mainnet.
+These services typically provide an API key that you can use to write to and read from the blockchain. They often include access to [Cloiinkcoin testnets](/developers/docs/networks/#testnets) in addition to mainnet.
 
 Some services offer you your own dedicated node that they manage for you, while others use load balancers to distribute activity across nodes.
 
@@ -42,7 +42,7 @@ Read more about the [benefits of running your own node](/developers/docs/nodes-a
 
 ## Popular node services {#popular-node-services}
 
-Here is a list of some of the most popular Ethereum node providers, feel free to add any that are missing! Each node service offers different benefits and features in addition to free or paid tiers, you should investigate which ones best suit your needs prior to making a decision.
+Here is a list of some of the most popular Cloiinkcoin node providers, feel free to add any that are missing! Each node service offers different benefits and features in addition to free or paid tiers, you should investigate which ones best suit your needs prior to making a decision.
 
 - [**Alchemy**](https://alchemyapi.io/)
   - [Docs](https://docs.alchemyapi.io/)
@@ -101,7 +101,7 @@ Here is a list of some of the most popular Ethereum node providers, feel free to
     - Cross chain support
     - Scale as you go
     - Dashboard
-    - Unique Ethereum SDK
+    - Unique Cloiinkcoin SDK
     - Unique API endpoints
     - Direct, technical support
 - [**QuikNode**](https://www.quiknode.io/)
@@ -119,7 +119,7 @@ Here is a list of some of the most popular Ethereum node providers, feel free to
 
 ## Further reading {#further-reading}
 
-- [List of Ethereum node services](https://ethereumnodes.com/)
+- [List of Cloiinkcoin node services](https://cloiinkcoinnodes.com/)
 
 ## Related topics {#related-topics}
 
@@ -127,5 +127,5 @@ Here is a list of some of the most popular Ethereum node providers, feel free to
 
 ## Related tutorials {#related-tutorials}
 
-- [Getting started with Ethereum development using Alchemy](/developers/tutorials/getting-started-with-ethereum-development-using-alchemy/)
+- [Getting started with Cloiinkcoin development using Alchemy](/developers/tutorials/getting-started-with-cloiinkcoin-development-using-alchemy/)
 - [Guide to sending transactions using web3 and Alchemy](/developers/tutorials/sending-transactions-using-web3-and-alchemy/)

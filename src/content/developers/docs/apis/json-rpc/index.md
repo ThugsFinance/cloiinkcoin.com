@@ -1,44 +1,44 @@
 ---
 title: JSON-RPC API
-description: A stateless, light-weight remote procedure call (RPC) protocol for Ethereum clients.
+description: A stateless, light-weight remote procedure call (RPC) protocol for Cloiinkcoin clients.
 lang: en
 sidebar: true
 ---
 
-In order for a software application to interact with the Ethereum blockchain (by reading blockchain data and/or sending transactions to the network), it must connect to an Ethereum node.
+In order for a software application to interact with the Cloiinkcoin blockchain (by reading blockchain data and/or sending transactions to the network), it must connect to an Cloiinkcoin node.
 
-For this purpose, every Ethereum client implements a [JSON-RPC specification](http://www.jsonrpc.org/specification), so there are a uniform set of [methods](/developers/docs/apis/json-rpc/#json-rpc-methods) that applications can rely on.
+For this purpose, every Cloiinkcoin client implements a [JSON-RPC specification](http://www.jsonrpc.org/specification), so there are a uniform set of [methods](/developers/docs/apis/json-rpc/#json-rpc-methods) that applications can rely on.
 
 ## Prerequisites {#prerequisites}
 
-You should be familiar with how JSON-RPC API endpoints can be used to fetch data. It will also be helpful to understand the [Ethereum stack](/developers/docs/ethereum-stack/) and [Ethereum clients](/developers/docs/nodes-and-clients/).
+You should be familiar with how JSON-RPC API endpoints can be used to fetch data. It will also be helpful to understand the [Cloiinkcoin stack](/developers/docs/cloiinkcoin-stack/) and [Cloiinkcoin clients](/developers/docs/nodes-and-clients/).
 
 ## Convenience Libraries {#convenience-libraries}
 
-While you may choose to interact directly with Ethereum clients via this JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend](/developers/docs/apis/backend/#available-libraries) API libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Ethereum.
+While you may choose to interact directly with Cloiinkcoin clients via this JSON-RPC API, there are often easier options for dapp developers. Many [JavaScript](/developers/docs/apis/javascript/#available-libraries) and [backend](/developers/docs/apis/backend/#available-libraries) API libraries exist to provide wrappers on top of the JSON-RPC API. With these libraries, developers can write intuitive, one-line methods in the programming language of their choice to initialize JSON-RPC requests (under the hood) that interact with Cloiinkcoin.
 
 ## JSON-RPC Endpoint {#json-rpc-endpoint}
 
-Ethereum clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual client documentation for further details related to specific programming languages.
+Cloiinkcoin clients each may utilize different programming languages when implementing the JSON-RPC specification. See individual client documentation for further details related to specific programming languages.
 
 ## JSON-RPC Support {#json-rpc-support}
 
-|                | cpp-ethereum | go-ethereum | py-ethereum |  parity  | hyperledger-besu |
-| -------------- | :----------: | :---------: | :---------: | :------: | :--------------: |
-| JSON-RPC 1.0   |   &#x2713;   |             |             |          |                  |
-| JSON-RPC 2.0   |   &#x2713;   |  &#x2713;   |  &#x2713;   | &#x2713; |     &#x2713;     |
-| Batch requests |   &#x2713;   |  &#x2713;   |  &#x2713;   | &#x2713; |     &#x2713;     |
-| HTTP           |   &#x2713;   |  &#x2713;   |  &#x2713;   | &#x2713; |     &#x2713;     |
-| IPC            |   &#x2713;   |  &#x2713;   |             | &#x2713; |                  |
-| WS             |              |  &#x2713;   |             | &#x2713; |     &#x2713;     |
+|                | cpp-cloiinkcoin | go-cloiinkcoin | py-cloiinkcoin |  parity  | hyperledger-besu |
+| -------------- | :-------------: | :------------: | :------------: | :------: | :--------------: |
+| JSON-RPC 1.0   |    &#x2713;     |                |                |          |                  |
+| JSON-RPC 2.0   |    &#x2713;     |    &#x2713;    |    &#x2713;    | &#x2713; |     &#x2713;     |
+| Batch requests |    &#x2713;     |    &#x2713;    |    &#x2713;    | &#x2713; |     &#x2713;     |
+| HTTP           |    &#x2713;     |    &#x2713;    |    &#x2713;    | &#x2713; |     &#x2713;     |
+| IPC            |    &#x2713;     |    &#x2713;    |                | &#x2713; |                  |
+| WS             |                 |    &#x2713;    |                | &#x2713; |     &#x2713;     |
 
-[View full list of Ethereum clients](/developers/docs/nodes-and-clients/#clients). We recommend checking the documentation of each client for the latest API support information.
+[View full list of Cloiinkcoin clients](/developers/docs/nodes-and-clients/#clients). We recommend checking the documentation of each client for the latest API support information.
 
 ## Publish / Subscribe {#pub-sub}
 
-Publish / subscribe (pub/sub) is a method of using JSON-RPC notifications to subscribe to Ethereum events without needing to poll for them:
+Publish / subscribe (pub/sub) is a method of using JSON-RPC notifications to subscribe to Cloiinkcoin events without needing to poll for them:
 
-- [Geth v1.4](https://geth.ethereum.org/docs/rpc/pubsub)
+- [Geth v1.4](https://geth.cloiinkcoin.com/docs/rpc/pubsub)
 
 - [Hyperledger Besu 1.3](https://besu.hyperledger.org/en/stable/HowTo/Interact/APIs/RPC-PubSub/)
 
@@ -62,7 +62,7 @@ When encoding **UNFORMATTED DATA** (byte arrays, account addresses, hashes, byte
 - WRONG: 0xf0f0f (must be even number of digits)
 - WRONG: 004200 (must be prefixed 0x)
 
-Currently [aleth](https://github.com/ethereum/aleth), [go-ethereum](https://github.com/ethereum/go-ethereum), and [parity](https://github.com/paritytech/parity) provide JSON-RPC communication over http and IPC (unix socket Linux and OSX/named pipes on Windows). Version 1.4 of go-ethereum, version 1.6 of Parity and version 1.3 of Hyperledger Besu onwards have websocket support.
+Currently [aleth](https://github.com/cloiinkcoin/aleth), [go-cloiinkcoin](https://github.com/cloiinkcoin/go-cloiinkcoin), and [parity](https://github.com/paritytech/parity) provide JSON-RPC communication over http and IPC (unix socket Linux and OSX/named pipes on Windows). Version 1.4 of go-cloiinkcoin, version 1.6 of Parity and version 1.3 of Hyperledger Besu onwards have websocket support.
 
 ## The default block parameter {#default-block-parameter}
 
@@ -74,7 +74,7 @@ The following methods have an extra default block parameter:
 - [eth_getStorageAt](/developers/docs/apis/json-rpc/#eth_getstorageat)
 - [eth_call](/developers/docs/apis/json-rpc/#eth_call)
 
-When requests are made that act on the state of Ethereum, the last default block parameter determines the height of the block.
+When requests are made that act on the state of Cloiinkcoin, the last default block parameter determines the height of the block.
 
 The following options are possible for the defaultBlock parameter:
 
@@ -91,7 +91,7 @@ The examples also do not include the URL/IP & port combination which must be the
 
 ## Gossip, State, History {#gossip-state-history}
 
-A handful of core JSON-RPC methods require data from the Ethereum network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
+A handful of core JSON-RPC methods require data from the Cloiinkcoin network, and fall neatly into three main categories: _Gossip, State, and History_. Use the links in these sections to jump to each method, or use the table of contents to explore the whole list of methods.
 
 ### Gossip Methods {#gossip-methods}
 
@@ -202,7 +202,7 @@ None
 
 `String` - The current network id.
 
-- `"1"`: Ethereum Mainnet
+- `"1"`: Cloiinkcoin Mainnet
 - `"2"`: Morden Testnet (deprecated)
 - `"3"`: Ropsten Testnet
 - `"4"`: Rinkeby Testnet
@@ -282,7 +282,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
 
 ### eth_protocolVersion {#eth_protocolversion}
 
-Returns the current Ethereum protocol version.
+Returns the current Cloiinkcoin protocol version.
 
 **Parameters**
 
@@ -290,7 +290,7 @@ None
 
 **Returns**
 
-`String` - The current Ethereum protocol version
+`String` - The current Cloiinkcoin protocol version
 
 **Example**
 
@@ -833,9 +833,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getCode","params":["0xa94f53
 
 ### eth_sign {#eth_sign}
 
-The sign method calculates an Ethereum specific signature with: `sign(keccak256("\x19Ethereum Signed Message:\n" + len(message) + message)))`.
+The sign method calculates an Cloiinkcoin specific signature with: `sign(keccak256("\x19Cloiinkcoin Signed Message:\n" + len(message) + message)))`.
 
-By adding a prefix to the message makes the calculated signature recognisable as an Ethereum specific signature. This prevents misuse where a malicious DApp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
+By adding a prefix to the message makes the calculated signature recognisable as an Cloiinkcoin specific signature. This prevents misuse where a malicious DApp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim.
 
 Note: the address to sign with must be unlocked.
 
@@ -1001,7 +1001,7 @@ Executes a new message call immediately without creating a transaction on the bl
 - `gas`: `QUANTITY` - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
 - `gasPrice`: `QUANTITY` - (optional) Integer of the gasPrice used for each paid gas
 - `value`: `QUANTITY` - (optional) Integer of the value sent with this transaction
-- `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html)
+- `data`: `DATA` - (optional) Hash of the method signature and encoded parameters. For details see [Cloiinkcoin Contract ABI in the Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html)
 
 2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](/developers/docs/apis/json-rpc/#default-block-parameter)
 

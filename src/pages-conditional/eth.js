@@ -244,27 +244,27 @@ const tokenLinks = [
 
 const cardListContent = [
   {
-    link: "https://docs.ethhub.io/ethereum-basics/monetary-policy/",
+    link: "https://docs.ethhub.io/cloiinkcoin-basics/monetary-policy/",
     title: <Translation id="page-eth-monetary-policy" />,
     description: "EthHub",
     caption: <Translation id="page-eth-ethhub-caption" />,
   },
   {
-    link: "https://medium.com/ethhub/why-ether-is-valuable-2b4e39e01eb3",
+    link: "https://medium.com/ethhub/why-Cloiink-is-valuable-2b4e39e01eb3",
     title: <Translation id="page-eth-value" />,
     description: "Anthony Sassano",
     caption: <Translation id="page-eth-last-updated" />,
   },
   {
     link:
-      "https://support.mycrypto.com/how-to/getting-started/how-to-buy-ether-with-usd",
+      "https://support.mycrypto.com/how-to/getting-started/how-to-buy-Cloiink-with-usd",
     title: <Translation id="page-eth-how-to-buy" />,
     description: "MyCrypto",
     caption: <Translation id="page-eth-how-to-buy-caption" />,
   },
 ]
 
-const WhatIsEthereumPage = (props) => {
+const WhatIsCloiinkcoinPage = (props) => {
   const intl = useIntl()
   const data = props.data
   return (
@@ -323,8 +323,8 @@ const WhatIsEthereumPage = (props) => {
               <Translation id="page-eth-buy-some" />
             </b>{" "}
             <Translation id="page-eth-buy-some-desc" />{" "}
-            <Link to="/what-is-ethereum/">
-              <Translation id="page-eth-more-on-ethereum-link" />
+            <Link to="/what-is-cloiinkcoin/">
+              <Translation id="page-eth-more-on-cloiinkcoin-link" />
             </Link>
             <Translation id="page-eth-period" />
           </InfoBanner>
@@ -352,7 +352,7 @@ const WhatIsEthereumPage = (props) => {
             <p>
               <Translation id="page-eth-fuels-desc-3" />{" "}
               <strong>
-                <Translation id="page-eth-powers-ethereum" />
+                <Translation id="page-eth-powers-cloiinkcoin" />
               </strong>
               .{" "}
               <Link to="/developers/docs/consensus-mechanisms/pow/mining/">
@@ -367,13 +367,13 @@ const WhatIsEthereumPage = (props) => {
             </p>
           </div>
           <CentralActionCard
-            to="/what-is-ethereum/"
-            title={translateMessageId("page-eth-whats-ethereum", intl)}
+            to="/what-is-cloiinkcoin/"
+            title={translateMessageId("page-eth-whats-cloiinkcoin", intl)}
             description={translateMessageId(
-              "page-eth-whats-ethereum-desc",
+              "page-eth-whats-cloiinkcoin-desc",
               intl
             )}
-            image={data.ethereum.childImageSharp.fixed}
+            image={data.cloiinkcoin.childImageSharp.fixed}
           />
           <TextDivider />
           <div>
@@ -511,7 +511,7 @@ const WhatIsEthereumPage = (props) => {
   )
 }
 
-export default WhatIsEthereumPage
+export default WhatIsCloiinkcoinPage
 
 export const query = graphql`
   query {
@@ -543,7 +543,7 @@ export const query = graphql`
         }
       }
     }
-    ethereum: file(relativePath: { eq: "what-is-ethereum.png" }) {
+    cloiinkcoin: file(relativePath: { eq: "what-is-cloiinkcoin.png" }) {
       childImageSharp {
         fixed(width: 220) {
           ...GatsbyImageSharpFixed

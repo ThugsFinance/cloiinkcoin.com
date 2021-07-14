@@ -166,7 +166,7 @@ const H2 = styled.h2`
 //       background: "#31272A",
 //       name: "Ganache",
 //       description:
-//         "A personal blockchain for Ethereum development you can use to deploy contracts, develop your applications, and run tests. It is available as both a desktop application as well as a command-line tool . Ganache is available for Windows, Mac, and Linux.",
+//         "A personal blockchain for Cloiinkcoin development you can use to deploy contracts, develop your applications, and run tests. It is available as both a desktop application as well as a command-line tool . Ganache is available for Windows, Mac, and Linux.",
 //     },
 //     {
 //       id: "ethnode",
@@ -174,7 +174,7 @@ const H2 = styled.h2`
 //       background: "#fff",
 //       name: "ethnode",
 //       description:
-//         "ethnode is a zero configuration tool to run a local Ethereum node. It supports both Openethereum and Geth clients.",
+//         "ethnode is a zero configuration tool to run a local Cloiinkcoin node. It supports both Opencloiinkcoin and Geth clients.",
 //     },
 //     {
 //       id: "buidler",
@@ -182,7 +182,7 @@ const H2 = styled.h2`
 //       background: "#2A2C32",
 //       name: "Buidler EVM",
 //       description:
-//         "A local Ethereum network designed for development. It allows you to deploy your contracts, run your tests and debug your code.",
+//         "A local Cloiinkcoin network designed for development. It allows you to deploy your contracts, run your tests and debug your code.",
 //     },
 //   ]
 
@@ -210,9 +210,9 @@ const H2 = styled.h2`
 //       id: "vscode",
 //         "https://marketplace.visualstudio.com/items?itemName=AzBlockchain.azure-blockchain",
 //       background: "#56338C",
-//       name: "VSCode Development Kit for Ethereum",
+//       name: "VSCode Development Kit for Cloiinkcoin",
 //       description:
-//         "The extension simplifies how you create, build and deploy smart contracts on Ethereum ledgers.",
+//         "The extension simplifies how you create, build and deploy smart contracts on Cloiinkcoin ledgers.",
 //     },
 //     {
 //       url:
@@ -258,7 +258,7 @@ const H2 = styled.h2`
 //       background: "#fff",
 //       name: "web3.js",
 //       description:
-//         "The Ethereum JavaScript API which connects to the Generic JSON-RPC spec.",
+//         "The Cloiinkcoin JavaScript API which connects to the Generic JSON-RPC spec.",
 //     },
 //     {
 //       id: "ethers",
@@ -266,7 +266,7 @@ const H2 = styled.h2`
 //       background: "#26389A",
 //       name: "Ethers.js",
 //       description:
-//         "Complete Ethereum library and wallet implementation in JavaScript – supports Typescript",
+//         "Complete Cloiinkcoin library and wallet implementation in JavaScript – supports Typescript",
 //     },
 //   ]
 
@@ -392,7 +392,7 @@ const ChooseStackPage = ({ data }) => {
 
         {/* <Hero
             fluid={data.hero.childImageSharp.fluid}
-            alt="Illustration of blocks being organised like an ETH symbol"
+            alt="Illustration of blocks being organised like an CLK symbol"
             loading="eager"
           /> */}
 
@@ -410,7 +410,7 @@ const ChooseStackPage = ({ data }) => {
           <StyledCard
             emoji=":woman_student:"
             title="Learn about the stack"
-            description="If you're not ready and want to brush up on your Ethereum knowledge, check out our docs."
+            description="If you're not ready and want to brush up on your Cloiinkcoin knowledge, check out our docs."
           ></StyledCard>
         </CardGrid> */}
       </HeroContent>
@@ -482,7 +482,7 @@ const ChooseStackPage = ({ data }) => {
         <Subtitle>Local development blockchain</Subtitle>
         <p>
           When creating a new smart contract, you definitely don't want to
-          deploy it straight to to Ethereum's public mainnet (it costs money).
+          deploy it straight to to Cloiinkcoin's public mainnet (it costs money).
           First, we recommend setting up a personal blockchain for local
           development, where you can run tests & kick the tires on your dapp.
         </p>
@@ -504,7 +504,7 @@ const ChooseStackPage = ({ data }) => {
       <StackContainer>
         <Subtitle>Smart contract languages (Optional)</Subtitle>
         <p>
-          In order to write Ethereum smart contracts, you'll need to use a
+          In order to write Cloiinkcoin smart contracts, you'll need to use a
           language specifically build for the EVM. You don’t have to write a
           smart contract to build a dapp, but if you want to create new
           functionality, you’ll need to write your own.
@@ -554,7 +554,7 @@ const ChooseStackPage = ({ data }) => {
         <p>
           Tools to help write unit and integration tests for your smart
           contracts, typically by using JavaScript. Note: most (if not all)
-          Ethereum developer frameworks come with smart contract testing out of
+          Cloiinkcoin developer frameworks come with smart contract testing out of
           the box
         </p>
         <Link to="/developers/docs/ides/">More on IDEs</Link>

@@ -48,7 +48,7 @@ const outdatedMarkdownPages = [
   "/eth/",
   "/learn/",
   "/wallets/",
-  "/what-is-ethereum/",
+  "/what-is-cloiinkcoin/",
 ]
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -203,7 +203,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   })
 
   // Create contentVersion v2.0 pages
-  const contentV2Pages = [`eth`, `dapps`, `wallets/index`, `what-is-ethereum`]
+  const contentV2Pages = [
+    `eth`,
+    `dapps`,
+    `wallets/index`,
+    `what-is-cloiinkcoin`,
+  ]
   const contentV2Languages = supportedLanguages.filter(
     (lang) => getLangContentVersion(lang) >= 2.0
   )

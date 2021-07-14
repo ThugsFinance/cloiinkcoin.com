@@ -1,11 +1,11 @@
 ---
 title: Transactions
-description: An overview of Ethereum transactions – how they work, their data structure, and how to send them via an application.
+description: An overview of Cloiinkcoin transactions – how they work, their data structure, and how to send them via an application.
 lang: en
 sidebar: true
 ---
 
-Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Ethereum network. The simplest transaction is transferring ETH from one account to another.
+Transactions are cryptographically signed instructions from accounts. An account will initiate a transaction to update the state of the Cloiinkcoin network. The simplest transaction is transferring CLK from one account to another.
 
 <!-- TODO explain these 2 types of transactions -->
 <!-- There are two types of transactions: those which result in message calls and those which result in contract creation. -->
@@ -13,14 +13,14 @@ Transactions are cryptographically signed instructions from accounts. An account
 
 ## Prerequisites {#prerequisites}
 
-To help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/) and our [introduction to Ethereum](/developers/docs/intro-to-ethereum/).
+To help you better understand this page, we recommend you first read [Accounts](/developers/docs/accounts/) and our [introduction to Cloiinkcoin](/developers/docs/intro-to-cloiinkcoin/).
 
 ## What's a transaction? {#whats-a-transaction}
 
-An Ethereum transaction refers to an action initiated by an externally-owned account, in other words an account managed by a human, not a contract. For example, if Bob sends Alice 1 ETH, Bob's account must be debited and Alice's must be credited. This state-changing action takes place within a transaction.
+An Cloiinkcoin transaction refers to an action initiated by an externally-owned account, in other words an account managed by a human, not a contract. For example, if Bob sends Alice 1 CLK, Bob's account must be debited and Alice's must be credited. This state-changing action takes place within a transaction.
 
 ![Diagram showing a transaction cause state change](./tx.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Cloiinkcoin EVM illustrated](https://takenobu-hs.github.io/downloads/cloiinkcoin_evm_illustrated.pdf)_
 
 Transactions, which change the state of the EVM, need to be broadcast to the whole network. Any node can broadcast a request for a transaction to be executed on the EVM; after this happens, a miner will execute the transaction and propagate the resulting state change to the rest of the network.
 
@@ -30,7 +30,7 @@ A submitted transaction includes the following information:
 
 - `recipient` – the receiving address (if an externally-owned account, the transaction will transfer value. If a contract account, the transaction will execute the contract code)
 - `signature` – the identifier of the sender. This is generated when the sender's private key signs the transaction and confirms the sender has authorised this transaction
-- `value` – amount of ETH to transfer from sender to recipient (in WEI, a denomination of ETH)
+- `value` – amount of CLK to transfer from sender to recipient (in WEI, a denomination of CLK)
 - `data` – optional field to include arbitrary data
 - `gasLimit` – the maximum amount of gas units that can be consumed by the transaction. Units of gas represent computational steps
 - `gasPrice` – the fee the sender pays per unit of gas
@@ -52,7 +52,7 @@ The transaction object will look a little like this:
 
 But a transaction object needs to be signed using the sender's private key. This proves that the transaction could only have come from the sender and was not sent fraudulently.
 
-An Ethereum client like Geth will handle this signing process.
+An Cloiinkcoin client like Geth will handle this signing process.
 
 Example [JSON-RPC](https://eth.wiki/json-rpc/API) call:
 
@@ -108,24 +108,24 @@ With the signature hash, the transaction can be cryptographically proven that it
 
 As mentioned, transactions cost [gas](/developers/docs/gas/) to execute. Simple transfer transactions require 21000 units of Gas.
 
-So for Bob to send Alice 1 ETH at a `gasPrice` of 200 gwei, Bob will need to pay the following fee:
+So for Bob to send Alice 1 CLK at a `gasPrice` of 200 gwei, Bob will need to pay the following fee:
 
 ```
 200 * 21000 = 4,200,000 gwei
 --or--
-0.0042 ETH
+0.0042 CLK
 ```
 
-Bob's account will be debited **-1.0042 ETH**
+Bob's account will be debited **-1.0042 CLK**
 
-Alice's account will be credited **+1.0 ETH**
+Alice's account will be credited **+1.0 CLK**
 
-The miner processing the transaction will get **+0.0042 ETH**
+The miner processing the transaction will get **+0.0042 CLK**
 
 Gas is required for any smart contract interaction too.
 
 ![Diagram showing how unused gas is refunded](./gas-tx.png)
-_Diagram adapted from [Ethereum EVM illustrated](https://takenobu-hs.github.io/downloads/ethereum_evm_illustrated.pdf)_
+_Diagram adapted from [Cloiinkcoin EVM illustrated](https://takenobu-hs.github.io/downloads/cloiinkcoin_evm_illustrated.pdf)_
 
 Any gas not used in a transaction is refunded to the user account.
 
@@ -172,7 +172,7 @@ A message is produced when a contract currently executing code executes the `CAL
 
 ```
 // FROM SOLIDITY DOCS
-Contracts can call other contracts or send ether to non-contract accounts by the means of message calls. Message calls are similar to transactions, in that they have a source, a target, data payload, Ether, gas and return data. In fact, every transaction consists of a top-level message call which in turn can create further message calls.
+Contracts can call other contracts or send Cloiink to non-contract accounts by the means of message calls. Message calls are similar to transactions, in that they have a source, a target, data payload, Ether, gas and return data. In fact, every transaction consists of a top-level message call which in turn can create further message calls.
 
 A contract can decide how much of its remaining gas should be sent with the inner message call and how much it wants to retain. If an out-of-gas exception happens in the inner call (or any other exception), this will be signalled by an error value put onto the stack. In this case, only the gas sent together with the call is used up. In Solidity, the calling contract causes a manual exception by default in such situations, so that exceptions “bubble up” the call stack.
 
@@ -204,8 +204,8 @@ let tx = {
   // ... or supports ENS names
   // to: "ricmoo.firefly.eth",
 
-  // We must pass in the amount as wei (1 ether = 1e18 wei), so we
-  // use this convenience function to convert ether to wei.
+  // We must pass in the amount as wei (1 Cloiink = 1e18 wei), so we
+  // use this convenience function to convert Cloiink to wei.
   value: ethers.utils.parseEther("1.0"),
 }
 
@@ -299,6 +299,6 @@ _Know of a community resource that helped you? Edit this page and add it!_
 ## Related topics {#related-topics}
 
 - [Accounts](/developers/docs/accounts/)
-- [Ethereum virtual machine (EVM)](/developers/docs/evm/)
+- [Cloiinkcoin virtual machine (EVM)](/developers/docs/evm/)
 - [Gas](/developers/docs/gas/)
 - [Mining](/developers/docs/consensus-mechanisms/pow/mining/)
